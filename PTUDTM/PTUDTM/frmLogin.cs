@@ -16,7 +16,6 @@ namespace PTUDTM
         public frmLogin()
         {
             InitializeComponent();
-            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -36,7 +35,9 @@ namespace PTUDTM
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            //Application.frmMain = new frmMain();
+            Program.frmMain = new frmMain();
+            this.Hide();
+            Program.frmMain.Show();
         }
     }
 }

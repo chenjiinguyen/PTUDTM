@@ -9,17 +9,19 @@ namespace PTUDTM
 {
     static class Program
     {
-       
+        public static frmMain frmMain;
+        public static frmLogin frmLogin;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            frmMain frmMain;
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            frmLogin = new frmLogin();
+            Application.Run(frmLogin);
         }
     }
 }

@@ -33,12 +33,15 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnMinimize = new Guna.UI2.WinForms.Guna2Button();
             this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.pnFeature = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(198)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panel1.Controls.Add(this.pnFeature);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(190, 600);
@@ -85,6 +88,14 @@
             this.btnClose.Size = new System.Drawing.Size(39, 24);
             this.btnClose.TabIndex = 8;
             this.btnClose.Text = "X";
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // pnFeature
+            // 
+            this.pnFeature.Location = new System.Drawing.Point(0, 109);
+            this.pnFeature.Name = "pnFeature";
+            this.pnFeature.Size = new System.Drawing.Size(190, 450);
+            this.pnFeature.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -99,6 +110,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
             this.Load += new System.EventHandler(this.frmMain_Load);
+            this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -110,5 +122,6 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnMinimize;
         private Guna.UI2.WinForms.Guna2Button btnClose;
+        private System.Windows.Forms.Panel pnFeature;
     }
 }

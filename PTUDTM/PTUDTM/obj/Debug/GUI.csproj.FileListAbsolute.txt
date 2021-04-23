@@ -10,3 +10,4 @@ C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.pd
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.pdb
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.ButtonFeature.resources
