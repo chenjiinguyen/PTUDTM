@@ -1,0 +1,4 @@
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.dll
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.pdb
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.dll
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.pdb

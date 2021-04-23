@@ -1,0 +1,12 @@
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.exe.config
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.exe
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.pdb
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmLogin.resources
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.form.frmMain.resources
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.Properties.Resources.resources
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.exe
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.pdb
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.dll
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.pdb
+C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csprojResolveAssemblyReference.cache
