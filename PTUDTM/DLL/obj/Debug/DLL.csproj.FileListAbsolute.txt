@@ -2,3 +2,12 @@ C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.pdb
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.csprojResolveAssemblyReference.cache
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\DLL\bin\Debug\System.Net.Http.Formatting.xml

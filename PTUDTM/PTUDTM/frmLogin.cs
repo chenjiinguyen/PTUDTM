@@ -10,12 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using BLL;
 
 namespace PTUDTM
 {
 
     public partial class frmLogin : Form
     {
+        LoginBLL login = new LoginBLL();
         public frmLogin()
         {
             InitializeComponent();
@@ -38,9 +40,13 @@ namespace PTUDTM
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Program.frmMain = new frmMain();
-            this.Hide();
-            Program.frmMain.Show();
+
+            string user = txtUsername.Text;
+            string pass = txtPassword.Text;
+            login.Login(user, pass);
+            //Program.frmMain = new frmMain();
+            //this.Hide();
+            //Program.frmMain.Show();
         }
     }
 }

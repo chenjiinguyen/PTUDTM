@@ -12,3 +12,22 @@ C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.cspro
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.ButtonFeature.resources
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmLogin.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.exe.config
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.exe
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.exe
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.ButtonFeature.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmLogin.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.form.frmMain.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.Properties.Resources.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\DLL.dll
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\DLL.pdb
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.xml
