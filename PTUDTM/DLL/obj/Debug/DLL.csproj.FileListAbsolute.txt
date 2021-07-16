@@ -2,3 +2,14 @@ C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.pdb
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.csproj.AssemblyReference.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.csproj.CoreCompileInputs.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\bin\Debug\DLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\bin\Debug\RestSharp.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\bin\Debug\RestSharp.xml
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\DLL\obj\Debug\DLL.csproj.CopyComplete

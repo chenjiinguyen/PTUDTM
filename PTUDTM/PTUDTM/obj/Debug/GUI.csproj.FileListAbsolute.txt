@@ -12,3 +12,27 @@ C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.cspro
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.ButtonFeature.resources
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmLogin.resources
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.exe.config
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.exe
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\PTUDTM.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\BLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.ButtonFeature.resources
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmLogin.resources
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.form.frmMain.resources
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.Properties.Resources.resources
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.exe
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\DLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\RestSharp.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\DLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\RestSharp.xml
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.Form1.resources

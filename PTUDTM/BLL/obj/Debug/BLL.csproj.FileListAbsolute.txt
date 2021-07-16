@@ -5,3 +5,16 @@ C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.pdb
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\BLL\bin\Debug\DLL.dll
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\BLL\bin\Debug\DLL.pdb
 C:\Users\Administrator\Documents\GitHub\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\BLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\BLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\DLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\DLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\obj\Debug\BLL.pdb
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\RestSharp.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\RestSharp.xml
+C:\Users\Duy Nguyen\Workspace\CSharp\PTUDTM\PTUDTM\BLL\bin\Debug\Newtonsoft.Json.xml

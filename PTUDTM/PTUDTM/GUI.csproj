@@ -109,6 +109,10 @@
       <Project>{01d16176-edc9-4755-b3c8-9776ca69bd50}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DLL\DLL.csproj">
+      <Project>{96E9C729-00D4-489F-820A-DA57D5380F5C}</Project>
+      <Name>DLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="resource\background\background_login.jpg" />
