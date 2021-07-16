@@ -65,7 +65,34 @@
     <Compile Include="component\ButtonFeature.Designer.cs">
       <DependentUpon>ButtonFeature.cs</DependentUpon>
     </Compile>
+    <Compile Include="component\CirculaImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="component\StoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\StoryList.Designer.cs">
+      <DependentUpon>StoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\UserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\WidgetNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\WidgetNumber.Designer.cs">
+      <DependentUpon>WidgetNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataObject.cs" />
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +110,18 @@
     <EmbeddedResource Include="component\ButtonFeature.resx">
       <DependentUpon>ButtonFeature.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="component\StoryList.resx">
+      <DependentUpon>StoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\WidgetNumber.resx">
+      <DependentUpon>WidgetNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +136,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -123,6 +163,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
+    <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <Content Include="resource\background\background_login.jpg" />
     <Content Include="resource\icon\icon-password-login.png" />
     <Content Include="resource\icon\icon-user-login.png" />

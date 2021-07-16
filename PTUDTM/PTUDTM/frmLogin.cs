@@ -48,5 +48,10 @@ namespace PTUDTM
             //this.Hide();
             //Program.frmMain.Show();
         }
+
+        private void pnLogin_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

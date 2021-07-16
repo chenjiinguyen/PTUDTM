@@ -31,3 +31,7 @@ C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\GUI.cspr
 C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\DLL.dll
 C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\DLL.pdb
 C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.WidgetNumber.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmDashboard.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.UserList.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.StoryList.resources
