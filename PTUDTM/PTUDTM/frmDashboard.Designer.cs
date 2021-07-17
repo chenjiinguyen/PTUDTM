@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.userList1 = new PTUDTM.component.UserList();
             this.userList2 = new PTUDTM.component.UserList();
             this.userList3 = new PTUDTM.component.UserList();
@@ -40,14 +43,12 @@
             this.widgetNumber3 = new PTUDTM.component.WidgetNumber();
             this.widgetNumber2 = new PTUDTM.component.WidgetNumber();
             this.widgetNumber1 = new PTUDTM.component.WidgetNumber();
-            this.label2 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.storyList1 = new PTUDTM.component.StoryList();
             this.storyList2 = new PTUDTM.component.StoryList();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,28 +69,8 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(1, 179);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(591, 855);
+            this.panel2.Size = new System.Drawing.Size(563, 855);
             this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.flowLayoutPanel2);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(598, 179);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(893, 855);
-            this.panel3.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(34, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách người dùng";
             // 
             // flowLayoutPanel1
             // 
@@ -97,29 +78,78 @@
             this.flowLayoutPanel1.Controls.Add(this.userList1);
             this.flowLayoutPanel1.Controls.Add(this.userList2);
             this.flowLayoutPanel1.Controls.Add(this.userList3);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(38, 97);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(26, 97);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(517, 706);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(517, 755);
             this.flowLayoutPanel1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(22, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(380, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh sách người dùng";
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.flowLayoutPanel2);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(570, 179);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(945, 855);
+            this.panel3.TabIndex = 2;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.AutoScroll = true;
+            this.flowLayoutPanel2.Controls.Add(this.storyList1);
+            this.flowLayoutPanel2.Controls.Add(this.storyList2);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(26, 97);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(909, 758);
+            this.flowLayoutPanel2.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(30, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(455, 39);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Danh sách truyện mới nhất";
             // 
             // userList1
             // 
+            this.userList1.Avatar = global::PTUDTM.Properties.Resources._51376355_554018558417057_2054804331131043840_n;
             this.userList1.Location = new System.Drawing.Point(3, 3);
             this.userList1.Name = "userList1";
+            this.userList1.NameUser = "Diệp Hạ Nhi";
+            this.userList1.Role = "Member";
             this.userList1.Size = new System.Drawing.Size(450, 150);
             this.userList1.TabIndex = 0;
             // 
             // userList2
             // 
+            this.userList2.Avatar = ((System.Drawing.Image)(resources.GetObject("userList2.Avatar")));
             this.userList2.Location = new System.Drawing.Point(3, 159);
             this.userList2.Name = "userList2";
+            this.userList2.NameUser = "Diệp Hạ Nhi";
+            this.userList2.Role = "Member";
             this.userList2.Size = new System.Drawing.Size(450, 150);
             this.userList2.TabIndex = 1;
             // 
             // userList3
             // 
+            this.userList3.Avatar = ((System.Drawing.Image)(resources.GetObject("userList3.Avatar")));
             this.userList3.Location = new System.Drawing.Point(3, 315);
             this.userList3.Name = "userList3";
+            this.userList3.NameUser = "Duy khùng";
+            this.userList3.Role = "Member";
             this.userList3.Size = new System.Drawing.Size(450, 150);
             this.userList3.TabIndex = 2;
             // 
@@ -163,39 +193,39 @@
             this.widgetNumber1.TabIndex = 0;
             this.widgetNumber1.Title = "Tổng số sách ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(30, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(455, 39);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Danh sách truyện mới nhất";
-            // 
-            // flowLayoutPanel2
-            // 
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Controls.Add(this.storyList1);
-            this.flowLayoutPanel2.Controls.Add(this.storyList2);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(37, 100);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(810, 706);
-            this.flowLayoutPanel2.TabIndex = 4;
-            // 
             // storyList1
             // 
+            this.storyList1.Author = "Tác giả:";
+            this.storyList1.AuthorName = "Nguyễn Nhật Ánh";
+            this.storyList1.Category = "Thể loại:";
+            this.storyList1.CategoryName = "Truyện chữ";
+            this.storyList1.DatePost = "Ngày đăng:";
             this.storyList1.Location = new System.Drawing.Point(3, 3);
             this.storyList1.Name = "storyList1";
-            this.storyList1.Size = new System.Drawing.Size(745, 354);
+            this.storyList1.Poster = ((System.Drawing.Image)(resources.GetObject("storyList1.Poster")));
+            this.storyList1.Size = new System.Drawing.Size(868, 387);
             this.storyList1.TabIndex = 0;
+            this.storyList1.Time = "16/07/2021";
+            this.storyList1.Title = "MẮT BIẾC";
+            this.storyList1.View = "Lượt xem:";
+            this.storyList1.ViewNumber = "100";
             // 
             // storyList2
             // 
-            this.storyList2.Location = new System.Drawing.Point(3, 363);
+            this.storyList2.Author = "Tác giả:";
+            this.storyList2.AuthorName = "Nguyễn Nhật Ánh";
+            this.storyList2.Category = "Thể loại:";
+            this.storyList2.CategoryName = "Truyện chữ";
+            this.storyList2.DatePost = "Ngày đăng:";
+            this.storyList2.Location = new System.Drawing.Point(3, 396);
             this.storyList2.Name = "storyList2";
-            this.storyList2.Size = new System.Drawing.Size(745, 354);
+            this.storyList2.Poster = ((System.Drawing.Image)(resources.GetObject("storyList2.Poster")));
+            this.storyList2.Size = new System.Drawing.Size(868, 387);
             this.storyList2.TabIndex = 1;
+            this.storyList2.Time = "16/07/2021";
+            this.storyList2.Title = "MẮT BIẾC";
+            this.storyList2.View = "Lượt xem:";
+            this.storyList2.ViewNumber = "100";
             // 
             // frmDashboard
             // 
@@ -211,9 +241,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -234,8 +264,8 @@
         private component.UserList userList2;
         private component.UserList userList3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.Label label2;
         private component.StoryList storyList1;
         private component.StoryList storyList2;
-        private System.Windows.Forms.Label label2;
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace PTUDTM.component
+﻿using System.ComponentModel;
+using System.Drawing;
+namespace PTUDTM.component
 {
     partial class UserList
     {
@@ -20,6 +22,27 @@
             base.Dispose(disposing);
         }
 
+        [Description("Avatar Image"), Category("Custom")]
+        public Image Avatar
+        {
+            get { return imageAvatar.Image; }
+            set { imageAvatar.Image = value; }
+        }
+
+        [Description("Text in Name"), Category("Custom")]
+        public string NameUser
+        {
+            get { return lblNameUser.Text; }
+            set { lblNameUser.Text = value; }
+        }
+
+        [Description("Text in Role"), Category("Custom")]
+        public string Role
+        {
+            get { return lblRole.Text; }
+            set { lblRole.Text = value; }
+        }
+
         #region Component Designer generated code
 
         /// <summary> 
@@ -30,11 +53,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblNameUser = new System.Windows.Forms.Label();
-            this.lblRule = new System.Windows.Forms.Label();
-            this.circulaImageBox1 = new PTUDTM.component.CirculaImageBox();
+            this.lblRole = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            ((System.ComponentModel.ISupportInitialize)(this.circulaImageBox1)).BeginInit();
+            this.imageAvatar = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,37 +82,25 @@
             this.lblNameUser.Text = "Diệp Hạ Nhi";
             this.lblNameUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblRule
+            // lblRole
             // 
-            this.lblRule.AutoSize = true;
-            this.lblRule.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblRule.Location = new System.Drawing.Point(115, 75);
-            this.lblRule.Name = "lblRule";
-            this.lblRule.Size = new System.Drawing.Size(332, 37);
-            this.lblRule.TabIndex = 3;
-            this.lblRule.Text = "Member";
-            // 
-            // circulaImageBox1
-            // 
-            this.circulaImageBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.circulaImageBox1.Image = global::PTUDTM.Properties.Resources._51376355_554018558417057_2054804331131043840_n;
-            this.circulaImageBox1.Location = new System.Drawing.Point(3, 3);
-            this.circulaImageBox1.Name = "circulaImageBox1";
-            this.tableLayoutPanel1.SetRowSpan(this.circulaImageBox1, 2);
-            this.circulaImageBox1.Size = new System.Drawing.Size(106, 106);
-            this.circulaImageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.circulaImageBox1.TabIndex = 4;
-            this.circulaImageBox1.TabStop = false;
+            this.lblRole.AutoSize = true;
+            this.lblRole.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblRole.Location = new System.Drawing.Point(115, 75);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(332, 37);
+            this.lblRole.TabIndex = 3;
+            this.lblRole.Text = "Member";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 75F));
-            this.tableLayoutPanel1.Controls.Add(this.lblRule, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lblRole, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblNameUser, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.circulaImageBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.imageAvatar, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -100,6 +111,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(450, 150);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
+            // imageAvatar
+            // 
+            this.imageAvatar.Image = global::PTUDTM.Properties.Resources._51376355_554018558417057_2054804331131043840_n;
+            this.imageAvatar.Location = new System.Drawing.Point(3, 3);
+            this.imageAvatar.Name = "imageAvatar";
+            this.tableLayoutPanel1.SetRowSpan(this.imageAvatar, 2);
+            this.imageAvatar.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.imageAvatar.ShadowDecoration.Parent = this.imageAvatar;
+            this.imageAvatar.Size = new System.Drawing.Size(106, 106);
+            this.imageAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imageAvatar.TabIndex = 4;
+            this.imageAvatar.TabStop = false;
+            // 
             // UserList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -107,9 +131,9 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "UserList";
             this.Size = new System.Drawing.Size(450, 150);
-            ((System.ComponentModel.ISupportInitialize)(this.circulaImageBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -118,8 +142,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblNameUser;
-        private System.Windows.Forms.Label lblRule;
-        private CirculaImageBox circulaImageBox1;
+        private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox imageAvatar;
     }
 }

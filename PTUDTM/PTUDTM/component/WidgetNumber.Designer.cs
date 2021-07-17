@@ -21,13 +21,13 @@ namespace PTUDTM.component
             base.Dispose(disposing);
         }
 
-        [Description("Text in Title"),Category("Data")] 
+        [Description("Text in Title"),Category("Custom")] 
         public string Title {
             get { return lblName.Text; }
             set { lblName.Text = value; }
         }
 
-        [Description("Text in Number"), Category("Data")]
+        [Description("Text in Number"), Category("Custom")]
         public string Number
         {
             get { return lblNumber.Text; }
