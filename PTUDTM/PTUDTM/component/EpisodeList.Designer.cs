@@ -1,4 +1,5 @@
-﻿namespace PTUDTM.component
+﻿using System.ComponentModel;
+namespace PTUDTM.component
 {
     partial class EpisodeList
     {
@@ -18,6 +19,27 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        [Description("Text in Episode"), Category("Custom")]
+        public string Episode
+        {
+            get { return lblEpisode.Text; }
+            set { lblEpisode.Text = value; }
+        }
+
+        [Description("Text in Time"), Category("Custom")]
+        public string Time
+        {
+            get { return lblTime.Text; }
+            set { lblTime.Text = value; }
+        }
+
+        [Description("Text in Status"), Category("Custom")]
+        public string Status
+        {
+            get { return lblStatus.Text; }
+            set { lblStatus.Text = value; }
         }
 
         #region Component Designer generated code

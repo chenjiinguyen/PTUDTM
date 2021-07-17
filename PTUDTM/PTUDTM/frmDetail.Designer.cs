@@ -208,7 +208,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.87265F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.12735F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 273F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 239F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 242F));
             this.tableLayoutPanel1.Controls.Add(this.lblTitleEpi, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblTime, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblStatus, 2, 0);
@@ -234,7 +234,7 @@
             this.lblTitleEpi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitleEpi.Location = new System.Drawing.Point(3, 0);
             this.lblTitleEpi.Name = "lblTitleEpi";
-            this.lblTitleEpi.Size = new System.Drawing.Size(460, 52);
+            this.lblTitleEpi.Size = new System.Drawing.Size(458, 52);
             this.lblTitleEpi.TabIndex = 0;
             this.lblTitleEpi.Text = "Tiêu đề chương";
             this.lblTitleEpi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -245,9 +245,9 @@
             this.lblTime.BackColor = System.Drawing.Color.LightGray;
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(469, 0);
+            this.lblTime.Location = new System.Drawing.Point(467, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(214, 52);
+            this.lblTime.Size = new System.Drawing.Size(213, 52);
             this.lblTime.TabIndex = 1;
             this.lblTime.Text = "Thời gian";
             this.lblTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -258,7 +258,7 @@
             this.lblStatus.BackColor = System.Drawing.Color.LightGray;
             this.lblStatus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(689, 0);
+            this.lblStatus.Location = new System.Drawing.Point(686, 0);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(267, 52);
             this.lblStatus.TabIndex = 2;
@@ -270,9 +270,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(962, 0);
+            this.label1.Location = new System.Drawing.Point(959, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 52);
+            this.label1.Size = new System.Drawing.Size(237, 52);
             this.label1.TabIndex = 3;
             // 
             // flowLayoutPanel1
@@ -288,27 +288,36 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.episodeList1, 4);
             this.episodeList1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.episodeList1.Episode = "Chương 1";
             this.episodeList1.Location = new System.Drawing.Point(3, 55);
             this.episodeList1.Name = "episodeList1";
             this.episodeList1.Size = new System.Drawing.Size(1193, 96);
+            this.episodeList1.Status = "Thành công";
             this.episodeList1.TabIndex = 4;
+            this.episodeList1.Time = "17/07/2021";
             // 
             // episodeList2
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.episodeList2, 4);
+            this.episodeList2.Episode = "Chương 2";
             this.episodeList2.Location = new System.Drawing.Point(3, 157);
             this.episodeList2.Name = "episodeList2";
             this.episodeList2.Size = new System.Drawing.Size(1193, 94);
+            this.episodeList2.Status = "Thành công";
             this.episodeList2.TabIndex = 5;
+            this.episodeList2.Time = "16/07/2021";
             // 
             // episodeList3
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.episodeList3, 4);
             this.episodeList3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.episodeList3.Episode = "Chương 1";
             this.episodeList3.Location = new System.Drawing.Point(3, 257);
             this.episodeList3.Name = "episodeList3";
             this.episodeList3.Size = new System.Drawing.Size(1193, 92);
+            this.episodeList3.Status = "Thành công";
             this.episodeList3.TabIndex = 6;
+            this.episodeList3.Time = "17/07/2021";
             // 
             // frmDetail
             // 
