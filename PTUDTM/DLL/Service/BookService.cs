@@ -1,5 +1,5 @@
-﻿using DLL.Model;
-using DLL.Response;
+﻿using MODEL.Model;
+using MODEL.Response;
 using Newtonsoft.Json;
 using RestSharp;
 using System;

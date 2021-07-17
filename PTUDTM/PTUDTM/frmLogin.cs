@@ -17,7 +17,6 @@ namespace PTUDTM
 
     public partial class frmLogin : Form
     {
-        LoginBLL login = new LoginBLL();
         public frmLogin()
         {
             InitializeComponent();
@@ -41,9 +40,10 @@ namespace PTUDTM
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            string user = txtUsername.Text;
-            string pass = txtPassword.Text;
-            login.Login(user, pass);
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            string token = Businesses.auth.Signin(username,password,true);
+            MessageBox.Show(token);
             //Program.frmMain = new frmMain();
             //this.Hide();
             //Program.frmMain.Show();

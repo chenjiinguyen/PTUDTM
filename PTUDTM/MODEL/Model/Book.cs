@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLL.Model
+namespace MODEL.Model
 {
     public partial class Book
     {
