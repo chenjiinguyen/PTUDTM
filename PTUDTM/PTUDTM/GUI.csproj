@@ -36,11 +36,18 @@
       <HintPath>..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http.WebRequest" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -52,13 +59,52 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="component\BookList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\BookList.Designer.cs">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </Compile>
     <Compile Include="component\ButtonFeature.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="component\ButtonFeature.Designer.cs">
       <DependentUpon>ButtonFeature.cs</DependentUpon>
     </Compile>
+    <Compile Include="component\CirculaImageBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="component\StoryList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\StoryList.Designer.cs">
+      <DependentUpon>StoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\UserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\WidgetNumber.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\WidgetNumber.Designer.cs">
+      <DependentUpon>WidgetNumber.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataObject.cs" />
+    <Compile Include="frmBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,8 +119,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="component\BookList.resx">
+      <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="component\ButtonFeature.resx">
       <DependentUpon>ButtonFeature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\StoryList.resx">
+      <DependentUpon>StoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\WidgetNumber.resx">
+      <DependentUpon>WidgetNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -90,7 +154,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,12 +176,15 @@
       <Name>BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\DLL\DLL.csproj">
-      <Project>{96E9C729-00D4-489F-820A-DA57D5380F5C}</Project>
+      <Project>{96e9c729-00d4-489f-820a-da57d5380f5c}</Project>
       <Name>DLL</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
+    <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <Content Include="resource\background\background_login.jpg" />
+    <Content Include="resource\icon\dashboard.png" />
     <Content Include="resource\icon\icon-password-login.png" />
     <Content Include="resource\icon\icon-user-login.png" />
     <Content Include="resource\logo.ico" />
