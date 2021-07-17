@@ -74,6 +74,12 @@
     <Compile Include="component\CirculaImageBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="component\EpisodeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\EpisodeList.Designer.cs">
+      <DependentUpon>EpisodeList.cs</DependentUpon>
+    </Compile>
     <Compile Include="component\StoryList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetail.Designer.cs">
+      <DependentUpon>frmDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +137,9 @@
     <EmbeddedResource Include="component\ButtonFeature.resx">
       <DependentUpon>ButtonFeature.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="component\EpisodeList.resx">
+      <DependentUpon>EpisodeList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="component\StoryList.resx">
       <DependentUpon>StoryList.cs</DependentUpon>
     </EmbeddedResource>
@@ -139,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetail.resx">
+      <DependentUpon>frmDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlNumber = new System.Windows.Forms.Panel();
+            this.pnlUser = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlStory = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.storyList1 = new PTUDTM.component.StoryList();
+            this.storyList2 = new PTUDTM.component.StoryList();
             this.userList1 = new PTUDTM.component.UserList();
             this.userList2 = new PTUDTM.component.UserList();
             this.userList3 = new PTUDTM.component.UserList();
@@ -43,34 +45,32 @@
             this.widgetNumber3 = new PTUDTM.component.WidgetNumber();
             this.widgetNumber2 = new PTUDTM.component.WidgetNumber();
             this.widgetNumber1 = new PTUDTM.component.WidgetNumber();
-            this.storyList1 = new PTUDTM.component.StoryList();
-            this.storyList2 = new PTUDTM.component.StoryList();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.pnlNumber.SuspendLayout();
+            this.pnlUser.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlStory.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlNumber
             // 
-            this.panel1.Controls.Add(this.widgetNumber4);
-            this.panel1.Controls.Add(this.widgetNumber3);
-            this.panel1.Controls.Add(this.widgetNumber2);
-            this.panel1.Controls.Add(this.widgetNumber1);
-            this.panel1.Location = new System.Drawing.Point(1, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1557, 171);
-            this.panel1.TabIndex = 0;
+            this.pnlNumber.Controls.Add(this.widgetNumber4);
+            this.pnlNumber.Controls.Add(this.widgetNumber3);
+            this.pnlNumber.Controls.Add(this.widgetNumber2);
+            this.pnlNumber.Controls.Add(this.widgetNumber1);
+            this.pnlNumber.Location = new System.Drawing.Point(1, 2);
+            this.pnlNumber.Name = "pnlNumber";
+            this.pnlNumber.Size = new System.Drawing.Size(1514, 171);
+            this.pnlNumber.TabIndex = 0;
             // 
-            // panel2
+            // pnlUser
             // 
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(1, 179);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(563, 855);
-            this.panel2.TabIndex = 1;
+            this.pnlUser.Controls.Add(this.flowLayoutPanel1);
+            this.pnlUser.Controls.Add(this.label1);
+            this.pnlUser.Location = new System.Drawing.Point(1, 179);
+            this.pnlUser.Name = "pnlUser";
+            this.pnlUser.Size = new System.Drawing.Size(563, 855);
+            this.pnlUser.TabIndex = 1;
             // 
             // flowLayoutPanel1
             // 
@@ -93,15 +93,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Danh sách người dùng";
             // 
-            // panel3
+            // pnlStory
             // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.flowLayoutPanel2);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(570, 179);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(945, 855);
-            this.panel3.TabIndex = 2;
+            this.pnlStory.AutoScroll = true;
+            this.pnlStory.Controls.Add(this.flowLayoutPanel2);
+            this.pnlStory.Controls.Add(this.label2);
+            this.pnlStory.Location = new System.Drawing.Point(570, 179);
+            this.pnlStory.Name = "pnlStory";
+            this.pnlStory.Size = new System.Drawing.Size(945, 855);
+            this.pnlStory.TabIndex = 2;
             // 
             // flowLayoutPanel2
             // 
@@ -122,6 +122,40 @@
             this.label2.Size = new System.Drawing.Size(455, 39);
             this.label2.TabIndex = 3;
             this.label2.Text = "Danh sách truyện mới nhất";
+            // 
+            // storyList1
+            // 
+            this.storyList1.Author = "Tác giả:";
+            this.storyList1.AuthorName = "Nguyễn Nhật Ánh";
+            this.storyList1.Category = "Thể loại:";
+            this.storyList1.CategoryName = "Truyện chữ";
+            this.storyList1.DatePost = "Ngày đăng:";
+            this.storyList1.Location = new System.Drawing.Point(3, 3);
+            this.storyList1.Name = "storyList1";
+            this.storyList1.Poster = ((System.Drawing.Image)(resources.GetObject("storyList1.Poster")));
+            this.storyList1.Size = new System.Drawing.Size(868, 387);
+            this.storyList1.TabIndex = 0;
+            this.storyList1.Time = "16/07/2021";
+            this.storyList1.Title = "MẮT BIẾC";
+            this.storyList1.View = "Lượt xem:";
+            this.storyList1.ViewNumber = "100";
+            // 
+            // storyList2
+            // 
+            this.storyList2.Author = "Tác giả:";
+            this.storyList2.AuthorName = "Nguyễn Nhật Ánh";
+            this.storyList2.Category = "Thể loại:";
+            this.storyList2.CategoryName = "Truyện chữ";
+            this.storyList2.DatePost = "Ngày đăng:";
+            this.storyList2.Location = new System.Drawing.Point(3, 396);
+            this.storyList2.Name = "storyList2";
+            this.storyList2.Poster = ((System.Drawing.Image)(resources.GetObject("storyList2.Poster")));
+            this.storyList2.Size = new System.Drawing.Size(868, 387);
+            this.storyList2.TabIndex = 1;
+            this.storyList2.Time = "16/07/2021";
+            this.storyList2.Title = "MẮT BIẾC";
+            this.storyList2.View = "Lượt xem:";
+            this.storyList2.ViewNumber = "100";
             // 
             // userList1
             // 
@@ -193,57 +227,23 @@
             this.widgetNumber1.TabIndex = 0;
             this.widgetNumber1.Title = "Tổng số sách ";
             // 
-            // storyList1
-            // 
-            this.storyList1.Author = "Tác giả:";
-            this.storyList1.AuthorName = "Nguyễn Nhật Ánh";
-            this.storyList1.Category = "Thể loại:";
-            this.storyList1.CategoryName = "Truyện chữ";
-            this.storyList1.DatePost = "Ngày đăng:";
-            this.storyList1.Location = new System.Drawing.Point(3, 3);
-            this.storyList1.Name = "storyList1";
-            this.storyList1.Poster = ((System.Drawing.Image)(resources.GetObject("storyList1.Poster")));
-            this.storyList1.Size = new System.Drawing.Size(868, 387);
-            this.storyList1.TabIndex = 0;
-            this.storyList1.Time = "16/07/2021";
-            this.storyList1.Title = "MẮT BIẾC";
-            this.storyList1.View = "Lượt xem:";
-            this.storyList1.ViewNumber = "100";
-            // 
-            // storyList2
-            // 
-            this.storyList2.Author = "Tác giả:";
-            this.storyList2.AuthorName = "Nguyễn Nhật Ánh";
-            this.storyList2.Category = "Thể loại:";
-            this.storyList2.CategoryName = "Truyện chữ";
-            this.storyList2.DatePost = "Ngày đăng:";
-            this.storyList2.Location = new System.Drawing.Point(3, 396);
-            this.storyList2.Name = "storyList2";
-            this.storyList2.Poster = ((System.Drawing.Image)(resources.GetObject("storyList2.Poster")));
-            this.storyList2.Size = new System.Drawing.Size(868, 387);
-            this.storyList2.TabIndex = 1;
-            this.storyList2.Time = "16/07/2021";
-            this.storyList2.Title = "MẮT BIẾC";
-            this.storyList2.View = "Lượt xem:";
-            this.storyList2.ViewNumber = "100";
-            // 
             // frmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1517, 1037);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlStory);
+            this.Controls.Add(this.pnlUser);
+            this.Controls.Add(this.pnlNumber);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmDashboard";
             this.Text = "frmDashboard";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlNumber.ResumeLayout(false);
+            this.pnlUser.ResumeLayout(false);
+            this.pnlUser.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlStory.ResumeLayout(false);
+            this.pnlStory.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -251,9 +251,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlNumber;
+        private System.Windows.Forms.Panel pnlUser;
+        private System.Windows.Forms.Panel pnlStory;
         private component.WidgetNumber widgetNumber1;
         private component.WidgetNumber widgetNumber4;
         private component.WidgetNumber widgetNumber3;

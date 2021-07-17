@@ -11,7 +11,7 @@ namespace PTUDTM
     {
         public static frmMain frmMain;
         public static frmLogin frmLogin;
-        public static frmDashboard frmDashboard;
+        public static frmDetail frmDeTail;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -21,8 +21,8 @@ namespace PTUDTM
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            frmDashboard = new frmDashboard();
-            Application.Run(frmDashboard);
+            frmDeTail = new frmDetail();
+            Application.Run(frmDeTail);
         }
     }
 }
