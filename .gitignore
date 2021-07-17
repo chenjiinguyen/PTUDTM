@@ -22,7 +22,7 @@
 mono_crash.*
 
 # Build results
-[Dd]ebug/
+**/[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -202,7 +202,7 @@ PublishScripts/
 # NuGet Symbol Packages
 *.snupkg
 # The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
+# **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
@@ -399,7 +399,7 @@ FodyWeavers.xsd
 _ReSharper.*
 bin
 obj
-packages
+# packages
 
 # Common node modules locations
 /node_modules
