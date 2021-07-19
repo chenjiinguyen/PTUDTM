@@ -39,3 +39,4 @@ C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.c
 C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmBook.resources
 C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmDetail.resources
 C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.component.EpisodeList.resources
+C:\Users\Nhu Quynh\Documents\PhatTrienPM\PTUDTM\PTUDTM\PTUDTM\obj\Debug\PTUDTM.frmPublicBook.resources
