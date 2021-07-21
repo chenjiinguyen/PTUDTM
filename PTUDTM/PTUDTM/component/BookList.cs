@@ -21,5 +21,11 @@ namespace PTUDTM.component
         {
 
         }
+
+        public void LoadImage(string url)
+        {
+            picturePoster.Load(url);
+        }
+            
     }
 }

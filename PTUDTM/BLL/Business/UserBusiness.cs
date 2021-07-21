@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 
 namespace BLL.Business
 {
-    public class BookBusiness
+    public class UserBusiness
     {
-        public BookBusiness()
+        public UserBusiness()
         {
         }
 
-        public List<Book> GetAll()
+        public List<User> GetAll()
         {
-            List<Book> books = Services.book.GetAll();
-            return books;
-
+            List<User> users = Services.user.GetAll();
+            return users;
         }
     }
 }

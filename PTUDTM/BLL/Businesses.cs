@@ -13,5 +13,7 @@ namespace BLL
         public static BookBusiness book = new BookBusiness();
 
         public static AuthBusiness auth = new AuthBusiness();
+
+        public static UserBusiness user = new UserBusiness();
     }
 }

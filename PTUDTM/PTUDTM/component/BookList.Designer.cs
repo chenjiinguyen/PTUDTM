@@ -125,10 +125,10 @@ namespace PTUDTM.component
             this.tableLayoutPanel1.SetColumnSpan(this.lblTitle, 3);
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(328, 30);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(20, 30, 3, 3);
+            this.lblTitle.Location = new System.Drawing.Point(246, 24);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(15, 24, 2, 2);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(161, 39);
+            this.lblTitle.Size = new System.Drawing.Size(123, 31);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "MẮT BIẾC\r\n";
             this.lblTitle.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -138,10 +138,10 @@ namespace PTUDTM.component
             this.lblAuthor.BackColor = System.Drawing.Color.Transparent;
             this.lblAuthor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthor.Location = new System.Drawing.Point(328, 96);
-            this.lblAuthor.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.lblAuthor.Location = new System.Drawing.Point(246, 77);
+            this.lblAuthor.Margin = new System.Windows.Forms.Padding(15, 2, 2, 2);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(97, 31);
+            this.lblAuthor.Size = new System.Drawing.Size(76, 24);
             this.lblAuthor.TabIndex = 2;
             this.lblAuthor.Text = "Tác giả:";
             this.lblAuthor.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,9 +151,10 @@ namespace PTUDTM.component
             this.lblAuthorName.BackColor = System.Drawing.Color.Transparent;
             this.lblAuthorName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorName.Location = new System.Drawing.Point(472, 96);
+            this.lblAuthorName.Location = new System.Drawing.Point(353, 77);
+            this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblAuthorName.Name = "lblAuthorName";
-            this.lblAuthorName.Size = new System.Drawing.Size(189, 31);
+            this.lblAuthorName.Size = new System.Drawing.Size(145, 24);
             this.lblAuthorName.TabIndex = 3;
             this.lblAuthorName.Text = "Nguyễn Nhật Ánh";
             // 
@@ -162,10 +163,10 @@ namespace PTUDTM.component
             this.lblCategory.BackColor = System.Drawing.Color.Transparent;
             this.lblCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.Location = new System.Drawing.Point(328, 174);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.lblCategory.Location = new System.Drawing.Point(246, 139);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(15, 2, 2, 2);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(106, 31);
+            this.lblCategory.Size = new System.Drawing.Size(82, 24);
             this.lblCategory.TabIndex = 4;
             this.lblCategory.Text = "Thể loại:";
             // 
@@ -174,9 +175,10 @@ namespace PTUDTM.component
             this.lblCateName.BackColor = System.Drawing.Color.Transparent;
             this.lblCateName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCateName.Location = new System.Drawing.Point(472, 174);
+            this.lblCateName.Location = new System.Drawing.Point(353, 139);
+            this.lblCateName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblCateName.Name = "lblCateName";
-            this.lblCateName.Size = new System.Drawing.Size(122, 31);
+            this.lblCateName.Size = new System.Drawing.Size(94, 24);
             this.lblCateName.TabIndex = 5;
             this.lblCateName.Text = "Truyện chữ";
             // 
@@ -185,10 +187,10 @@ namespace PTUDTM.component
             this.lblDatePost.BackColor = System.Drawing.Color.Transparent;
             this.lblDatePost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDatePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatePost.Location = new System.Drawing.Point(328, 245);
-            this.lblDatePost.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.lblDatePost.Location = new System.Drawing.Point(246, 196);
+            this.lblDatePost.Margin = new System.Windows.Forms.Padding(15, 2, 2, 2);
             this.lblDatePost.Name = "lblDatePost";
-            this.lblDatePost.Size = new System.Drawing.Size(135, 31);
+            this.lblDatePost.Size = new System.Drawing.Size(105, 24);
             this.lblDatePost.TabIndex = 6;
             this.lblDatePost.Text = "Ngày đăng:";
             // 
@@ -197,9 +199,10 @@ namespace PTUDTM.component
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(472, 245);
+            this.lblTime.Location = new System.Drawing.Point(353, 196);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(121, 31);
+            this.lblTime.Size = new System.Drawing.Size(93, 24);
             this.lblTime.TabIndex = 7;
             this.lblTime.Text = "16/07/2021";
             // 
@@ -208,10 +211,10 @@ namespace PTUDTM.component
             this.lblView.BackColor = System.Drawing.Color.Transparent;
             this.lblView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblView.Location = new System.Drawing.Point(328, 318);
-            this.lblView.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
+            this.lblView.Location = new System.Drawing.Point(246, 254);
+            this.lblView.Margin = new System.Windows.Forms.Padding(15, 2, 2, 2);
             this.lblView.Name = "lblView";
-            this.lblView.Size = new System.Drawing.Size(115, 31);
+            this.lblView.Size = new System.Drawing.Size(90, 24);
             this.lblView.TabIndex = 8;
             this.lblView.Text = "Lượt xem:";
             // 
@@ -220,9 +223,10 @@ namespace PTUDTM.component
             this.lblViewNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblViewNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblViewNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViewNumber.Location = new System.Drawing.Point(472, 318);
+            this.lblViewNumber.Location = new System.Drawing.Point(353, 254);
+            this.lblViewNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lblViewNumber.Name = "lblViewNumber";
-            this.lblViewNumber.Size = new System.Drawing.Size(42, 31);
+            this.lblViewNumber.Size = new System.Drawing.Size(33, 24);
             this.lblViewNumber.TabIndex = 9;
             this.lblViewNumber.Text = "100";
             // 
@@ -231,11 +235,11 @@ namespace PTUDTM.component
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2Panel1, 4);
             this.guna2Panel1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Panel1.Location = new System.Drawing.Point(20, 398);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.guna2Panel1.Location = new System.Drawing.Point(15, 319);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1396, 1);
+            this.guna2Panel1.Size = new System.Drawing.Size(1047, 1);
             this.guna2Panel1.TabIndex = 10;
             // 
             // btnDetail
@@ -247,10 +251,11 @@ namespace PTUDTM.component
             this.btnDetail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDetail.ForeColor = System.Drawing.Color.White;
             this.btnDetail.HoverState.Parent = this.btnDetail;
-            this.btnDetail.Location = new System.Drawing.Point(1275, 245);
+            this.btnDetail.Location = new System.Drawing.Point(956, 196);
+            this.btnDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.ShadowDecoration.Parent = this.btnDetail;
-            this.btnDetail.Size = new System.Drawing.Size(141, 67);
+            this.btnDetail.Size = new System.Drawing.Size(106, 54);
             this.btnDetail.TabIndex = 11;
             this.btnDetail.Text = "Chi tiết";
             // 
@@ -264,10 +269,11 @@ namespace PTUDTM.component
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.Parent = this.btnEdit;
-            this.btnEdit.Location = new System.Drawing.Point(1275, 96);
+            this.btnEdit.Location = new System.Drawing.Point(956, 77);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
-            this.btnEdit.Size = new System.Drawing.Size(141, 72);
+            this.btnEdit.Size = new System.Drawing.Size(106, 58);
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "Sửa";
             // 
@@ -282,20 +288,21 @@ namespace PTUDTM.component
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Location = new System.Drawing.Point(1275, 174);
+            this.btnDelete.Location = new System.Drawing.Point(956, 139);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(141, 65);
+            this.btnDelete.Size = new System.Drawing.Size(106, 53);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Xóa";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 308F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.99681F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.00319F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 491F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 369F));
             this.tableLayoutPanel1.Controls.Add(this.picturePoster, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2Panel1, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.btnDetail, 3, 3);
@@ -312,15 +319,16 @@ namespace PTUDTM.component
             this.tableLayoutPanel1.Controls.Add(this.lblTime, 2, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.3956F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.6044F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1419, 417);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1064, 334);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
             // picturePoster
@@ -328,24 +336,25 @@ namespace PTUDTM.component
             this.picturePoster.BorderRadius = 14;
             this.picturePoster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picturePoster.Image = global::PTUDTM.Properties.Resources.mat_biec_bia_cung_2019;
-            this.picturePoster.Location = new System.Drawing.Point(20, 20);
-            this.picturePoster.Margin = new System.Windows.Forms.Padding(20, 20, 3, 3);
+            this.picturePoster.Location = new System.Drawing.Point(15, 16);
+            this.picturePoster.Margin = new System.Windows.Forms.Padding(15, 16, 2, 2);
             this.picturePoster.Name = "picturePoster";
             this.tableLayoutPanel1.SetRowSpan(this.picturePoster, 5);
             this.picturePoster.ShadowDecoration.Parent = this.picturePoster;
-            this.picturePoster.Size = new System.Drawing.Size(285, 358);
+            this.picturePoster.Size = new System.Drawing.Size(214, 287);
             this.picturePoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePoster.TabIndex = 0;
             this.picturePoster.TabStop = false;
             // 
             // BookList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BookList";
-            this.Size = new System.Drawing.Size(1419, 417);
+            this.Size = new System.Drawing.Size(1064, 334);
             this.Load += new System.EventHandler(this.BookList_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

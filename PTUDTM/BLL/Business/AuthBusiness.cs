@@ -1,4 +1,5 @@
 ﻿using DLL;
+using MODEL.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +18,13 @@ namespace BLL.Business
         {
             string token = Services.auth.Signin(username, password, remember);
             return token;
+
+        }
+
+        public User me(string token)
+        {
+            User me = Services.auth.me(token);
+            return me;
 
         }
     }

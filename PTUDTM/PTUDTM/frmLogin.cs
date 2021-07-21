@@ -43,15 +43,30 @@ namespace PTUDTM
             string username = txtUsername.Text;
             string password = txtPassword.Text;
             string token = Businesses.auth.Signin(username,password,true);
-            MessageBox.Show(token);
-            //Program.frmMain = new frmMain();
-            //this.Hide();
-            //Program.frmMain.Show();
+            if(token != null)
+            {
+                //MessageBox.Show("Đăng nhập thành công !!!", "Thông Báo");
+                Program.token = token;
+                Program.frmMain = new frmMain();
+                this.Hide();
+                Program.frmMain.Show();
+            }
+            else
+            {
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu !!!","Thông Báo");
+            }
+
         }
 
         private void pnLogin_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            txtUsername.Text = "admin";
+            txtPassword.Text = "admin";
         }
     }
 }

@@ -18,5 +18,7 @@ namespace DLL
         public static BookService book = new BookService(base_url);
 
         public static AuthService auth = new AuthService(base_url);
+
+        public static UserService user = new UserService(base_url);
     }
 }

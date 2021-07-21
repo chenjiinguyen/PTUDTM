@@ -16,5 +16,10 @@ namespace PTUDTM.component
         {
             InitializeComponent();
         }
+
+        public void LoadImage(string url)
+        {
+            picturePoster.LoadAsync(url);
+        }
     }
 }

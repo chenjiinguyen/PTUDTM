@@ -1,4 +1,5 @@
-﻿using MODEL.Response;
+﻿using MODEL.Model;
+using MODEL.Response;
 using Newtonsoft.Json;
 using RestSharp;
 using System;
@@ -24,7 +25,6 @@ namespace DLL.Service
             IRestClient client = new RestClient(base_url);
             IRestRequest request = new RestRequest("signin", Method.POST);
 
-            //request.AddHeader("Authorization", "Bearer qaPmk9Vw8o7r7UOiX-3b-8Z_6r3w0Iu2pecwJ3x7CngjPp2fN3c61Q_5VU3y0rc-vPpkTKuaOI2eRs3bMyA5ucKKzY1thMFoM0wjnReEYeMGyq3JfZ-OIko1if3NmIj79ZSpNotLL2734ts2jGBjw8-uUgKet7jQAaq-qf5aIDwzUo0bnGosEj_UkFxiJKXPPlF2L4iNJSlBqRYrhw08RK1SzB4tf18Airb80WVy1Kewx2NGq5zCC-SCzvJW-mlOtjIDBAQ5intqaRkwRaSyjJ_MagxJF_CLc4BNUYC3hC2ejQDoTE6HYMWMcg0mbyWghMFpOw3gqyfAGjr6LPJcIly__aJ5__iyt-BTkOnMpDAZLTjzx4qDHMPWeND-TlzKWXjVb5yMv5Q6Jg6UmETWbuxyTdvGTJFzanUg1HWzPr7gSs6GLEv9VDTMiC8a5sNcGyLcHBIJo8mErrZrIssHvbT8ZUPWtyJaujKvdgazqsrad9CO3iRsZWQJ3lpvdQwucCsyjoRVoj_mXYhz3JK3wfOjLff16Gy1NLbj4gmOhBBRb8rJnUXnP7rBHs00FAk59BIpKLIPIyMgYBApDCut8V55AgXtGs4MgFFiJKbuaKxq8cdMYEVBTzDJ-S1IR5d6eiTGusD5aFlUkAs9NV_nFw");
             request.RequestFormat = DataFormat.Json;
             request.AddBody(new { username = username, password = password, remember = (remember) ? "true" : "false" });
 
@@ -36,6 +36,25 @@ namespace DLL.Service
             }
 
             return token;
+        }
+
+        public User me(string token)
+        {
+            User me = null;
+            IRestClient client = new RestClient(base_url);
+            IRestRequest request = new RestRequest("me", Method.GET);
+            request.AddHeader("Authorization", token);
+            IRestResponse response = client.Execute(request);
+            if (response.StatusCode.ToString() == "OK")
+            {
+                AuthResponse authResponse = JsonConvert.DeserializeObject<AuthResponse>(response.Content);
+                if (authResponse.Success)
+                {
+                    me = authResponse.Data;
+                }
+            }
+
+            return me;
         }
     }
 }

@@ -97,7 +97,12 @@
     <Compile Include="component\WidgetNumber.Designer.cs">
       <DependentUpon>WidgetNumber.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataObject.cs" />
+    <Compile Include="form\Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +129,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThreadHelperClass.cs" />
     <EmbeddedResource Include="component\BookList.resx">
       <DependentUpon>BookList.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="component\WidgetNumber.resx">
       <DependentUpon>WidgetNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBook.resx">
       <DependentUpon>frmBook.cs</DependentUpon>
@@ -184,14 +193,22 @@
       <Project>{96e9c729-00d4-489f-820a-da57d5380f5c}</Project>
       <Name>DLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MODEL\MODEL.csproj">
+      <Project>{7ED02B64-ACAC-41EC-BB90-99B5A4BD944D}</Project>
+      <Name>MODEL</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <Content Include="resource\background\background_login.jpg" />
     <Content Include="resource\icon\dashboard.png" />
+    <None Include="resource\icon\icon-dashboard.png" />
+    <None Include="resource\icon\icon-books.png" />
     <Content Include="resource\icon\icon-password-login.png" />
+    <Content Include="resource\icon\icon-statistical.png" />
     <Content Include="resource\icon\icon-user-login.png" />
+    <Content Include="resource\icon\icon-users.png" />
     <Content Include="resource\logo.ico" />
     <Content Include="resource\logo.png" />
   </ItemGroup>

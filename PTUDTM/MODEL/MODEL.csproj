@@ -53,6 +53,7 @@
     <Compile Include="Response\BooksResponse.cs" />
     <Compile Include="Response\Response.cs" />
     <Compile Include="Response\UserResponse.cs" />
+    <Compile Include="Response\UsersResponse.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -23,7 +23,7 @@ namespace MODEL.Model
         public string Poster { get; set; }
         [JsonProperty("description")]
         public string Description { get; set; }
-        [JsonProperty("status")]
+        [JsonProperty("view")]
         public int View { get; set; }
         [JsonProperty("createdAt")]
         public DateTime CreatedAt { get; set; }

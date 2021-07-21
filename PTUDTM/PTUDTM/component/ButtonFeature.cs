@@ -16,5 +16,11 @@ namespace PTUDTM.component
         {
             InitializeComponent();
         }
+
+        public void LoadImage(Image img)
+        {
+            image.Image = img;
+        }
+            
     }
 }
