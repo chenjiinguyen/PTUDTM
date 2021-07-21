@@ -12,6 +12,7 @@ namespace PTUDTM
         public static string token = "";
         public static frmMain frmMain;
         public static frmLogin frmLogin;
+        public static frmCreateEpisodeAudio frmDeTail;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>

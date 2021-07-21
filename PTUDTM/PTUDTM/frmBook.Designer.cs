@@ -29,25 +29,41 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBook));
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.pnlButton = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.flowPnlBooklist = new System.Windows.Forms.FlowLayoutPanel();
             this.bookList2 = new PTUDTM.component.BookList();
             this.bookList1 = new PTUDTM.component.BookList();
-            this.guna2GradientPanel1.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.pnlButton.SuspendLayout();
+            this.flowPnlBooklist.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2GradientPanel1
+            // pnlButton
             // 
-            this.guna2GradientPanel1.Controls.Add(this.btnStatistic);
-            this.guna2GradientPanel1.Controls.Add(this.btnAdd);
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(1, 5);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(1481, 107);
-            this.guna2GradientPanel1.TabIndex = 0;
+            this.pnlButton.Controls.Add(this.btnStatistic);
+            this.pnlButton.Controls.Add(this.btnAdd);
+            this.pnlButton.Location = new System.Drawing.Point(1, 5);
+            this.pnlButton.Name = "pnlButton";
+            this.pnlButton.ShadowDecoration.Parent = this.pnlButton;
+            this.pnlButton.Size = new System.Drawing.Size(1481, 107);
+            this.pnlButton.TabIndex = 0;
+            // 
+            // btnStatistic
+            // 
+            this.btnStatistic.BorderRadius = 5;
+            this.btnStatistic.CheckedState.Parent = this.btnStatistic;
+            this.btnStatistic.CustomImages.Parent = this.btnStatistic;
+            this.btnStatistic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnStatistic.HoverState.Parent = this.btnStatistic;
+            this.btnStatistic.Location = new System.Drawing.Point(256, 19);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.ShadowDecoration.Parent = this.btnStatistic;
+            this.btnStatistic.Size = new System.Drawing.Size(137, 66);
+            this.btnStatistic.TabIndex = 1;
+            this.btnStatistic.Text = "Thống kê";
             // 
             // btnAdd
             // 
@@ -65,31 +81,15 @@
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
             // 
-            // btnStatistic
+            // flowPnlBooklist
             // 
-            this.btnStatistic.BorderRadius = 5;
-            this.btnStatistic.CheckedState.Parent = this.btnStatistic;
-            this.btnStatistic.CustomImages.Parent = this.btnStatistic;
-            this.btnStatistic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStatistic.ForeColor = System.Drawing.Color.White;
-            this.btnStatistic.HoverState.Parent = this.btnStatistic;
-            this.btnStatistic.Location = new System.Drawing.Point(1274, 19);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.ShadowDecoration.Parent = this.btnStatistic;
-            this.btnStatistic.Size = new System.Drawing.Size(137, 66);
-            this.btnStatistic.TabIndex = 1;
-            this.btnStatistic.Text = "Thống kê";
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Controls.Add(this.bookList2);
-            this.flowLayoutPanel1.Controls.Add(this.bookList1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(1, 118);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1481, 835);
-            this.flowLayoutPanel1.TabIndex = 1;
+            this.flowPnlBooklist.AutoScroll = true;
+            this.flowPnlBooklist.Controls.Add(this.bookList2);
+            this.flowPnlBooklist.Controls.Add(this.bookList1);
+            this.flowPnlBooklist.Location = new System.Drawing.Point(1, 118);
+            this.flowPnlBooklist.Name = "flowPnlBooklist";
+            this.flowPnlBooklist.Size = new System.Drawing.Size(1481, 835);
+            this.flowPnlBooklist.TabIndex = 1;
             // 
             // bookList2
             // 
@@ -132,22 +132,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1484, 965);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.guna2GradientPanel1);
+            this.Controls.Add(this.flowPnlBooklist);
+            this.Controls.Add(this.pnlButton);
             this.Name = "frmBook";
             this.Text = "frmBook";
-            this.guna2GradientPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.pnlButton.ResumeLayout(false);
+            this.flowPnlBooklist.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2GradientPanel pnlButton;
         private Guna.UI2.WinForms.Guna2Button btnStatistic;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flowPnlBooklist;
         private component.BookList bookList2;
         private component.BookList bookList1;
     }
