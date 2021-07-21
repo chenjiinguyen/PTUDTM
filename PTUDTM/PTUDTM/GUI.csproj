@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Management" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -65,6 +66,12 @@
     <Compile Include="component\BookList.Designer.cs">
       <DependentUpon>BookList.cs</DependentUpon>
     </Compile>
+    <Compile Include="component\BookListUncensored.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\BookListUncensored.Designer.cs">
+      <DependentUpon>BookListUncensored.cs</DependentUpon>
+    </Compile>
     <Compile Include="component\ButtonFeature.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -80,11 +87,23 @@
     <Compile Include="component\EpisodeList.Designer.cs">
       <DependentUpon>EpisodeList.cs</DependentUpon>
     </Compile>
+    <Compile Include="component\EpisodeListCensor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\EpisodeListCensor.Designer.cs">
+      <DependentUpon>EpisodeListCensor.cs</DependentUpon>
+    </Compile>
     <Compile Include="component\StoryList.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="component\StoryList.Designer.cs">
       <DependentUpon>StoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\UserInfoDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\UserInfoDetail.Designer.cs">
+      <DependentUpon>UserInfoDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="component\UserList.cs">
       <SubType>UserControl</SubType>
@@ -105,6 +124,36 @@
     <Compile Include="frmBook.Designer.cs">
       <DependentUpon>frmBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBookCensorship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookCensorship.Designer.cs">
+      <DependentUpon>frmBookCensorship.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBookListUnCensored.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBookListUnCensored.Designer.cs">
+      <DependentUpon>frmBookListUnCensored.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateEpisodeAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateEpisodeAudio.Designer.cs">
+      <DependentUpon>frmCreateEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateEpisodeComic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateEpisodeComic.Designer.cs">
+      <DependentUpon>frmCreateEpisodeComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCreateEpisodeWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateEpisodeWord.Designer.cs">
+      <DependentUpon>frmCreateEpisodeWord.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +165,42 @@
     </Compile>
     <Compile Include="frmDetail.Designer.cs">
       <DependentUpon>frmDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditBook.Designer.cs">
+      <DependentUpon>frmEditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditEpisodeAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditEpisodeAudio.Designer.cs">
+      <DependentUpon>frmEditEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditEpisodeComic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditEpisodeComic.Designer.cs">
+      <DependentUpon>frmEditEpisodeComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEditEpisodeWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditEpisodeWord.Designer.cs">
+      <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEpisodeListUncensored.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEpisodeListUncensored.Designer.cs">
+      <DependentUpon>frmEpisodeListUncensored.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEpisodeWordCensorship.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEpisodeWordCensorship.Designer.cs">
+      <DependentUpon>frmEpisodeWordCensorship.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -135,10 +220,19 @@
     <Compile Include="frmPublicBook.Designer.cs">
       <DependentUpon>frmPublicBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmUserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserList.Designer.cs">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="component\BookList.resx">
       <DependentUpon>BookList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\BookListUncensored.resx">
+      <DependentUpon>BookListUncensored.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="component\ButtonFeature.resx">
       <DependentUpon>ButtonFeature.cs</DependentUpon>
@@ -146,8 +240,14 @@
     <EmbeddedResource Include="component\EpisodeList.resx">
       <DependentUpon>EpisodeList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="component\EpisodeListCensor.resx">
+      <DependentUpon>EpisodeListCensor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="component\StoryList.resx">
       <DependentUpon>StoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\UserInfoDetail.resx">
+      <DependentUpon>UserInfoDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="component\UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
@@ -158,11 +258,44 @@
     <EmbeddedResource Include="frmBook.resx">
       <DependentUpon>frmBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBookCensorship.resx">
+      <DependentUpon>frmBookCensorship.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBookListUnCensored.resx">
+      <DependentUpon>frmBookListUnCensored.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateEpisodeAudio.resx">
+      <DependentUpon>frmCreateEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateEpisodeComic.resx">
+      <DependentUpon>frmCreateEpisodeComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCreateEpisodeWord.resx">
+      <DependentUpon>frmCreateEpisodeWord.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDetail.resx">
       <DependentUpon>frmDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditBook.resx">
+      <DependentUpon>frmEditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditEpisodeAudio.resx">
+      <DependentUpon>frmEditEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditEpisodeComic.resx">
+      <DependentUpon>frmEditEpisodeComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEditEpisodeWord.resx">
+      <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEpisodeListUncensored.resx">
+      <DependentUpon>frmEpisodeListUncensored.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEpisodeWordCensorship.resx">
+      <DependentUpon>frmEpisodeWordCensorship.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -173,21 +306,24 @@
     <EmbeddedResource Include="frmPublicBook.resx">
       <DependentUpon>frmPublicBook.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmUserList.resx">
+      <DependentUpon>frmUserList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -211,6 +347,7 @@
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <Content Include="resource\background\background_login.jpg" />
+    <Content Include="resource\icon\button_add.png" />
     <Content Include="resource\icon\dashboard.png" />
     <Content Include="resource\icon\icon-password-login.png" />
     <Content Include="resource\icon\icon-user-login.png" />

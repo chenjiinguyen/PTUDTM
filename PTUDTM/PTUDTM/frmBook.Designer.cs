@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBook));
             this.pnlButton = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.flowPnlBooklist = new System.Windows.Forms.FlowLayoutPanel();
             this.bookList2 = new PTUDTM.component.BookList();
             this.bookList1 = new PTUDTM.component.BookList();
@@ -49,6 +49,22 @@
             this.pnlButton.Size = new System.Drawing.Size(1481, 107);
             this.pnlButton.TabIndex = 0;
             // 
+            // btnStatistic
+            // 
+            this.btnStatistic.BorderRadius = 5;
+            this.btnStatistic.CheckedState.Parent = this.btnStatistic;
+            this.btnStatistic.CustomImages.Parent = this.btnStatistic;
+            this.btnStatistic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStatistic.ForeColor = System.Drawing.Color.White;
+            this.btnStatistic.HoverState.Parent = this.btnStatistic;
+            this.btnStatistic.Location = new System.Drawing.Point(256, 19);
+            this.btnStatistic.Name = "btnStatistic";
+            this.btnStatistic.ShadowDecoration.Parent = this.btnStatistic;
+            this.btnStatistic.Size = new System.Drawing.Size(137, 66);
+            this.btnStatistic.TabIndex = 1;
+            this.btnStatistic.Text = "Thống kê";
+            // 
             // btnAdd
             // 
             this.btnAdd.BorderRadius = 5;
@@ -64,22 +80,6 @@
             this.btnAdd.Size = new System.Drawing.Size(137, 66);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
-            // 
-            // btnStatistic
-            // 
-            this.btnStatistic.BorderRadius = 5;
-            this.btnStatistic.CheckedState.Parent = this.btnStatistic;
-            this.btnStatistic.CustomImages.Parent = this.btnStatistic;
-            this.btnStatistic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStatistic.ForeColor = System.Drawing.Color.White;
-            this.btnStatistic.HoverState.Parent = this.btnStatistic;
-            this.btnStatistic.Location = new System.Drawing.Point(1274, 19);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.ShadowDecoration.Parent = this.btnStatistic;
-            this.btnStatistic.Size = new System.Drawing.Size(137, 66);
-            this.btnStatistic.TabIndex = 1;
-            this.btnStatistic.Text = "Thống kê";
             // 
             // flowPnlBooklist
             // 

@@ -138,7 +138,7 @@ namespace PTUDTM.component
             this.lblAuthor.BackColor = System.Drawing.Color.Transparent;
             this.lblAuthor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthor.Location = new System.Drawing.Point(328, 96);
+            this.lblAuthor.Location = new System.Drawing.Point(328, 93);
             this.lblAuthor.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.lblAuthor.Name = "lblAuthor";
             this.lblAuthor.Size = new System.Drawing.Size(97, 31);
@@ -151,7 +151,7 @@ namespace PTUDTM.component
             this.lblAuthorName.BackColor = System.Drawing.Color.Transparent;
             this.lblAuthorName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorName.Location = new System.Drawing.Point(472, 96);
+            this.lblAuthorName.Location = new System.Drawing.Point(470, 93);
             this.lblAuthorName.Name = "lblAuthorName";
             this.lblAuthorName.Size = new System.Drawing.Size(189, 31);
             this.lblAuthorName.TabIndex = 3;
@@ -162,7 +162,7 @@ namespace PTUDTM.component
             this.lblCategory.BackColor = System.Drawing.Color.Transparent;
             this.lblCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.Location = new System.Drawing.Point(328, 174);
+            this.lblCategory.Location = new System.Drawing.Point(328, 169);
             this.lblCategory.Margin = new System.Windows.Forms.Padding(20, 3, 3, 3);
             this.lblCategory.Name = "lblCategory";
             this.lblCategory.Size = new System.Drawing.Size(106, 31);
@@ -174,7 +174,7 @@ namespace PTUDTM.component
             this.lblCateName.BackColor = System.Drawing.Color.Transparent;
             this.lblCateName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCateName.Location = new System.Drawing.Point(472, 174);
+            this.lblCateName.Location = new System.Drawing.Point(470, 169);
             this.lblCateName.Name = "lblCateName";
             this.lblCateName.Size = new System.Drawing.Size(122, 31);
             this.lblCateName.TabIndex = 5;
@@ -197,7 +197,7 @@ namespace PTUDTM.component
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(472, 245);
+            this.lblTime.Location = new System.Drawing.Point(470, 245);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(121, 31);
             this.lblTime.TabIndex = 7;
@@ -220,7 +220,7 @@ namespace PTUDTM.component
             this.lblViewNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblViewNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblViewNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViewNumber.Location = new System.Drawing.Point(472, 318);
+            this.lblViewNumber.Location = new System.Drawing.Point(470, 318);
             this.lblViewNumber.Name = "lblViewNumber";
             this.lblViewNumber.Size = new System.Drawing.Size(42, 31);
             this.lblViewNumber.TabIndex = 9;
@@ -264,10 +264,10 @@ namespace PTUDTM.component
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.Parent = this.btnEdit;
-            this.btnEdit.Location = new System.Drawing.Point(1275, 96);
+            this.btnEdit.Location = new System.Drawing.Point(1275, 93);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
-            this.btnEdit.Size = new System.Drawing.Size(141, 72);
+            this.btnEdit.Size = new System.Drawing.Size(141, 70);
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "Sửa";
             // 
@@ -282,10 +282,10 @@ namespace PTUDTM.component
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Location = new System.Drawing.Point(1275, 174);
+            this.btnDelete.Location = new System.Drawing.Point(1275, 169);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(141, 65);
+            this.btnDelete.Size = new System.Drawing.Size(141, 70);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Xóa";
             // 
@@ -295,7 +295,7 @@ namespace PTUDTM.component
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 308F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.99681F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.00319F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 491F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 499F));
             this.tableLayoutPanel1.Controls.Add(this.picturePoster, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2Panel1, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.btnDetail, 3, 3);
@@ -316,7 +316,7 @@ namespace PTUDTM.component
             this.tableLayoutPanel1.RowCount = 6;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.3956F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.6044F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 71F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 76F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 73F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 66F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
