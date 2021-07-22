@@ -22,7 +22,7 @@ namespace PTUDTM
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             frmDeTail = new frmCreateEpisodeAudio();
-            Application.Run(frmDeTail);
+            Application.Run(new frmLogin());
         }
     }
 }

@@ -190,6 +190,18 @@
     <Compile Include="frmEditEpisodeWord.Designer.cs">
       <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEpisodeAudioCensor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEpisodeAudioCensor.Designer.cs">
+      <DependentUpon>frmEpisodeAudioCensor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEpisodeComicCensor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEpisodeComicCensor.Designer.cs">
+      <DependentUpon>frmEpisodeComicCensor.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmEpisodeListUncensored.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +303,12 @@
     <EmbeddedResource Include="frmEditEpisodeWord.resx">
       <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmEpisodeAudioCensor.resx">
+      <DependentUpon>frmEpisodeAudioCensor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEpisodeComicCensor.resx">
+      <DependentUpon>frmEpisodeComicCensor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmEpisodeListUncensored.resx">
       <DependentUpon>frmEpisodeListUncensored.cs</DependentUpon>
     </EmbeddedResource>
@@ -346,6 +364,7 @@
   <ItemGroup>
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
+    <None Include="Resources\WfI44pj.png" />
     <Content Include="resource\background\background_login.jpg" />
     <Content Include="resource\icon\button_add.png" />
     <Content Include="resource\icon\dashboard.png" />
