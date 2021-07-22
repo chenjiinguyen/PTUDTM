@@ -16,5 +16,9 @@ namespace PTUDTM.component
         {
             InitializeComponent();
         }
+        public void LoadImage(string url)
+        {
+            imageAvatar.LoadAsync(url);
+        }
     }
 }

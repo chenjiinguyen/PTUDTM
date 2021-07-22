@@ -11,13 +11,13 @@ using System.Windows.Forms;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using BLL;
+using DLL;
 
 namespace PTUDTM
 {
 
     public partial class frmLogin : Form
     {
-        LoginBLL login = new LoginBLL();
         public frmLogin()
         {
             InitializeComponent();
@@ -41,17 +41,35 @@ namespace PTUDTM
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-            string user = txtUsername.Text;
-            string pass = txtPassword.Text;
-            login.Login(user, pass);
-            //Program.frmMain = new frmMain();
-            //this.Hide();
-            //Program.frmMain.Show();
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+            user me = Businesses.auth.Signin(username, password);
+
+
+            if (me != null)
+            {
+                //MessageBox.Show("đăng nhập thành công !!!", "thông báo");
+                Program.me = me;
+                Program.frmMain = new frmMain();
+                this.Hide();
+                Program.frmMain.Show();
+            }
+            else
+            {
+                MessageBox.Show("sai tên đăng nhập hoặc mật khẩu !!!", "thông báo");
+            }
+
         }
 
         private void pnLogin_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            txtUsername.Text = "admin";
+            txtPassword.Text = "admin";
         }
     }
 }

@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/csharp
-# Edit at https://www.toptal.com/developers/gitignore?templates=csharp
+# Created by https://www.toptal.com/developers/gitignore/api/csharp,dotnetcore
+# Edit at https://www.toptal.com/developers/gitignore?templates=csharp,dotnetcore
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -22,7 +22,7 @@
 mono_crash.*
 
 # Build results
-[Dd]ebug/
+**/[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -95,6 +95,7 @@ StyleCopReport.xml
 *.tmp_proj
 *_wpftmp.csproj
 *.log
+*.tlog
 *.vspscc
 *.vssscc
 .builds
@@ -147,8 +148,9 @@ _TeamCity*
 !.axoCover/settings.json
 
 # Coverlet is a free, cross platform Code Coverage Tool
-coverage*.[ji][sn][of][no]
+coverage*.json
 coverage*.xml
+coverage*.info
 
 # Visual Studio code coverage results
 *.coverage
@@ -200,7 +202,7 @@ PublishScripts/
 # NuGet Symbol Packages
 *.snupkg
 # The packages folder can be ignored because of Package Restore
-**/[Pp]ackages/*
+# **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
 !**/[Pp]ackages/build/
 # Uncomment if necessary however generally it will be regenerated when needed
@@ -208,6 +210,9 @@ PublishScripts/
 # NuGet v3's project.json files produces more ignorable files
 *.nuget.props
 *.nuget.targets
+
+# Nuget personal access tokens and Credentials
+nuget.config
 
 # Microsoft Azure Build Output
 csx/
@@ -365,4 +370,40 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-# End of https://www.toptal.com/developers/gitignore/api/csharp
+# VS Code files for those working on multiple tools
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Windows Installer files from build outputs
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+### DotnetCore ###
+# .NET Core build folders
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+# packages
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+# End of https://www.toptal.com/developers/gitignore/api/csharp,dotnetcore
+

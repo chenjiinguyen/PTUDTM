@@ -118,8 +118,8 @@ namespace PTUDTM.component
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 289F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 217F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel2.Controls.Add(this.lblViewNumber, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.lblTitle, 1, 0);
@@ -134,15 +134,16 @@ namespace PTUDTM.component
             this.tableLayoutPanel2.Controls.Add(this.picturePoster, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.49738F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.07853F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 68F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 54F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.090908F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(868, 387);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(529, 310);
             this.tableLayoutPanel2.TabIndex = 11;
             // 
             // lblViewNumber
@@ -150,9 +151,10 @@ namespace PTUDTM.component
             this.lblViewNumber.AutoSize = true;
             this.lblViewNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblViewNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViewNumber.Location = new System.Drawing.Point(463, 310);
+            this.lblViewNumber.Location = new System.Drawing.Point(347, 248);
+            this.lblViewNumber.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblViewNumber.Name = "lblViewNumber";
-            this.lblViewNumber.Size = new System.Drawing.Size(402, 59);
+            this.lblViewNumber.Size = new System.Drawing.Size(301, 47);
             this.lblViewNumber.TabIndex = 12;
             this.lblViewNumber.Text = "100";
             // 
@@ -162,10 +164,10 @@ namespace PTUDTM.component
             this.tableLayoutPanel2.SetColumnSpan(this.lblTitle, 2);
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(309, 0);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.lblTitle.Location = new System.Drawing.Point(232, 0);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(556, 106);
+            this.lblTitle.Size = new System.Drawing.Size(416, 85);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "MẮT BIẾC";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,10 +177,10 @@ namespace PTUDTM.component
             this.lblAuthor.AutoSize = true;
             this.lblAuthor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthor.Location = new System.Drawing.Point(309, 106);
-            this.lblAuthor.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.lblAuthor.Location = new System.Drawing.Point(232, 85);
+            this.lblAuthor.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.lblAuthor.Name = "lblAuthor";
-            this.lblAuthor.Size = new System.Drawing.Size(148, 67);
+            this.lblAuthor.Size = new System.Drawing.Size(111, 54);
             this.lblAuthor.TabIndex = 2;
             this.lblAuthor.Text = "Tác giả:";
             // 
@@ -187,9 +189,10 @@ namespace PTUDTM.component
             this.lblAuthorName.AutoSize = true;
             this.lblAuthorName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorName.Location = new System.Drawing.Point(463, 106);
+            this.lblAuthorName.Location = new System.Drawing.Point(347, 85);
+            this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAuthorName.Name = "lblAuthorName";
-            this.lblAuthorName.Size = new System.Drawing.Size(402, 67);
+            this.lblAuthorName.Size = new System.Drawing.Size(301, 54);
             this.lblAuthorName.TabIndex = 3;
             this.lblAuthorName.Text = "Nguyễn Nhật Ánh";
             // 
@@ -198,10 +201,10 @@ namespace PTUDTM.component
             this.lblCategory.AutoSize = true;
             this.lblCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategory.Location = new System.Drawing.Point(309, 173);
-            this.lblCategory.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.lblCategory.Location = new System.Drawing.Point(232, 139);
+            this.lblCategory.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(148, 69);
+            this.lblCategory.Size = new System.Drawing.Size(111, 55);
             this.lblCategory.TabIndex = 4;
             this.lblCategory.Text = "Thể loại:";
             // 
@@ -210,9 +213,10 @@ namespace PTUDTM.component
             this.lblCateName.AutoSize = true;
             this.lblCateName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCateName.Location = new System.Drawing.Point(463, 173);
+            this.lblCateName.Location = new System.Drawing.Point(347, 139);
+            this.lblCateName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCateName.Name = "lblCateName";
-            this.lblCateName.Size = new System.Drawing.Size(402, 69);
+            this.lblCateName.Size = new System.Drawing.Size(301, 55);
             this.lblCateName.TabIndex = 5;
             this.lblCateName.Text = "Truyện chữ";
             // 
@@ -221,10 +225,10 @@ namespace PTUDTM.component
             this.lblDatePost.AutoSize = true;
             this.lblDatePost.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblDatePost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDatePost.Location = new System.Drawing.Point(309, 242);
-            this.lblDatePost.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.lblDatePost.Location = new System.Drawing.Point(232, 194);
+            this.lblDatePost.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.lblDatePost.Name = "lblDatePost";
-            this.lblDatePost.Size = new System.Drawing.Size(148, 68);
+            this.lblDatePost.Size = new System.Drawing.Size(111, 54);
             this.lblDatePost.TabIndex = 6;
             this.lblDatePost.Text = "Ngày đăng:";
             // 
@@ -233,9 +237,10 @@ namespace PTUDTM.component
             this.lblTime.AutoSize = true;
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(463, 242);
+            this.lblTime.Location = new System.Drawing.Point(347, 194);
+            this.lblTime.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(402, 68);
+            this.lblTime.Size = new System.Drawing.Size(301, 54);
             this.lblTime.TabIndex = 7;
             this.lblTime.Text = "16/07/2021";
             // 
@@ -244,10 +249,10 @@ namespace PTUDTM.component
             this.lblView.AutoSize = true;
             this.lblView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblView.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblView.Location = new System.Drawing.Point(309, 310);
-            this.lblView.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
+            this.lblView.Location = new System.Drawing.Point(232, 248);
+            this.lblView.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.lblView.Name = "lblView";
-            this.lblView.Size = new System.Drawing.Size(148, 59);
+            this.lblView.Size = new System.Drawing.Size(111, 47);
             this.lblView.TabIndex = 8;
             this.lblView.Text = "Lượt xem:";
             // 
@@ -256,9 +261,10 @@ namespace PTUDTM.component
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.tableLayoutPanel2.SetColumnSpan(this.panel1, 3);
-            this.panel1.Location = new System.Drawing.Point(3, 377);
+            this.panel1.Location = new System.Drawing.Point(2, 302);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(862, 1);
+            this.panel1.Size = new System.Drawing.Size(646, 1);
             this.panel1.TabIndex = 13;
             // 
             // picturePoster
@@ -266,23 +272,24 @@ namespace PTUDTM.component
             this.picturePoster.BorderRadius = 14;
             this.picturePoster.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picturePoster.Image = global::PTUDTM.Properties.Resources.mat_biec_bia_cung_2019;
-            this.picturePoster.Location = new System.Drawing.Point(20, 20);
-            this.picturePoster.Margin = new System.Windows.Forms.Padding(20, 20, 3, 20);
+            this.picturePoster.Location = new System.Drawing.Point(15, 16);
+            this.picturePoster.Margin = new System.Windows.Forms.Padding(15, 16, 2, 16);
             this.picturePoster.Name = "picturePoster";
             this.tableLayoutPanel2.SetRowSpan(this.picturePoster, 5);
             this.picturePoster.ShadowDecoration.Parent = this.picturePoster;
-            this.picturePoster.Size = new System.Drawing.Size(266, 329);
+            this.picturePoster.Size = new System.Drawing.Size(200, 263);
             this.picturePoster.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picturePoster.TabIndex = 14;
             this.picturePoster.TabStop = false;
             // 
             // StoryList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StoryList";
-            this.Size = new System.Drawing.Size(868, 387);
+            this.Size = new System.Drawing.Size(529, 310);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picturePoster)).EndInit();
