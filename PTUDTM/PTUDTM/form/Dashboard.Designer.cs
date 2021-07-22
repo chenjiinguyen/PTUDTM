@@ -33,13 +33,13 @@ namespace PTUDTM.form
             this.pnUser = new System.Windows.Forms.FlowLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnBook = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.wnMembers = new PTUDTM.component.WidgetNumber();
             this.wnView = new PTUDTM.component.WidgetNumber();
             this.wnCensorBook = new PTUDTM.component.WidgetNumber();
             this.wnTongSach = new PTUDTM.component.WidgetNumber();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnBook = new System.Windows.Forms.FlowLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -55,7 +55,7 @@ namespace PTUDTM.form
             this.panel2.Location = new System.Drawing.Point(2, 152);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(425, 803);
+            this.panel2.Size = new System.Drawing.Size(425, 737);
             this.panel2.TabIndex = 4;
             // 
             // pnUser
@@ -66,7 +66,7 @@ namespace PTUDTM.form
             this.pnUser.Location = new System.Drawing.Point(18, 94);
             this.pnUser.Margin = new System.Windows.Forms.Padding(2);
             this.pnUser.Name = "pnUser";
-            this.pnUser.Size = new System.Drawing.Size(388, 663);
+            this.pnUser.Size = new System.Drawing.Size(388, 597);
             this.pnUser.TabIndex = 2;
             // 
             // label1
@@ -91,8 +91,57 @@ namespace PTUDTM.form
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1294, 146);
+            this.panel1.Size = new System.Drawing.Size(1198, 146);
             this.panel1.TabIndex = 3;
+            // 
+            // wnMembers
+            // 
+            this.wnMembers.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.wnMembers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.wnMembers.Location = new System.Drawing.Point(617, 19);
+            this.wnMembers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wnMembers.Name = "wnMembers";
+            this.wnMembers.Number = "0";
+            this.wnMembers.Size = new System.Drawing.Size(239, 92);
+            this.wnMembers.TabIndex = 3;
+            this.wnMembers.Title = "Tổng thành viên";
+            // 
+            // wnView
+            // 
+            this.wnView.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.wnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.wnView.Location = new System.Drawing.Point(886, 19);
+            this.wnView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wnView.Name = "wnView";
+            this.wnView.Number = "0";
+            this.wnView.Size = new System.Drawing.Size(239, 92);
+            this.wnView.TabIndex = 2;
+            this.wnView.Title = "Tổng lượt xem";
+            this.wnView.Load += new System.EventHandler(this.wnView_Load);
+            // 
+            // wnCensorBook
+            // 
+            this.wnCensorBook.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.wnCensorBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.wnCensorBook.Location = new System.Drawing.Point(341, 19);
+            this.wnCensorBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wnCensorBook.Name = "wnCensorBook";
+            this.wnCensorBook.Number = "0";
+            this.wnCensorBook.Size = new System.Drawing.Size(239, 92);
+            this.wnCensorBook.TabIndex = 1;
+            this.wnCensorBook.Title = "Sách chưa kiểm duyệt";
+            // 
+            // wnTongSach
+            // 
+            this.wnTongSach.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.wnTongSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.wnTongSach.Location = new System.Drawing.Point(77, 19);
+            this.wnTongSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.wnTongSach.Name = "wnTongSach";
+            this.wnTongSach.Number = "0";
+            this.wnTongSach.Size = new System.Drawing.Size(239, 92);
+            this.wnTongSach.TabIndex = 0;
+            this.wnTongSach.Title = "Tổng số sách ";
             // 
             // panel3
             // 
@@ -103,7 +152,7 @@ namespace PTUDTM.form
             this.panel3.Location = new System.Drawing.Point(431, 152);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(865, 803);
+            this.panel3.Size = new System.Drawing.Size(769, 737);
             this.panel3.TabIndex = 5;
             // 
             // pnBook
@@ -116,7 +165,7 @@ namespace PTUDTM.form
             this.pnBook.Location = new System.Drawing.Point(27, 94);
             this.pnBook.Margin = new System.Windows.Forms.Padding(2);
             this.pnBook.Name = "pnBook";
-            this.pnBook.Size = new System.Drawing.Size(804, 665);
+            this.pnBook.Size = new System.Drawing.Size(708, 599);
             this.pnBook.TabIndex = 4;
             // 
             // label2
@@ -129,55 +178,6 @@ namespace PTUDTM.form
             this.label2.Size = new System.Drawing.Size(343, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "Danh sách truyện mới nhất";
-            // 
-            // wnMembers
-            // 
-            this.wnMembers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.wnMembers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.wnMembers.Location = new System.Drawing.Point(665, 19);
-            this.wnMembers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.wnMembers.Name = "wnMembers";
-            this.wnMembers.Number = "0";
-            this.wnMembers.Size = new System.Drawing.Size(239, 92);
-            this.wnMembers.TabIndex = 3;
-            this.wnMembers.Title = "Tổng thành viên";
-            // 
-            // wnView
-            // 
-            this.wnView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.wnView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.wnView.Location = new System.Drawing.Point(934, 19);
-            this.wnView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.wnView.Name = "wnView";
-            this.wnView.Number = "0";
-            this.wnView.Size = new System.Drawing.Size(239, 92);
-            this.wnView.TabIndex = 2;
-            this.wnView.Title = "Tổng lượt xem";
-            this.wnView.Load += new System.EventHandler(this.wnView_Load);
-            // 
-            // wnCensorBook
-            // 
-            this.wnCensorBook.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.wnCensorBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.wnCensorBook.Location = new System.Drawing.Point(389, 19);
-            this.wnCensorBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.wnCensorBook.Name = "wnCensorBook";
-            this.wnCensorBook.Number = "0";
-            this.wnCensorBook.Size = new System.Drawing.Size(239, 92);
-            this.wnCensorBook.TabIndex = 1;
-            this.wnCensorBook.Title = "Sách chưa kiểm duyệt";
-            // 
-            // wnTongSach
-            // 
-            this.wnTongSach.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.wnTongSach.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.wnTongSach.Location = new System.Drawing.Point(125, 19);
-            this.wnTongSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.wnTongSach.Name = "wnTongSach";
-            this.wnTongSach.Number = "0";
-            this.wnTongSach.Size = new System.Drawing.Size(239, 92);
-            this.wnTongSach.TabIndex = 0;
-            this.wnTongSach.Title = "Tổng số sách ";
             // 
             // tableLayoutPanel1
             // 
@@ -196,7 +196,7 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1298, 957);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1202, 891);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // Dashboard
@@ -205,7 +205,8 @@ namespace PTUDTM.form
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Dashboard";
-            this.Size = new System.Drawing.Size(1384, 1055);
+            this.Size = new System.Drawing.Size(1288, 989);
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);

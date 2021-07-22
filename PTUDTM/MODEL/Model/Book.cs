@@ -9,8 +9,8 @@ namespace MODEL.Model
 {
     public partial class Book
     {
-        [JsonProperty("id")]
-        public string Id { get; set; }
+        [JsonProperty("idbook")]
+        public int Id { get; set; }
         [JsonProperty("title")]
         public string Title { get; set; }
         [JsonProperty("author")]
@@ -34,7 +34,7 @@ namespace MODEL.Model
 
         public Book()
         {
-            this.Id = "";
+            this.Id = 1;
             this.Title = "";
             this.Author = "";
             this.Uploader = "";
@@ -47,7 +47,7 @@ namespace MODEL.Model
             this.Like = 0;
         }
 
-        public Book(string id, string title, string author, string uploader, string category, string poster, string description, int view, DateTime createdAt, DateTime updatedAt, int like)
+        public Book(int id, string title, string author, string uploader, string category, string poster, string description, int view, DateTime createdAt, DateTime updatedAt, int like)
         {
             this.Id = id;
             this.Title = title;

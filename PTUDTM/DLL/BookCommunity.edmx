@@ -1,0 +1,1016 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BOOKCOMMUNITYModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="book">
+          <Key>
+            <PropertyRef Name="idbook" />
+          </Key>
+          <Property Name="idbook" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="author" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="uploader" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="category" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="poster" Type="text" Nullable="false" />
+          <Property Name="description" Type="text" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+          <Property Name="view" Type="bigint" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" />
+          <Property Name="updatedat" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="idcategory" />
+          </Key>
+          <Property Name="idcategory" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="comment">
+          <Key>
+            <PropertyRef Name="idcomment" />
+          </Key>
+          <Property Name="idcomment" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="iduser" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="idbook" Type="bigint" Nullable="false" />
+          <Property Name="parent" Type="bigint" />
+          <Property Name="content" Type="text" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" />
+          <Property Name="updatedat" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="device">
+          <Key>
+            <PropertyRef Name="token" />
+          </Key>
+          <Property Name="token" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="episode">
+          <Key>
+            <PropertyRef Name="idepisode" />
+          </Key>
+          <Property Name="idepisode" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idbook" Type="bigint" Nullable="false" />
+          <Property Name="index" Type="bigint" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="content" Type="text" />
+          <Property Name="view" Type="int" Nullable="false" />
+          <Property Name="status" Type="int" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="updatedat" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="like">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="idbook" />
+          </Key>
+          <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="idbook" Type="bigint" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" />
+          <Property Name="updatedat" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="moderation_book">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idbook" Type="bigint" Nullable="false" />
+          <Property Name="moderator" Type="varchar" MaxLength="50" />
+          <Property Name="moderation" Type="bigint" />
+          <Property Name="content" Type="text" />
+          <Property Name="review" Type="bool" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" />
+          <Property Name="updatedat" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="moderation_episode">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idepisode" Type="bigint" Nullable="false" />
+          <Property Name="moderator" Type="varchar" MaxLength="50" />
+          <Property Name="moderation" Type="bigint" />
+          <Property Name="content" Type="text" />
+          <Property Name="review" Type="bool" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" />
+          <Property Name="updatedat" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="point">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="idepisode" />
+          </Key>
+          <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="idepisode" Type="bigint" Nullable="false" />
+          <Property Name="charge" Type="bit" Nullable="false" />
+          <Property Name="point" Type="bigint" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" />
+          <Property Name="updatedat" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="idrole" />
+          </Key>
+          <Property Name="idrole" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="description" Type="text" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="1024" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="gender" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="usergroup" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="birthday" Type="date" Nullable="false" />
+          <Property Name="avatar" Type="varchar" MaxLength="512" Nullable="false" />
+          <Property Name="point" Type="bigint" Nullable="false" />
+          <Property Name="createdat" Type="datetime" Precision="0" Nullable="false" />
+          <Property Name="updatedat" Type="datetime" Precision="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usergroup">
+          <Key>
+            <PropertyRef Name="idgroup" />
+          </Key>
+          <Property Name="idgroup" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityType Name="usergroup_role">
+          <Key>
+            <PropertyRef Name="idgroup" />
+            <PropertyRef Name="idrole" />
+          </Key>
+          <Property Name="idgroup" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="idrole" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="books_ibfk_1">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="book" Type="Self.book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="book">
+              <PropertyRef Name="uploader" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="books_ibfk_2">
+          <End Role="category" Type="Self.category" Multiplicity="1" />
+          <End Role="book" Type="Self.book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="category">
+              <PropertyRef Name="idcategory" />
+            </Principal>
+            <Dependent Role="book">
+              <PropertyRef Name="category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="comments_ibfk_1">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="iduser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="comments_ibfk_2">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="episodes_ibfk_1">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="episode" Type="Self.episode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="episode">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="likes_ibfk_1">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="like" Type="Self.like" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="like">
+              <PropertyRef Name="username" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="likes_ibfk_2">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="like" Type="Self.like" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="like">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderation_episode_ibfk_1">
+          <End Role="episode" Type="Self.episode" Multiplicity="1" />
+          <End Role="moderation_episode" Type="Self.moderation_episode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="episode">
+              <PropertyRef Name="idepisode" />
+            </Principal>
+            <Dependent Role="moderation_episode">
+              <PropertyRef Name="idepisode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderation_episode_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="moderation_episode" Type="Self.moderation_episode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="moderation_episode">
+              <PropertyRef Name="moderator" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderations_ibfk_1">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="moderation_book" Type="Self.moderation_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="moderation_book">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderations_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="moderation_book" Type="Self.moderation_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="moderation_book">
+              <PropertyRef Name="moderator" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="point_ibfk_1">
+          <End Role="episode" Type="Self.episode" Multiplicity="1" />
+          <End Role="point" Type="Self.point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="episode">
+              <PropertyRef Name="idepisode" />
+            </Principal>
+            <Dependent Role="point">
+              <PropertyRef Name="idepisode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="point_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="point" Type="Self.point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="point">
+              <PropertyRef Name="username" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="usergroup_role_ibfk_1">
+          <End Role="usergroup" Type="Self.usergroup" Multiplicity="1" />
+          <End Role="usergroup_role" Type="Self.usergroup_role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usergroup">
+              <PropertyRef Name="idgroup" />
+            </Principal>
+            <Dependent Role="usergroup_role">
+              <PropertyRef Name="idgroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="usergroup_role_ibfk_2">
+          <End Role="role" Type="Self.role" Multiplicity="1" />
+          <End Role="usergroup_role" Type="Self.usergroup_role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="role">
+              <PropertyRef Name="idrole" />
+            </Principal>
+            <Dependent Role="usergroup_role">
+              <PropertyRef Name="idrole" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="users_ibfk_1">
+          <End Role="usergroup" Type="Self.usergroup" Multiplicity="1" />
+          <End Role="user" Type="Self.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usergroup">
+              <PropertyRef Name="idgroup" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="usergroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="BOOKCOMMUNITYModelStoreContainer">
+          <EntitySet Name="book" EntityType="Self.book" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="category" EntityType="Self.category" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="comment" EntityType="Self.comment" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="device" EntityType="Self.device" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="episode" EntityType="Self.episode" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="like" EntityType="Self.like" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="moderation_book" EntityType="Self.moderation_book" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="moderation_episode" EntityType="Self.moderation_episode" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="point" EntityType="Self.point" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="role" EntityType="Self.role" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="user" EntityType="Self.user" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="usergroup" EntityType="Self.usergroup" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <EntitySet Name="usergroup_role" EntityType="Self.usergroup_role" Schema="BOOKCOMMUNITY" store:Type="Tables" />
+          <AssociationSet Name="books_ibfk_1" Association="Self.books_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="book" EntitySet="book" />
+          </AssociationSet>
+          <AssociationSet Name="books_ibfk_2" Association="Self.books_ibfk_2">
+            <End Role="category" EntitySet="category" />
+            <End Role="book" EntitySet="book" />
+          </AssociationSet>
+          <AssociationSet Name="comments_ibfk_1" Association="Self.comments_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="comment" EntitySet="comment" />
+          </AssociationSet>
+          <AssociationSet Name="comments_ibfk_2" Association="Self.comments_ibfk_2">
+            <End Role="book" EntitySet="book" />
+            <End Role="comment" EntitySet="comment" />
+          </AssociationSet>
+          <AssociationSet Name="episodes_ibfk_1" Association="Self.episodes_ibfk_1">
+            <End Role="book" EntitySet="book" />
+            <End Role="episode" EntitySet="episode" />
+          </AssociationSet>
+          <AssociationSet Name="likes_ibfk_1" Association="Self.likes_ibfk_1">
+            <End Role="user" EntitySet="user" />
+            <End Role="like" EntitySet="like" />
+          </AssociationSet>
+          <AssociationSet Name="likes_ibfk_2" Association="Self.likes_ibfk_2">
+            <End Role="book" EntitySet="book" />
+            <End Role="like" EntitySet="like" />
+          </AssociationSet>
+          <AssociationSet Name="moderation_episode_ibfk_1" Association="Self.moderation_episode_ibfk_1">
+            <End Role="episode" EntitySet="episode" />
+            <End Role="moderation_episode" EntitySet="moderation_episode" />
+          </AssociationSet>
+          <AssociationSet Name="moderation_episode_ibfk_2" Association="Self.moderation_episode_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="moderation_episode" EntitySet="moderation_episode" />
+          </AssociationSet>
+          <AssociationSet Name="moderations_ibfk_1" Association="Self.moderations_ibfk_1">
+            <End Role="book" EntitySet="book" />
+            <End Role="moderation_book" EntitySet="moderation_book" />
+          </AssociationSet>
+          <AssociationSet Name="moderations_ibfk_2" Association="Self.moderations_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="moderation_book" EntitySet="moderation_book" />
+          </AssociationSet>
+          <AssociationSet Name="point_ibfk_1" Association="Self.point_ibfk_1">
+            <End Role="episode" EntitySet="episode" />
+            <End Role="point" EntitySet="point" />
+          </AssociationSet>
+          <AssociationSet Name="point_ibfk_2" Association="Self.point_ibfk_2">
+            <End Role="user" EntitySet="user" />
+            <End Role="point" EntitySet="point" />
+          </AssociationSet>
+          <AssociationSet Name="usergroup_role_ibfk_1" Association="Self.usergroup_role_ibfk_1">
+            <End Role="usergroup" EntitySet="usergroup" />
+            <End Role="usergroup_role" EntitySet="usergroup_role" />
+          </AssociationSet>
+          <AssociationSet Name="usergroup_role_ibfk_2" Association="Self.usergroup_role_ibfk_2">
+            <End Role="role" EntitySet="role" />
+            <End Role="usergroup_role" EntitySet="usergroup_role" />
+          </AssociationSet>
+          <AssociationSet Name="users_ibfk_1" Association="Self.users_ibfk_1">
+            <End Role="usergroup" EntitySet="usergroup" />
+            <End Role="user" EntitySet="user" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BOOKCOMMUNITYModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="book">
+          <Key>
+            <PropertyRef Name="idbook" />
+          </Key>
+          <Property Name="idbook" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="author" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="uploader" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="category" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="poster" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="status" Type="Int32" Nullable="false" />
+          <Property Name="view" Type="Int64" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" />
+          <Property Name="updatedat" Type="DateTime" />
+          <NavigationProperty Name="user" Relationship="Self.books_ibfk_1" FromRole="book" ToRole="user" />
+          <NavigationProperty Name="category1" Relationship="Self.books_ibfk_2" FromRole="book" ToRole="category" />
+          <NavigationProperty Name="comments" Relationship="Self.comments_ibfk_2" FromRole="book" ToRole="comment" />
+          <NavigationProperty Name="episodes" Relationship="Self.episodes_ibfk_1" FromRole="book" ToRole="episode" />
+          <NavigationProperty Name="likes" Relationship="Self.likes_ibfk_2" FromRole="book" ToRole="like" />
+          <NavigationProperty Name="moderation_book" Relationship="Self.moderations_ibfk_1" FromRole="book" ToRole="moderation_book" />
+        </EntityType>
+        <EntityType Name="category">
+          <Key>
+            <PropertyRef Name="idcategory" />
+          </Key>
+          <Property Name="idcategory" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="books" Relationship="Self.books_ibfk_2" FromRole="category" ToRole="book" />
+        </EntityType>
+        <EntityType Name="comment">
+          <Key>
+            <PropertyRef Name="idcomment" />
+          </Key>
+          <Property Name="idcomment" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="iduser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idbook" Type="Int64" Nullable="false" />
+          <Property Name="parent" Type="Int64" />
+          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" />
+          <Property Name="updatedat" Type="DateTime" />
+          <NavigationProperty Name="book" Relationship="Self.comments_ibfk_2" FromRole="comment" ToRole="book" />
+          <NavigationProperty Name="user" Relationship="Self.comments_ibfk_1" FromRole="comment" ToRole="user" />
+        </EntityType>
+        <EntityType Name="device">
+          <Key>
+            <PropertyRef Name="token" />
+          </Key>
+          <Property Name="token" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="episode">
+          <Key>
+            <PropertyRef Name="idepisode" />
+          </Key>
+          <Property Name="idepisode" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idbook" Type="Int64" Nullable="false" />
+          <Property Name="index" Type="Int64" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="view" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="Int32" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" Nullable="false" />
+          <Property Name="updatedat" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="book" Relationship="Self.episodes_ibfk_1" FromRole="episode" ToRole="book" />
+          <NavigationProperty Name="moderation_episode" Relationship="Self.moderation_episode_ibfk_1" FromRole="episode" ToRole="moderation_episode" />
+          <NavigationProperty Name="points" Relationship="Self.point_ibfk_1" FromRole="episode" ToRole="point" />
+        </EntityType>
+        <EntityType Name="like">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="idbook" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idbook" Type="Int64" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" />
+          <Property Name="updatedat" Type="DateTime" />
+          <NavigationProperty Name="book" Relationship="Self.likes_ibfk_2" FromRole="like" ToRole="book" />
+          <NavigationProperty Name="user" Relationship="Self.likes_ibfk_1" FromRole="like" ToRole="user" />
+        </EntityType>
+        <EntityType Name="moderation_book">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idbook" Type="Int64" Nullable="false" />
+          <Property Name="moderator" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="moderation" Type="Int64" />
+          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="review" Type="Boolean" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" />
+          <Property Name="updatedat" Type="DateTime" />
+          <NavigationProperty Name="book" Relationship="Self.moderations_ibfk_1" FromRole="moderation_book" ToRole="book" />
+          <NavigationProperty Name="user" Relationship="Self.moderations_ibfk_2" FromRole="moderation_book" ToRole="user" />
+        </EntityType>
+        <EntityType Name="moderation_episode">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idepisode" Type="Int64" Nullable="false" />
+          <Property Name="moderator" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="moderation" Type="Int64" />
+          <Property Name="content" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="review" Type="Boolean" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" />
+          <Property Name="updatedat" Type="DateTime" />
+          <NavigationProperty Name="episode" Relationship="Self.moderation_episode_ibfk_1" FromRole="moderation_episode" ToRole="episode" />
+          <NavigationProperty Name="user" Relationship="Self.moderation_episode_ibfk_2" FromRole="moderation_episode" ToRole="user" />
+        </EntityType>
+        <EntityType Name="point">
+          <Key>
+            <PropertyRef Name="username" />
+            <PropertyRef Name="idepisode" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="idepisode" Type="Int64" Nullable="false" />
+          <Property Name="charge" Type="Boolean" Nullable="false" />
+          <Property Name="point1" Type="Int64" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" />
+          <Property Name="updatedat" Type="DateTime" />
+          <NavigationProperty Name="episode" Relationship="Self.point_ibfk_1" FromRole="point" ToRole="episode" />
+          <NavigationProperty Name="user" Relationship="Self.point_ibfk_2" FromRole="point" ToRole="user" />
+        </EntityType>
+        <EntityType Name="role">
+          <Key>
+            <PropertyRef Name="idrole" />
+          </Key>
+          <Property Name="idrole" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="usergroups" Relationship="Self.usergroup_role" FromRole="role" ToRole="usergroup" />
+        </EntityType>
+        <EntityType Name="user">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="1024" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="gender" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="usergroup" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="birthday" Type="DateTime" Nullable="false" />
+          <Property Name="avatar" Type="String" MaxLength="512" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="point" Type="Int64" Nullable="false" />
+          <Property Name="createdat" Type="DateTime" Nullable="false" />
+          <Property Name="updatedat" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="books" Relationship="Self.books_ibfk_1" FromRole="user" ToRole="book" />
+          <NavigationProperty Name="comments" Relationship="Self.comments_ibfk_1" FromRole="user" ToRole="comment" />
+          <NavigationProperty Name="likes" Relationship="Self.likes_ibfk_1" FromRole="user" ToRole="like" />
+          <NavigationProperty Name="moderation_book" Relationship="Self.moderations_ibfk_2" FromRole="user" ToRole="moderation_book" />
+          <NavigationProperty Name="moderation_episode" Relationship="Self.moderation_episode_ibfk_2" FromRole="user" ToRole="moderation_episode" />
+          <NavigationProperty Name="points" Relationship="Self.point_ibfk_2" FromRole="user" ToRole="point" />
+          <NavigationProperty Name="usergroup1" Relationship="Self.users_ibfk_1" FromRole="user" ToRole="usergroup" />
+        </EntityType>
+        <EntityType Name="usergroup">
+          <Key>
+            <PropertyRef Name="idgroup" />
+          </Key>
+          <Property Name="idgroup" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="users" Relationship="Self.users_ibfk_1" FromRole="usergroup" ToRole="user" />
+          <NavigationProperty Name="roles" Relationship="Self.usergroup_role" FromRole="usergroup" ToRole="role" />
+        </EntityType>
+        <Association Name="books_ibfk_1">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="book" Type="Self.book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="book">
+              <PropertyRef Name="uploader" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="books_ibfk_2">
+          <End Role="category" Type="Self.category" Multiplicity="1" />
+          <End Role="book" Type="Self.book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="category">
+              <PropertyRef Name="idcategory" />
+            </Principal>
+            <Dependent Role="book">
+              <PropertyRef Name="category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="comments_ibfk_2">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="episodes_ibfk_1">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="episode" Type="Self.episode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="episode">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="likes_ibfk_2">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="like" Type="Self.like" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="like">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderations_ibfk_1">
+          <End Role="book" Type="Self.book" Multiplicity="1" />
+          <End Role="moderation_book" Type="Self.moderation_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="book">
+              <PropertyRef Name="idbook" />
+            </Principal>
+            <Dependent Role="moderation_book">
+              <PropertyRef Name="idbook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="comments_ibfk_1">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="comment" Type="Self.comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="comment">
+              <PropertyRef Name="iduser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderation_episode_ibfk_1">
+          <End Role="episode" Type="Self.episode" Multiplicity="1" />
+          <End Role="moderation_episode" Type="Self.moderation_episode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="episode">
+              <PropertyRef Name="idepisode" />
+            </Principal>
+            <Dependent Role="moderation_episode">
+              <PropertyRef Name="idepisode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="point_ibfk_1">
+          <End Role="episode" Type="Self.episode" Multiplicity="1" />
+          <End Role="point" Type="Self.point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="episode">
+              <PropertyRef Name="idepisode" />
+            </Principal>
+            <Dependent Role="point">
+              <PropertyRef Name="idepisode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="likes_ibfk_1">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="like" Type="Self.like" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="like">
+              <PropertyRef Name="username" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderations_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="moderation_book" Type="Self.moderation_book" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="moderation_book">
+              <PropertyRef Name="moderator" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="moderation_episode_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="0..1" />
+          <End Role="moderation_episode" Type="Self.moderation_episode" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="moderation_episode">
+              <PropertyRef Name="moderator" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="point_ibfk_2">
+          <End Role="user" Type="Self.user" Multiplicity="1" />
+          <End Role="point" Type="Self.point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="user">
+              <PropertyRef Name="username" />
+            </Principal>
+            <Dependent Role="point">
+              <PropertyRef Name="username" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="users_ibfk_1">
+          <End Role="usergroup" Type="Self.usergroup" Multiplicity="1" />
+          <End Role="user" Type="Self.user" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="usergroup">
+              <PropertyRef Name="idgroup" />
+            </Principal>
+            <Dependent Role="user">
+              <PropertyRef Name="usergroup" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="usergroup_role">
+          <End Role="usergroup" Type="Self.usergroup" Multiplicity="*" />
+          <End Role="role" Type="Self.role" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="BOOKCOMMUNITYEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="books" EntityType="Self.book" />
+          <EntitySet Name="categories" EntityType="Self.category" />
+          <EntitySet Name="comments" EntityType="Self.comment" />
+          <EntitySet Name="devices" EntityType="Self.device" />
+          <EntitySet Name="episodes" EntityType="Self.episode" />
+          <EntitySet Name="likes" EntityType="Self.like" />
+          <EntitySet Name="moderation_book" EntityType="Self.moderation_book" />
+          <EntitySet Name="moderation_episode" EntityType="Self.moderation_episode" />
+          <EntitySet Name="points" EntityType="Self.point" />
+          <EntitySet Name="roles" EntityType="Self.role" />
+          <EntitySet Name="users" EntityType="Self.user" />
+          <EntitySet Name="usergroups" EntityType="Self.usergroup" />
+          <AssociationSet Name="books_ibfk_1" Association="Self.books_ibfk_1">
+            <End Role="user" EntitySet="users" />
+            <End Role="book" EntitySet="books" />
+          </AssociationSet>
+          <AssociationSet Name="books_ibfk_2" Association="Self.books_ibfk_2">
+            <End Role="category" EntitySet="categories" />
+            <End Role="book" EntitySet="books" />
+          </AssociationSet>
+          <AssociationSet Name="comments_ibfk_2" Association="Self.comments_ibfk_2">
+            <End Role="book" EntitySet="books" />
+            <End Role="comment" EntitySet="comments" />
+          </AssociationSet>
+          <AssociationSet Name="episodes_ibfk_1" Association="Self.episodes_ibfk_1">
+            <End Role="book" EntitySet="books" />
+            <End Role="episode" EntitySet="episodes" />
+          </AssociationSet>
+          <AssociationSet Name="likes_ibfk_2" Association="Self.likes_ibfk_2">
+            <End Role="book" EntitySet="books" />
+            <End Role="like" EntitySet="likes" />
+          </AssociationSet>
+          <AssociationSet Name="moderations_ibfk_1" Association="Self.moderations_ibfk_1">
+            <End Role="book" EntitySet="books" />
+            <End Role="moderation_book" EntitySet="moderation_book" />
+          </AssociationSet>
+          <AssociationSet Name="comments_ibfk_1" Association="Self.comments_ibfk_1">
+            <End Role="user" EntitySet="users" />
+            <End Role="comment" EntitySet="comments" />
+          </AssociationSet>
+          <AssociationSet Name="moderation_episode_ibfk_1" Association="Self.moderation_episode_ibfk_1">
+            <End Role="episode" EntitySet="episodes" />
+            <End Role="moderation_episode" EntitySet="moderation_episode" />
+          </AssociationSet>
+          <AssociationSet Name="point_ibfk_1" Association="Self.point_ibfk_1">
+            <End Role="episode" EntitySet="episodes" />
+            <End Role="point" EntitySet="points" />
+          </AssociationSet>
+          <AssociationSet Name="likes_ibfk_1" Association="Self.likes_ibfk_1">
+            <End Role="user" EntitySet="users" />
+            <End Role="like" EntitySet="likes" />
+          </AssociationSet>
+          <AssociationSet Name="moderations_ibfk_2" Association="Self.moderations_ibfk_2">
+            <End Role="user" EntitySet="users" />
+            <End Role="moderation_book" EntitySet="moderation_book" />
+          </AssociationSet>
+          <AssociationSet Name="moderation_episode_ibfk_2" Association="Self.moderation_episode_ibfk_2">
+            <End Role="user" EntitySet="users" />
+            <End Role="moderation_episode" EntitySet="moderation_episode" />
+          </AssociationSet>
+          <AssociationSet Name="point_ibfk_2" Association="Self.point_ibfk_2">
+            <End Role="user" EntitySet="users" />
+            <End Role="point" EntitySet="points" />
+          </AssociationSet>
+          <AssociationSet Name="users_ibfk_1" Association="Self.users_ibfk_1">
+            <End Role="usergroup" EntitySet="usergroups" />
+            <End Role="user" EntitySet="users" />
+          </AssociationSet>
+          <AssociationSet Name="usergroup_role" Association="Self.usergroup_role">
+            <End Role="usergroup" EntitySet="usergroups" />
+            <End Role="role" EntitySet="roles" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BOOKCOMMUNITYModelStoreContainer" CdmEntityContainer="BOOKCOMMUNITYEntities">
+          <EntitySetMapping Name="books">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.book">
+              <MappingFragment StoreEntitySet="book">
+                <ScalarProperty Name="idbook" ColumnName="idbook" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="author" ColumnName="author" />
+                <ScalarProperty Name="uploader" ColumnName="uploader" />
+                <ScalarProperty Name="category" ColumnName="category" />
+                <ScalarProperty Name="poster" ColumnName="poster" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="view" ColumnName="view" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="categories">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="idcategory" ColumnName="idcategory" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="comments">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.comment">
+              <MappingFragment StoreEntitySet="comment">
+                <ScalarProperty Name="idcomment" ColumnName="idcomment" />
+                <ScalarProperty Name="iduser" ColumnName="iduser" />
+                <ScalarProperty Name="idbook" ColumnName="idbook" />
+                <ScalarProperty Name="parent" ColumnName="parent" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="devices">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.device">
+              <MappingFragment StoreEntitySet="device">
+                <ScalarProperty Name="token" ColumnName="token" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="episodes">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.episode">
+              <MappingFragment StoreEntitySet="episode">
+                <ScalarProperty Name="idepisode" ColumnName="idepisode" />
+                <ScalarProperty Name="idbook" ColumnName="idbook" />
+                <ScalarProperty Name="index" ColumnName="index" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="view" ColumnName="view" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="likes">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.like">
+              <MappingFragment StoreEntitySet="like">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="idbook" ColumnName="idbook" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="moderation_book">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.moderation_book">
+              <MappingFragment StoreEntitySet="moderation_book">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idbook" ColumnName="idbook" />
+                <ScalarProperty Name="moderator" ColumnName="moderator" />
+                <ScalarProperty Name="moderation" ColumnName="moderation" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="review" ColumnName="review" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="moderation_episode">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.moderation_episode">
+              <MappingFragment StoreEntitySet="moderation_episode">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="idepisode" ColumnName="idepisode" />
+                <ScalarProperty Name="moderator" ColumnName="moderator" />
+                <ScalarProperty Name="moderation" ColumnName="moderation" />
+                <ScalarProperty Name="content" ColumnName="content" />
+                <ScalarProperty Name="review" ColumnName="review" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="points">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.point">
+              <MappingFragment StoreEntitySet="point">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="idepisode" ColumnName="idepisode" />
+                <ScalarProperty Name="charge" ColumnName="charge" />
+                <ScalarProperty Name="point1" ColumnName="point" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="roles">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.role">
+              <MappingFragment StoreEntitySet="role">
+                <ScalarProperty Name="idrole" ColumnName="idrole" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.user">
+              <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="usergroup" ColumnName="usergroup" />
+                <ScalarProperty Name="birthday" ColumnName="birthday" />
+                <ScalarProperty Name="avatar" ColumnName="avatar" />
+                <ScalarProperty Name="point" ColumnName="point" />
+                <ScalarProperty Name="createdat" ColumnName="createdat" />
+                <ScalarProperty Name="updatedat" ColumnName="updatedat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usergroups">
+            <EntityTypeMapping TypeName="BOOKCOMMUNITYModel.usergroup">
+              <MappingFragment StoreEntitySet="usergroup">
+                <ScalarProperty Name="idgroup" ColumnName="idgroup" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="usergroup_role" TypeName="BOOKCOMMUNITYModel.usergroup_role" StoreEntitySet="usergroup_role">
+            <EndProperty Name="usergroup">
+              <ScalarProperty Name="idgroup" ColumnName="idgroup" />
+            </EndProperty>
+            <EndProperty Name="role">
+              <ScalarProperty Name="idrole" ColumnName="idrole" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

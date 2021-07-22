@@ -1,4 +1,5 @@
-﻿using DLL;
+﻿using BCrypt.Net;
+using DLL;
 using MODEL.Model;
 using System;
 using System.Collections.Generic;
@@ -14,18 +15,11 @@ namespace BLL.Business
         {
         }
 
-        public string Signin(string username, string password,bool remember)
+        public user Signin(string username, string password)
         {
-            string token = Services.auth.Signin(username, password, remember);
-            return token;
 
+            return Services.auth.Signin(username, password);
         }
 
-        public User me(string token)
-        {
-            User me = Services.auth.me(token);
-            return me;
-
-        }
     }
 }

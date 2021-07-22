@@ -1,5 +1,4 @@
 ﻿using DLL;
-using MODEL.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,9 +13,9 @@ namespace BLL.Business
         {
         }
 
-        public List<User> GetAll()
+        public List<user> GetAll()
         {
-            List<User> users = Services.user.GetAll();
+            List<user> users = Services.user.GetAll();
             return users;
         }
     }

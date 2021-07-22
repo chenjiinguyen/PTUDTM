@@ -1,5 +1,5 @@
 ﻿using BLL;
-using MODEL.Model;
+using DLL;
 using PTUDTM.component;
 using System;
 using System.Collections.Generic;
@@ -16,37 +16,93 @@ namespace PTUDTM.form
 {
     public partial class Dashboard : UserControl
     {
+        List<user> users;
+        List<book> books;
+        Thread thread;
         public Dashboard()
         {
             InitializeComponent();
-
-            Thread t = new Thread(LoadData);
-            t.Start();
+            this.SetTopLevel(false);
         }
 
         public void LoadData()
         {
-
             
-            string token = Program.token;
-            List<Book> books = Businesses.book.GetAll();
-            List<User> users = Businesses.user.GetAll();
-            int count_view = books.Select(x=> x.View).Aggregate(0, (acc, x) => acc + x);
+            
+            String viewCount = books.Select(x => (int)x.view).Aggregate(0, (acc, x) => acc + x).ToString();
+            String userCount = users.Count.ToString();
+            String bookCount = books.Count.ToString();
 
-            ThreadHelperClass.SetNumberDashboard(this, wnTongSach, books.Count.ToString());
-            ThreadHelperClass.SetNumberDashboard(this, wnMembers, users.Count.ToString());
-            ThreadHelperClass.SetNumberDashboard(this, wnView, count_view.ToString());
+            wnTongSach.Number = bookCount;
+            wnView.Number = viewCount;
+            wnMembers.Number = userCount;
 
-            ThreadHelperClass.SetPanelListDashboard(this, pnBook, books);
-            ThreadHelperClass.SetPanelListDashboard(this, pnUser, users);
+            pnUser.Controls.Clear();
+            
+            users.ForEach(x =>
+            {
+                var item = new UserList();
+                item.NameUser = x.name;
+                item.Role = x.usergroup;
+                item.LoadImage(x.avatar);
+                pnUser.Controls.Add(item);
+            });
+
+
+            pnBook.Controls.Clear();
+            books.ForEach(x =>
+            {
+                var item = new StoryList();
+                item.Title = x.title;
+                item.AuthorName = x.author;
+                item.ViewNumber = x.view.ToString();
+                string category = "";
+                switch (x.category)
+                {
+                    case "TEXT":
+                        category = "Truyện Chữ";
+                        break;
+                    case "IMAGE":
+                        category = "Truyện Tranh";
+                        break;
+                    case "AUDIO":
+                        category = "Truyện Audio";
+                        break;
+                }
+                item.CategoryName = category;
+                item.LoadImage(x.poster);
+                pnBook.Controls.Add(item);
+            });
+
+            thread.Join();
+
+
 
 
         }
 
         private void wnView_Load(object sender, EventArgs e)
         {
+            
 
         }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+ 
+            thread = new Thread(() =>
+            {
+                users = Businesses.user.GetAll();
+                books = Businesses.book.GetAll();
+                Action action = new Action(LoadData);
+                this.BeginInvoke(action);
+            });
+            thread.Start();
+            
+        }
+
+
+
     }
 }
 

@@ -1,6 +1,4 @@
-﻿using MODEL.Model;
-using MODEL.Response;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -12,49 +10,24 @@ namespace DLL.Service
 {
     public class AuthService
     {
-        private string base_url;
+        BOOKCOMMUNITYEntities db;
 
-        public AuthService(string base_url)
+        public AuthService(BOOKCOMMUNITYEntities db)
         {
-            this.base_url = base_url;
+            this.db = db;
         }
 
-        public string Signin(string username, string password, bool remember)
+        public user Signin(string username, string password)
         {
-            string token = null;
-            IRestClient client = new RestClient(base_url);
-            IRestRequest request = new RestRequest("signin", Method.POST);
-
-            request.RequestFormat = DataFormat.Json;
-            request.AddBody(new { username = username, password = password, remember = (remember) ? "true" : "false" });
-
-            IRestResponse response = client.Execute(request);
-            if (response.StatusCode.ToString() == "OK")
+            user user = db.users.SingleOrDefault(x => x.username == username);
+            if(user != null)
             {
-                AuthResponse authResponse = JsonConvert.DeserializeObject<AuthResponse>(response.Content);
-                token = authResponse.Token;
+                bool check = BCrypt.Net.BCrypt.Verify(password, user.password);
+                if (check) return user;
+                return null;
             }
-
-            return token;
+            return null;
         }
 
-        public User me(string token)
-        {
-            User me = null;
-            IRestClient client = new RestClient(base_url);
-            IRestRequest request = new RestRequest("me", Method.GET);
-            request.AddHeader("Authorization", token);
-            IRestResponse response = client.Execute(request);
-            if (response.StatusCode.ToString() == "OK")
-            {
-                AuthResponse authResponse = JsonConvert.DeserializeObject<AuthResponse>(response.Content);
-                if (authResponse.Success)
-                {
-                    me = authResponse.Data;
-                }
-            }
-
-            return me;
-        }
     }
 }

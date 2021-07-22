@@ -13,12 +13,15 @@ namespace DLL
 {
     public class Services
     {
-        private static string base_url = "http://localhost:3000/api/";
 
-        public static BookService book = new BookService(base_url);
+        private static BOOKCOMMUNITYEntities db = new BOOKCOMMUNITYEntities();
 
-        public static AuthService auth = new AuthService(base_url);
+        public static BookService book = new BookService(db);
 
-        public static UserService user = new UserService(base_url);
+        public static AuthService auth = new AuthService(db);
+
+        public static UserService user = new UserService(db);
+
+        public static CategoryService category = new CategoryService(db);
     }
 }

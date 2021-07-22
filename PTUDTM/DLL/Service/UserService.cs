@@ -1,6 +1,4 @@
-﻿using MODEL.Model;
-using MODEL.Response;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
@@ -12,29 +10,16 @@ namespace DLL.Service
 {
     public class UserService
     {
-        private string base_url;
+        BOOKCOMMUNITYEntities db;
 
-        public UserService(string base_url)
+        public UserService(BOOKCOMMUNITYEntities db)
         {
-            this.base_url = base_url;
+            this.db = db;
         }
 
-        public List<User> GetAll()
+        public List<user> GetAll()
         {
-            List<User> users = null;
-            IRestClient client = new RestClient(base_url);
-            IRestRequest request = new RestRequest("user", Method.GET);
-
-    
-
-            IRestResponse response = client.Execute(request);
-            if (response.StatusCode.ToString() == "OK")
-            {
-                UsersResponse bookResponse = JsonConvert.DeserializeObject<UsersResponse>(response.Content);
-                users = bookResponse.Data;
-            }
-
-            return users;
+            return db.users.OrderByDescending(x => x.createdat).ToList();
         }
     }
 }

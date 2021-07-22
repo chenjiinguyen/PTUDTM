@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using BLL;
+using DLL;
 
 namespace PTUDTM
 {
@@ -42,18 +43,20 @@ namespace PTUDTM
 
             string username = txtUsername.Text;
             string password = txtPassword.Text;
-            string token = Businesses.auth.Signin(username,password,true);
-            if(token != null)
+            user me = Businesses.auth.Signin(username, password);
+
+
+            if (me != null)
             {
-                //MessageBox.Show("Đăng nhập thành công !!!", "Thông Báo");
-                Program.token = token;
+                //MessageBox.Show("đăng nhập thành công !!!", "thông báo");
+                Program.me = me;
                 Program.frmMain = new frmMain();
                 this.Hide();
                 Program.frmMain.Show();
             }
             else
             {
-                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu !!!","Thông Báo");
+                MessageBox.Show("sai tên đăng nhập hoặc mật khẩu !!!", "thông báo");
             }
 
         }

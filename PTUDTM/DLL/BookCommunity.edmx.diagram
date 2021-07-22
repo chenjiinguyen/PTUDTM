@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75edc3d70b344e02b931002d8d5cf417" Name="Diagram1">
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.book" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.category" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.comment" Width="1.5" PointX="7.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.device" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.episode" Width="1.5" PointX="7.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.like" Width="1.5" PointX="10.5" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.moderation_book" Width="1.5" PointX="7.5" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.moderation_episode" Width="1.5" PointX="9.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.point" Width="1.5" PointX="12.75" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.role" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.user" Width="1.5" PointX="3" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKCOMMUNITYModel.usergroup" Width="1.5" PointX="0.75" PointY="10.375" IsExpanded="true" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.books_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.books_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.comments_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.episodes_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.likes_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.moderations_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.comments_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.moderation_episode_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.point_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.likes_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.moderations_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.moderation_episode_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.point_ibfk_2" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.users_ibfk_1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKCOMMUNITYModel.usergroup_role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
