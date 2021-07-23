@@ -37,7 +37,7 @@ namespace PTUDTM.component
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            Program.LoadDialog(new EditBook(id), "Chỉnh Sửa Người Dùng - Book Community");
+            Program.LoadDialog(new EditBook(id), "Chỉnh Sửa Thông Tin Sách - Book Community");
         }
     }
 }

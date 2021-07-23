@@ -23,5 +23,12 @@ namespace DLL
         public static UserService user = new UserService(db);
 
         public static CategoryService category = new CategoryService(db);
+
+        public static ModerationBookService modbook = new ModerationBookService(db);
+
+        public static ModerationEpisodeService modepi = new ModerationEpisodeService(db);
+
+        public static EpisodeService episode = new EpisodeService(db);
+
     }
 }

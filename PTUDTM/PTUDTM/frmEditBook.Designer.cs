@@ -52,7 +52,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.80868F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.19132F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 615F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 616F));
             this.tableLayoutPanel1.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtAuthorName, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboCate, 1, 2);
@@ -88,7 +88,7 @@
             this.lblTitle.Location = new System.Drawing.Point(20, 0);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(227, 92);
+            this.lblTitle.Size = new System.Drawing.Size(226, 92);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Tiêu đề:";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,14 +109,14 @@
             this.txtAuthorName.FocusedState.Parent = this.txtAuthorName;
             this.txtAuthorName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAuthorName.HoverState.Parent = this.txtAuthorName;
-            this.txtAuthorName.Location = new System.Drawing.Point(256, 98);
+            this.txtAuthorName.Location = new System.Drawing.Point(255, 98);
             this.txtAuthorName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtAuthorName.Name = "txtAuthorName";
             this.txtAuthorName.PasswordChar = '\0';
             this.txtAuthorName.PlaceholderText = "";
             this.txtAuthorName.SelectedText = "";
             this.txtAuthorName.ShadowDecoration.Parent = this.txtAuthorName;
-            this.txtAuthorName.Size = new System.Drawing.Size(1252, 75);
+            this.txtAuthorName.Size = new System.Drawing.Size(1253, 75);
             this.txtAuthorName.TabIndex = 4;
             // 
             // cboCate
@@ -135,10 +135,10 @@
             this.cboCate.HoverState.Parent = this.cboCate;
             this.cboCate.ItemHeight = 30;
             this.cboCate.ItemsAppearance.Parent = this.cboCate;
-            this.cboCate.Location = new System.Drawing.Point(253, 182);
+            this.cboCate.Location = new System.Drawing.Point(252, 182);
             this.cboCate.Name = "cboCate";
             this.cboCate.ShadowDecoration.Parent = this.cboCate;
-            this.cboCate.Size = new System.Drawing.Size(1258, 36);
+            this.cboCate.Size = new System.Drawing.Size(1259, 36);
             this.cboCate.TabIndex = 9;
             // 
             // txtPicCover
@@ -157,14 +157,14 @@
             this.txtPicCover.FocusedState.Parent = this.txtPicCover;
             this.txtPicCover.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPicCover.HoverState.Parent = this.txtPicCover;
-            this.txtPicCover.Location = new System.Drawing.Point(256, 261);
+            this.txtPicCover.Location = new System.Drawing.Point(255, 261);
             this.txtPicCover.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtPicCover.Name = "txtPicCover";
             this.txtPicCover.PasswordChar = '\0';
             this.txtPicCover.PlaceholderText = "";
             this.txtPicCover.SelectedText = "";
             this.txtPicCover.ShadowDecoration.Parent = this.txtPicCover;
-            this.txtPicCover.Size = new System.Drawing.Size(1252, 74);
+            this.txtPicCover.Size = new System.Drawing.Size(1253, 74);
             this.txtPicCover.TabIndex = 6;
             // 
             // lblAuthorName
@@ -175,7 +175,7 @@
             this.lblAuthorName.Location = new System.Drawing.Point(20, 92);
             this.lblAuthorName.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblAuthorName.Name = "lblAuthorName";
-            this.lblAuthorName.Size = new System.Drawing.Size(227, 87);
+            this.lblAuthorName.Size = new System.Drawing.Size(226, 87);
             this.lblAuthorName.TabIndex = 3;
             this.lblAuthorName.Text = "Tên tác giả:";
             this.lblAuthorName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -200,7 +200,7 @@
             this.lblCategory.Location = new System.Drawing.Point(20, 179);
             this.lblCategory.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(227, 76);
+            this.lblCategory.Size = new System.Drawing.Size(226, 76);
             this.lblCategory.TabIndex = 5;
             this.lblCategory.Text = "Thể loại:";
             this.lblCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -221,14 +221,14 @@
             this.txtTitle.FocusedState.Parent = this.txtTitle;
             this.txtTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTitle.HoverState.Parent = this.txtTitle;
-            this.txtTitle.Location = new System.Drawing.Point(256, 6);
+            this.txtTitle.Location = new System.Drawing.Point(255, 6);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PasswordChar = '\0';
             this.txtTitle.PlaceholderText = "";
             this.txtTitle.SelectedText = "";
             this.txtTitle.ShadowDecoration.Parent = this.txtTitle;
-            this.txtTitle.Size = new System.Drawing.Size(1252, 80);
+            this.txtTitle.Size = new System.Drawing.Size(1253, 80);
             this.txtTitle.TabIndex = 2;
             // 
             // lblPicCover
@@ -239,7 +239,7 @@
             this.lblPicCover.Location = new System.Drawing.Point(20, 255);
             this.lblPicCover.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblPicCover.Name = "lblPicCover";
-            this.lblPicCover.Size = new System.Drawing.Size(227, 86);
+            this.lblPicCover.Size = new System.Drawing.Size(226, 86);
             this.lblPicCover.TabIndex = 10;
             this.lblPicCover.Text = "Ảnh bìa:";
             this.lblPicCover.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,7 +261,7 @@
             this.txtIntro.FocusedState.Parent = this.txtIntro;
             this.txtIntro.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIntro.HoverState.Parent = this.txtIntro;
-            this.txtIntro.Location = new System.Drawing.Point(256, 347);
+            this.txtIntro.Location = new System.Drawing.Point(255, 347);
             this.txtIntro.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtIntro.Multiline = true;
             this.txtIntro.Name = "txtIntro";
@@ -269,7 +269,7 @@
             this.txtIntro.PlaceholderText = "";
             this.txtIntro.SelectedText = "";
             this.txtIntro.ShadowDecoration.Parent = this.txtIntro;
-            this.txtIntro.Size = new System.Drawing.Size(1252, 424);
+            this.txtIntro.Size = new System.Drawing.Size(1253, 424);
             this.txtIntro.TabIndex = 11;
             // 
             // guna2Separator1
@@ -291,7 +291,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(650, 813);
+            this.btnCancel.Location = new System.Drawing.Point(649, 813);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(400, 10, 3, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
@@ -308,7 +308,7 @@
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(948, 813);
+            this.guna2Button2.Location = new System.Drawing.Point(947, 813);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(50, 10, 20, 20);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;

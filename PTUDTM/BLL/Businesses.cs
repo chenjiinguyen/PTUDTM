@@ -17,5 +17,7 @@ namespace BLL
         public static UserBusiness user = new UserBusiness();
 
         public static CategoryBusiness category = new CategoryBusiness();
+
+        public static EpisodeBusiness episode = new EpisodeBusiness();
     }
 }

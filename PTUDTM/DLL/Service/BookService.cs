@@ -29,6 +29,19 @@ namespace DLL.Service
             return db.books.OrderByDescending(x => x.createdat).ToList();
         }
 
+        public long Create(book book)
+        {
+            try {  
+                db.books.Add(book);
+                db.SaveChanges();
+                return book.idbook;
+            }
+            catch
+            {
+                return (long)-1;
+            }
+        }
+
     }
 }
 

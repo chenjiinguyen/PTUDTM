@@ -38,11 +38,10 @@ namespace BLL.Business
             {
 
                 PropertyDescriptor prop = props[i];
-                if (prop.PropertyType.Name != "Object[]")
-                {
-                    table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
-                }
-              
+
+                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+
+
             }
             object[] values = new object[props.Count];
             foreach (book t in books)
@@ -50,19 +49,48 @@ namespace BLL.Business
                 for (int i = 0; i < values.Length; i++)
                 {
                     var x = props[i].GetValue(t);
-                    if (x.GetType().Name != "Object[]")
-                    {
-                        values[i] = x;
-                    }
-         
-                   
-                    
-                    
+                    values[i] = x;
+
+
+
+
                 }
                 table.Rows.Add(values);
             }
             return table;
         }
+
+        public long Create(book book)
+        {
+            long id = Services.book.Create(book);
+            //1. Tao Book
+            //2. Lay ID Book => Neu khong thanh cong return -1;
+            if (id == -1)
+            {
+                return -1;
+            }
+            else
+            {
+                moderation_book modbook = new moderation_book();
+                modbook.idbook = id;
+                modbook.review = false;
+                modbook.createdat = modbook.updatedat = DateTime.Now;
+                long idmod = Services.modbook.Create(modbook);
+                if (idmod == -1)
+                {
+                    return -1;
+                }
+                else
+                {
+                    return id;
+                }
+                
+            }
+            //3. Tao Mod Book => Neu khong thanh cong return -1;
+            //4. Thang return ID Book
+           
+        }
+
 
     }
 

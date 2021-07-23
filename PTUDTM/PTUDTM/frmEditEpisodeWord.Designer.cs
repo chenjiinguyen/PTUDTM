@@ -56,7 +56,7 @@
             this.txtContent.FocusedState.Parent = this.txtContent;
             this.txtContent.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContent.HoverState.Parent = this.txtContent;
-            this.txtContent.Location = new System.Drawing.Point(287, 114);
+            this.txtContent.Location = new System.Drawing.Point(286, 114);
             this.txtContent.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtContent.Multiline = true;
             this.txtContent.Name = "txtContent";
@@ -64,7 +64,7 @@
             this.txtContent.PlaceholderText = "";
             this.txtContent.SelectedText = "";
             this.txtContent.ShadowDecoration.Parent = this.txtContent;
-            this.txtContent.Size = new System.Drawing.Size(1193, 538);
+            this.txtContent.Size = new System.Drawing.Size(1194, 538);
             this.txtContent.TabIndex = 12;
             // 
             // tableLayoutPanel1
@@ -72,7 +72,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.57303F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 68.42696F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 595F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 596F));
             this.tableLayoutPanel1.Controls.Add(this.lblIntro, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblChapterTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTitle, 1, 0);
@@ -80,7 +80,6 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2Separator1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnCancel, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnEdit, 2, 3);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
@@ -111,7 +110,7 @@
             this.lblChapterTitle.Location = new System.Drawing.Point(20, 0);
             this.lblChapterTitle.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblChapterTitle.Name = "lblChapterTitle";
-            this.lblChapterTitle.Size = new System.Drawing.Size(258, 108);
+            this.lblChapterTitle.Size = new System.Drawing.Size(257, 108);
             this.lblChapterTitle.TabIndex = 14;
             this.lblChapterTitle.Text = "Chapter tiêu đề:";
             this.lblChapterTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,14 +131,14 @@
             this.txtTitle.FocusedState.Parent = this.txtTitle;
             this.txtTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTitle.HoverState.Parent = this.txtTitle;
-            this.txtTitle.Location = new System.Drawing.Point(287, 6);
+            this.txtTitle.Location = new System.Drawing.Point(286, 6);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PasswordChar = '\0';
             this.txtTitle.PlaceholderText = "";
             this.txtTitle.SelectedText = "";
             this.txtTitle.ShadowDecoration.Parent = this.txtTitle;
-            this.txtTitle.Size = new System.Drawing.Size(1193, 96);
+            this.txtTitle.Size = new System.Drawing.Size(1194, 96);
             this.txtTitle.TabIndex = 13;
             // 
             // guna2Separator1
@@ -161,7 +160,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(681, 684);
+            this.btnCancel.Location = new System.Drawing.Point(680, 684);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
@@ -178,7 +177,7 @@
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.Parent = this.btnEdit;
-            this.btnEdit.Location = new System.Drawing.Point(893, 684);
+            this.btnEdit.Location = new System.Drawing.Point(892, 684);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
             this.btnEdit.Size = new System.Drawing.Size(142, 84);

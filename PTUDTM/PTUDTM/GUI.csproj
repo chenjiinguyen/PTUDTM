@@ -186,6 +186,18 @@
     <Compile Include="form\Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\CreateBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateBook.Designer.cs">
+      <DependentUpon>CreateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CreateEpisodeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateEpisodeText.Designer.cs">
+      <DependentUpon>CreateEpisodeText.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -349,6 +361,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateBook.resx">
+      <DependentUpon>CreateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateEpisodeText.resx">
+      <DependentUpon>CreateEpisodeText.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

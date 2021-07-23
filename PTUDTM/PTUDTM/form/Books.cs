@@ -104,5 +104,11 @@ namespace PTUDTM.form
                 bookDetail.LoadImage(row.Field<String>("poster"));
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Program.LoadDialog(new CreateBook(), "Thêm Sách - Book Community");
+
+        }
     }
 }
