@@ -32,16 +32,16 @@
             this.lblIntro = new System.Windows.Forms.Label();
             this.lblChapterTitle = new System.Windows.Forms.Label();
             this.txtChapterTitle = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
-            this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewLinkColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnClear = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDelete = new Guna.UI2.WinForms.Guna2Button();
+            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -52,7 +52,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.68793F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.31207F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 595F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 596F));
             this.tableLayoutPanel1.Controls.Add(this.lblIntro, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblChapterTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtChapterTitle, 1, 0);
@@ -61,7 +61,6 @@
             this.tableLayoutPanel1.Controls.Add(this.btnCreate, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.guna2Separator1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -73,6 +72,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1483, 748);
             this.tableLayoutPanel1.TabIndex = 1;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // lblIntro
             // 
@@ -85,6 +85,7 @@
             this.lblIntro.TabIndex = 15;
             this.lblIntro.Text = "Nội dung:";
             this.lblIntro.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblIntro.Click += new System.EventHandler(this.lblIntro_Click);
             // 
             // lblChapterTitle
             // 
@@ -94,10 +95,11 @@
             this.lblChapterTitle.Location = new System.Drawing.Point(20, 0);
             this.lblChapterTitle.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblChapterTitle.Name = "lblChapterTitle";
-            this.lblChapterTitle.Size = new System.Drawing.Size(267, 93);
+            this.lblChapterTitle.Size = new System.Drawing.Size(266, 93);
             this.lblChapterTitle.TabIndex = 14;
             this.lblChapterTitle.Text = "Chapter tiêu đề:";
             this.lblChapterTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblChapterTitle.Click += new System.EventHandler(this.lblChapterTitle_Click);
             // 
             // txtChapterTitle
             // 
@@ -115,41 +117,16 @@
             this.txtChapterTitle.FocusedState.Parent = this.txtChapterTitle;
             this.txtChapterTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtChapterTitle.HoverState.Parent = this.txtChapterTitle;
-            this.txtChapterTitle.Location = new System.Drawing.Point(296, 6);
+            this.txtChapterTitle.Location = new System.Drawing.Point(295, 6);
             this.txtChapterTitle.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtChapterTitle.Name = "txtChapterTitle";
             this.txtChapterTitle.PasswordChar = '\0';
             this.txtChapterTitle.PlaceholderText = "";
             this.txtChapterTitle.SelectedText = "";
             this.txtChapterTitle.ShadowDecoration.Parent = this.txtChapterTitle;
-            this.txtChapterTitle.Size = new System.Drawing.Size(1181, 81);
+            this.txtChapterTitle.Size = new System.Drawing.Size(1182, 81);
             this.txtChapterTitle.TabIndex = 13;
-            // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.guna2Separator1, 3);
-            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Separator1.Location = new System.Drawing.Point(3, 629);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1477, 10);
-            this.guna2Separator1.TabIndex = 16;
-            // 
-            // btnCreate
-            // 
-            this.btnCreate.BorderRadius = 5;
-            this.btnCreate.CheckedState.Parent = this.btnCreate;
-            this.btnCreate.CustomImages.Parent = this.btnCreate;
-            this.btnCreate.FillColor = System.Drawing.Color.Red;
-            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnCreate.ForeColor = System.Drawing.Color.White;
-            this.btnCreate.HoverState.Parent = this.btnCreate;
-            this.btnCreate.Location = new System.Drawing.Point(890, 657);
-            this.btnCreate.Name = "btnCreate";
-            this.btnCreate.ShadowDecoration.Parent = this.btnCreate;
-            this.btnCreate.Size = new System.Drawing.Size(142, 76);
-            this.btnCreate.TabIndex = 18;
-            this.btnCreate.Text = "Tạo";
+            this.txtChapterTitle.TextChanged += new System.EventHandler(this.txtChapterTitle_TextChanged);
             // 
             // dataGridView1
             // 
@@ -160,33 +137,25 @@
             this.Column2});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 2);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(293, 198);
+            this.dataGridView1.Location = new System.Drawing.Point(292, 198);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1187, 413);
+            this.dataGridView1.Size = new System.Drawing.Size(1188, 413);
             this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
             this.Column1.HeaderText = "URL";
+            this.Column1.MinimumWidth = 10;
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Hình ảnh";
+            this.Column2.MinimumWidth = 10;
             this.Column2.Name = "Column2";
-            // 
-            // panel1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
-            this.panel1.Controls.Add(this.btnClear);
-            this.panel1.Controls.Add(this.btnDelete);
-            this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(293, 96);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1187, 96);
-            this.panel1.TabIndex = 20;
             // 
             // btnCancel
             // 
@@ -197,47 +166,55 @@
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(690, 657);
+            this.btnCancel.Location = new System.Drawing.Point(689, 657);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
             this.btnCancel.Size = new System.Drawing.Size(139, 76);
             this.btnCancel.TabIndex = 17;
             this.btnCancel.Text = "Hủy";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnAdd
+            // btnCreate
             // 
-            this.btnAdd.BorderRadius = 5;
-            this.btnAdd.CheckedState.Parent = this.btnAdd;
-            this.btnAdd.CustomImages.Parent = this.btnAdd;
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.HoverState.Parent = this.btnAdd;
-            this.btnAdd.Location = new System.Drawing.Point(67, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
-            this.btnAdd.Size = new System.Drawing.Size(139, 76);
-            this.btnAdd.TabIndex = 18;
-            this.btnAdd.Text = " Thêm ảnh";
+            this.btnCreate.BorderRadius = 5;
+            this.btnCreate.CheckedState.Parent = this.btnCreate;
+            this.btnCreate.CustomImages.Parent = this.btnCreate;
+            this.btnCreate.FillColor = System.Drawing.Color.Red;
+            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCreate.ForeColor = System.Drawing.Color.White;
+            this.btnCreate.HoverState.Parent = this.btnCreate;
+            this.btnCreate.Location = new System.Drawing.Point(889, 657);
+            this.btnCreate.Name = "btnCreate";
+            this.btnCreate.ShadowDecoration.Parent = this.btnCreate;
+            this.btnCreate.Size = new System.Drawing.Size(142, 76);
+            this.btnCreate.TabIndex = 18;
+            this.btnCreate.Text = "Tạo";
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
-            // btnDelete
+            // guna2Separator1
             // 
-            this.btnDelete.BorderRadius = 5;
-            this.btnDelete.CheckedState.Parent = this.btnDelete;
-            this.btnDelete.CustomImages.Parent = this.btnDelete;
-            this.btnDelete.FillColor = System.Drawing.Color.Red;
-            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Location = new System.Drawing.Point(258, 0);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
-            this.btnDelete.Size = new System.Drawing.Size(139, 76);
-            this.btnDelete.TabIndex = 19;
-            this.btnDelete.Text = "Xóa ảnh";
+            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.guna2Separator1, 3);
+            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
+            this.guna2Separator1.Location = new System.Drawing.Point(3, 629);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(1477, 10);
+            this.guna2Separator1.TabIndex = 16;
+            this.guna2Separator1.Click += new System.EventHandler(this.guna2Separator1_Click);
+            // 
+            // panel1
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
+            this.panel1.Controls.Add(this.btnClear);
+            this.panel1.Controls.Add(this.btnDelete);
+            this.panel1.Controls.Add(this.btnAdd);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(292, 96);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1188, 96);
+            this.panel1.TabIndex = 20;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnClear
             // 
@@ -255,6 +232,43 @@
             this.btnClear.Size = new System.Drawing.Size(139, 76);
             this.btnClear.TabIndex = 20;
             this.btnClear.Text = "Xóa hết";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BorderRadius = 5;
+            this.btnDelete.CheckedState.Parent = this.btnDelete;
+            this.btnDelete.CustomImages.Parent = this.btnDelete;
+            this.btnDelete.FillColor = System.Drawing.Color.Red;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.HoverState.Parent = this.btnDelete;
+            this.btnDelete.Location = new System.Drawing.Point(258, 0);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
+            this.btnDelete.Size = new System.Drawing.Size(139, 76);
+            this.btnDelete.TabIndex = 19;
+            this.btnDelete.Text = "Xóa ảnh";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BorderRadius = 5;
+            this.btnAdd.CheckedState.Parent = this.btnAdd;
+            this.btnAdd.CustomImages.Parent = this.btnAdd;
+            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
+            this.btnAdd.HoverState.Parent = this.btnAdd;
+            this.btnAdd.Location = new System.Drawing.Point(67, 0);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(400, 3, 3, 3);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
+            this.btnAdd.Size = new System.Drawing.Size(139, 76);
+            this.btnAdd.TabIndex = 18;
+            this.btnAdd.Text = " Thêm ảnh";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // frmCreateEpisodeComic
             // 

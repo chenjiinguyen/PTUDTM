@@ -84,26 +84,33 @@ namespace PTUDTM.form
                     book.createdat = book.updatedat = DateTime.Now;
 
                     long id = Businesses.book.Create(book);
-                    if(id == -1)
+                    if (id == -1)
                     {
-                        MessageBox.Show("Thất bại", "Title");
+                        MessageBox.Show("Thất bại", "Thông báo");
                     }
                     else
                     {
-                        MessageBox.Show("Thành công", "Title");
-                        if(cate == "TEXT")
+                        MessageBox.Show("Thành công", "Thông báo");
+                        if (cate == "TEXT")
                         {
                             Program.LoadDialog(new CreateEpisodeText(id), "Đăng chương - Book Community");
-                        }    
+                        }
 
+                        else if (cate == "IMAGE")
+                        {
+                            Program.LoadDialog(new CreateEpisodeComic(id), "Đăng chương - Book Community");
+                        }
                         
-                        
+                        else if(cate == "AUDIO")
+                        {
+                            Program.LoadDialog(new CreateEpisodeAudio(id), "Đăng chương - Book Community");
+                        }
                     }
 
                 }
                 else
                 {
-                    MessageBox.Show("Link ảnh không hợp lệ", "Title");
+                    MessageBox.Show("Link ảnh không hợp lệ", "Thông báo");
                 }
             }
         }

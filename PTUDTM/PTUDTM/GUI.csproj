@@ -192,6 +192,18 @@
     <Compile Include="form\CreateBook.Designer.cs">
       <DependentUpon>CreateBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\CreateEpisodeAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateEpisodeAudio.Designer.cs">
+      <DependentUpon>CreateEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CreateEpisodeComic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateEpisodeComic.Designer.cs">
+      <DependentUpon>CreateEpisodeComic.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\CreateEpisodeText.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -364,6 +376,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="form\CreateBook.resx">
       <DependentUpon>CreateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateEpisodeAudio.resx">
+      <DependentUpon>CreateEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateEpisodeComic.resx">
+      <DependentUpon>CreateEpisodeComic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\CreateEpisodeText.resx">
       <DependentUpon>CreateEpisodeText.cs</DependentUpon>
