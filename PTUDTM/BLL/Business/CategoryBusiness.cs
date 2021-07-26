@@ -20,5 +20,10 @@ namespace BLL.Business
             return categories;
 
         }
+
+        public string GetNameByID(string id)
+        {
+            return Services.category.GetNameByID(id);
+        }
     }
 }

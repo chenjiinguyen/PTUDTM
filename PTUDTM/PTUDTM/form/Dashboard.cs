@@ -17,7 +17,7 @@ namespace PTUDTM.form
     public partial class Dashboard : UserControl
     {
         List<user> users;
-        List<book> books;
+        List<book> books, censor_books;
         Thread thread;
         public Dashboard()
         {
@@ -32,47 +32,15 @@ namespace PTUDTM.form
             String viewCount = books.Select(x => (int)x.view).Aggregate(0, (acc, x) => acc + x).ToString();
             String userCount = users.Count.ToString();
             String bookCount = books.Count.ToString();
-
+            String censorCount = censor_books.Count.ToString();
             wnTongSach.Number = bookCount;
             wnView.Number = viewCount;
             wnMembers.Number = userCount;
+            wnCensorBook.Number = censorCount;
 
-            pnUser.Controls.Clear();
+          
+
             
-            users.ForEach(x =>
-            {
-                var item = new UserList();
-                item.NameUser = x.name;
-                item.Role = x.usergroup;
-                item.LoadImage(x.avatar);
-                pnUser.Controls.Add(item);
-            });
-
-
-            pnBook.Controls.Clear();
-            books.ForEach(x =>
-            {
-                var item = new StoryList();
-                item.Title = x.title;
-                item.AuthorName = x.author;
-                item.ViewNumber = x.view.ToString();
-                string category = "";
-                switch (x.category)
-                {
-                    case "TEXT":
-                        category = "Truyện Chữ";
-                        break;
-                    case "IMAGE":
-                        category = "Truyện Tranh";
-                        break;
-                    case "AUDIO":
-                        category = "Truyện Audio";
-                        break;
-                }
-                item.CategoryName = category;
-                item.LoadImage(x.poster);
-                pnBook.Controls.Add(item);
-            });
 
             thread.Join();
 
@@ -94,6 +62,7 @@ namespace PTUDTM.form
             {
                 users = Businesses.user.GetAll();
                 books = Businesses.book.GetAll();
+                censor_books = Businesses.book.GetAllUncensor();
                 Action action = new Action(LoadData);
                 this.BeginInvoke(action);
             });

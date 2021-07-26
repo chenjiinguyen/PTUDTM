@@ -22,15 +22,31 @@ namespace BLL.Business
 
         }
 
+        public List<book> GetAllUncensor()
+        {
+            List<book> books = Services.book.GetAllUncensor();
+            return books;
+
+        }
+
+        
+
         public book GetByID(long id)
         {
             book book = Services.book.GetByID(id);
             return book;
         }
 
+        public book GetID(long id)
+        {
+            book book = Services.book.GetID(id);
+            return book;
+        }
+        
+
         public DataTable GetAllDataTable()
         {
-            IEnumerable<book> books = Services.book.GetAll();
+            List<book> books = Services.book.GetAll();
 
             DataTable table = new DataTable();
             PropertyDescriptorCollection props = TypeDescriptor.GetProperties(typeof(book));
@@ -38,10 +54,8 @@ namespace BLL.Business
             {
 
                 PropertyDescriptor prop = props[i];
-                if (prop.PropertyType.Name != "Object[]")
-                {
-                    table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
-                }
+                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+                
               
             }
             object[] values = new object[props.Count];
@@ -50,14 +64,38 @@ namespace BLL.Business
                 for (int i = 0; i < values.Length; i++)
                 {
                     var x = props[i].GetValue(t);
-                    if (x.GetType().Name != "Object[]")
-                    {
-                        values[i] = x;
-                    }
-         
+                    values[i] = x;
                    
-                    
-                    
+         
+                }
+                table.Rows.Add(values);
+            }
+            return table;
+        }
+
+        public DataTable GetAllUncensorDataTable()
+        {
+            List<book> books = Services.book.GetAllUncensor();
+
+            DataTable table = new DataTable();
+            PropertyDescriptorCollection props = TypeDescriptor.GetProperties(typeof(book));
+            for (int i = 0; i < props.Count; i++)
+            {
+
+                PropertyDescriptor prop = props[i];
+                table.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+
+
+            }
+            object[] values = new object[props.Count];
+            foreach (book t in books)
+            {
+                for (int i = 0; i < values.Length; i++)
+                {
+                    var x = props[i].GetValue(t);
+                    values[i] = x;
+
+
                 }
                 table.Rows.Add(values);
             }

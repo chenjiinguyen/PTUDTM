@@ -31,16 +31,14 @@ namespace PTUDTM.form
         {
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnUser = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnBook = new System.Windows.Forms.FlowLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.wnMembers = new PTUDTM.component.WidgetNumber();
             this.wnView = new PTUDTM.component.WidgetNumber();
             this.wnCensorBook = new PTUDTM.component.WidgetNumber();
             this.wnTongSach = new PTUDTM.component.WidgetNumber();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pnBook = new System.Windows.Forms.FlowLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -50,7 +48,6 @@ namespace PTUDTM.form
             // panel2
             // 
             this.panel2.Controls.Add(this.pnUser);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(2, 152);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
@@ -69,17 +66,6 @@ namespace PTUDTM.form
             this.pnUser.Size = new System.Drawing.Size(388, 597);
             this.pnUser.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh sách người dùng";
-            // 
             // panel1
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel1, 2);
@@ -93,6 +79,50 @@ namespace PTUDTM.form
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1198, 146);
             this.panel1.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.pnBook);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(431, 152);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(769, 737);
+            this.panel3.TabIndex = 5;
+            // 
+            // pnBook
+            // 
+            this.pnBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnBook.AutoScroll = true;
+            this.pnBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnBook.Location = new System.Drawing.Point(27, 94);
+            this.pnBook.Margin = new System.Windows.Forms.Padding(2);
+            this.pnBook.Name = "pnBook";
+            this.pnBook.Size = new System.Drawing.Size(708, 599);
+            this.pnBook.TabIndex = 4;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 429F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(38, 47);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1202, 891);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
             // wnMembers
             // 
@@ -143,62 +173,6 @@ namespace PTUDTM.form
             this.wnTongSach.TabIndex = 0;
             this.wnTongSach.Title = "Tổng số sách ";
             // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.pnBook);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(431, 152);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(769, 737);
-            this.panel3.TabIndex = 5;
-            // 
-            // pnBook
-            // 
-            this.pnBook.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnBook.AutoScroll = true;
-            this.pnBook.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnBook.Location = new System.Drawing.Point(27, 94);
-            this.pnBook.Margin = new System.Windows.Forms.Padding(2);
-            this.pnBook.Name = "pnBook";
-            this.pnBook.Size = new System.Drawing.Size(708, 599);
-            this.pnBook.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 36);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(343, 30);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Danh sách truyện mới nhất";
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 429F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(38, 47);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1202, 891);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -208,10 +182,8 @@ namespace PTUDTM.form
             this.Size = new System.Drawing.Size(1288, 989);
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -221,7 +193,6 @@ namespace PTUDTM.form
 
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel pnUser;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private component.WidgetNumber wnMembers;
         private component.WidgetNumber wnView;
@@ -229,7 +200,6 @@ namespace PTUDTM.form
         private component.WidgetNumber wnTongSach;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.FlowLayoutPanel pnBook;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     }
 }

@@ -20,5 +20,13 @@ namespace DLL.Service
             return db.categories.ToList();
         }
 
+        public string GetNameByID(string id)
+        {
+            category cate = db.categories.SingleOrDefault(x => x.idcategory.Equals(id));
+            if (cate != null)
+                return cate.name;
+            return "Truyện";
+        }
+
     }
 }

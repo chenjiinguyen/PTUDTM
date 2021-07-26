@@ -151,7 +151,7 @@ namespace PTUDTM.component
             this.lblAuthorName.BackColor = System.Drawing.Color.Transparent;
             this.lblAuthorName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorName.Location = new System.Drawing.Point(350, 74);
+            this.lblAuthorName.Location = new System.Drawing.Point(349, 74);
             this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2);
             this.lblAuthorName.Name = "lblAuthorName";
             this.lblAuthorName.Size = new System.Drawing.Size(145, 24);
@@ -175,7 +175,7 @@ namespace PTUDTM.component
             this.lblCateName.BackColor = System.Drawing.Color.Transparent;
             this.lblCateName.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblCateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCateName.Location = new System.Drawing.Point(350, 135);
+            this.lblCateName.Location = new System.Drawing.Point(349, 135);
             this.lblCateName.Margin = new System.Windows.Forms.Padding(2);
             this.lblCateName.Name = "lblCateName";
             this.lblCateName.Size = new System.Drawing.Size(94, 24);
@@ -199,7 +199,7 @@ namespace PTUDTM.component
             this.lblTime.BackColor = System.Drawing.Color.Transparent;
             this.lblTime.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Location = new System.Drawing.Point(350, 196);
+            this.lblTime.Location = new System.Drawing.Point(349, 196);
             this.lblTime.Margin = new System.Windows.Forms.Padding(2);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(93, 24);
@@ -223,7 +223,7 @@ namespace PTUDTM.component
             this.lblViewNumber.BackColor = System.Drawing.Color.Transparent;
             this.lblViewNumber.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblViewNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblViewNumber.Location = new System.Drawing.Point(350, 254);
+            this.lblViewNumber.Location = new System.Drawing.Point(349, 254);
             this.lblViewNumber.Margin = new System.Windows.Forms.Padding(2);
             this.lblViewNumber.Name = "lblViewNumber";
             this.lblViewNumber.Size = new System.Drawing.Size(33, 24);
@@ -303,7 +303,7 @@ namespace PTUDTM.component
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 231F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.99681F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 74.00319F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 381F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 386F));
             this.tableLayoutPanel1.Controls.Add(this.picturePoster, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2Panel1, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.btnDetail, 3, 3);
@@ -336,7 +336,7 @@ namespace PTUDTM.component
             // 
             this.picturePoster.BorderRadius = 14;
             this.picturePoster.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picturePoster.Image = global::PTUDTM.Properties.Resources.mat_biec_bia_cung_2019;
+            this.picturePoster.Image = global::PTUDTM.Properties.Resources.poster_not_available;
             this.picturePoster.Location = new System.Drawing.Point(15, 16);
             this.picturePoster.Margin = new System.Windows.Forms.Padding(15, 16, 2, 2);
             this.picturePoster.Name = "picturePoster";

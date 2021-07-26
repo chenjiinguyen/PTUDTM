@@ -119,6 +119,7 @@
     <Compile Include="Service\AuthService.cs" />
     <Compile Include="Service\BookService.cs" />
     <Compile Include="Service\CategoryService.cs" />
+    <Compile Include="Service\ModerationBookService.cs" />
     <Compile Include="Service\UserService.cs" />
     <Compile Include="user.cs">
       <DependentUpon>BookCommunity.tt</DependentUpon>

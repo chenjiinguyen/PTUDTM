@@ -134,7 +134,7 @@ namespace PTUDTM.component
             this.tableLayoutPanel2.Controls.Add(this.picturePoster, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 6;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.49738F));
@@ -262,7 +262,7 @@ namespace PTUDTM.component
             this.panel1.BackColor = System.Drawing.Color.Gray;
             this.tableLayoutPanel2.SetColumnSpan(this.panel1, 3);
             this.panel1.Location = new System.Drawing.Point(2, 302);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(646, 1);
             this.panel1.TabIndex = 13;
@@ -271,7 +271,7 @@ namespace PTUDTM.component
             // 
             this.picturePoster.BorderRadius = 14;
             this.picturePoster.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.picturePoster.Image = global::PTUDTM.Properties.Resources.mat_biec_bia_cung_2019;
+            this.picturePoster.Image = global::PTUDTM.Properties.Resources.poster_not_available;
             this.picturePoster.Location = new System.Drawing.Point(15, 16);
             this.picturePoster.Margin = new System.Windows.Forms.Padding(15, 16, 2, 16);
             this.picturePoster.Name = "picturePoster";
@@ -287,7 +287,7 @@ namespace PTUDTM.component
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StoryList";
             this.Size = new System.Drawing.Size(529, 310);
             this.tableLayoutPanel2.ResumeLayout(false);

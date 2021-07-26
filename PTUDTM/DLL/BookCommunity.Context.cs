@@ -18,6 +18,7 @@ namespace DLL
         public BOOKCOMMUNITYEntities()
             : base("name=BOOKCOMMUNITYEntities")
         {
+            this.Configuration.ProxyCreationEnabled = false;
         }
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -180,11 +180,23 @@
     <Compile Include="component\WidgetNumber.Designer.cs">
       <DependentUpon>WidgetNumber.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\BookCensorship.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\BookCensorship.Designer.cs">
+      <DependentUpon>BookCensorship.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\Books.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="form\Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CensorBooks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CensorBooks.Designer.cs">
+      <DependentUpon>CensorBooks.cs</DependentUpon>
     </Compile>
     <Compile Include="form\Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -335,8 +347,14 @@
     <EmbeddedResource Include="component\WidgetNumber.resx">
       <DependentUpon>WidgetNumber.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\BookCensorship.resx">
+      <DependentUpon>BookCensorship.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CensorBooks.resx">
+      <DependentUpon>CensorBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -437,6 +455,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resource\poster_not_available.jpg" />
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <Content Include="resource\background\background_login.jpg" />

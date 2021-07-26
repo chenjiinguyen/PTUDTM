@@ -1,6 +1,5 @@
 ﻿using BLL;
 using DLL;
-using PTUDTM.component;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,16 +13,16 @@ using System.Windows.Forms;
 
 namespace PTUDTM.form
 {
-    public partial class Books : UserControl
+    public partial class CensorBooks : UserControl
     {
         DataTable books;
         Thread thread;
-        public Books()
+        public CensorBooks()
         {
             InitializeComponent();
             this.SetTopLevel(false);
-
         }
+
         private void LoadData()
         {
             List<category> data_categories = Businesses.category.GetAll();
@@ -50,17 +49,22 @@ namespace PTUDTM.form
 
         }
 
-        private void Books_Load(object sender, EventArgs e)
+        private void CensorBooks_Load(object sender, EventArgs e)
         {
             tableLayoutPanel1.RowStyles[1].SizeType = SizeType.Absolute;
             tableLayoutPanel1.RowStyles[1].Height = 0;
             thread = new Thread(() =>
             {
-                books = Businesses.book.GetAllDataTable();
+                books = Businesses.book.GetAllUncensorDataTable();
                 Action action = new Action(LoadData);
                 this.BeginInvoke(action);
             });
             thread.Start();
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -80,16 +84,11 @@ namespace PTUDTM.form
                 foreach (var row in rows)
                     tblFiltered.ImportRow(row);
             }
-        
+
 
             tableLayoutPanel1.RowStyles[1].SizeType = SizeType.Absolute;
             tableLayoutPanel1.RowStyles[1].Height = 0;
             guna2DataGridView1.DataSource = tblFiltered;
-        }
-
-        private void guna2DataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
         }
 
         private void guna2DataGridView1_Click(object sender, EventArgs e)
