@@ -187,7 +187,7 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.Controls.Add(this.guna2DataGridView1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.bookDetail, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(96, 54);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 125F));
@@ -234,7 +234,7 @@ namespace PTUDTM.form
             this.guna2DataGridView1.EnableHeadersVisualStyles = false;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(182)))), ((int)(((byte)(224)))), ((int)(((byte)(216)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(4, 554);
-            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2DataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
@@ -326,13 +326,14 @@ namespace PTUDTM.form
             this.bookDetail.Title = "MẮT BIẾC\r\n";
             this.bookDetail.View = "Lượt xem:";
             this.bookDetail.ViewNumber = "100";
+            this.bookDetail.Load += new System.EventHandler(this.bookDetail_Load);
             // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Books";
             this.Size = new System.Drawing.Size(1717, 1236);
             this.Load += new System.EventHandler(this.Books_Load);

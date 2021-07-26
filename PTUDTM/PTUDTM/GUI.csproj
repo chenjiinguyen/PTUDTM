@@ -216,11 +216,35 @@
     <Compile Include="form\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\DetailBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\DetailBook.Designer.cs">
+      <DependentUpon>DetailBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\EditBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="form\EditBook.Designer.cs">
       <DependentUpon>EditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\EditEpisodeAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditEpisodeAudio.Designer.cs">
+      <DependentUpon>EditEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\EditEpisodeComic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditEpisodeComic.Designer.cs">
+      <DependentUpon>EditEpisodeComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\EditEpisodeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditEpisodeText.Designer.cs">
+      <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBook.cs">
       <SubType>Form</SubType>
@@ -389,8 +413,20 @@
     <EmbeddedResource Include="form\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\DetailBook.resx">
+      <DependentUpon>DetailBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\EditBook.resx">
       <DependentUpon>EditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\EditEpisodeAudio.resx">
+      <DependentUpon>EditEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\EditEpisodeComic.resx">
+      <DependentUpon>EditEpisodeComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\EditEpisodeText.resx">
+      <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBook.resx">
       <DependentUpon>frmBook.cs</DependentUpon>

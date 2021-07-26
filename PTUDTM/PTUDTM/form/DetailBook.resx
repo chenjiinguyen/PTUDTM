@@ -117,10 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="index.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="title.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="createdat.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="status.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="edit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="delete.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="txtDetail.Text" xml:space="preserve">
+    <value>"Mắt Biếc" là câu chuyện kể về cuộc đời của nhân vật Ngạn. Sinh ra và lớn lên ở một ngôi làng tên Đo Đo (cũng là nguyên quán của Nguyễn Nhật Ánh - tác giả), Ngạn thầm yêu từ nhỏ cô nàng cùng xóm có đôi mắt tuyệt đẹp - Hà Lan. Tuổi thơ ở nơi làng xóm bình yên giản dị thật là đẹp, nhưng rồi cũng đến lúc kết thúc khi cả hai đều phải lên thành phố tiếp tục việc học, và tấm bi kịch bắt đầu từ đây.
+Lòng thương nhớ của Ngạn đối với Hà Lan vẫn luôn không thay đổi, nhưng cô gái ấy đã không thể chống lại sự cám dỗ của thị thành, cô đã ngã vào lòng một người con trai khác tên Dũng. Cô và Dũng có con, nhưng người đàn ông ấy đã ruồng bỏ cô, khiến cô phải gửi đứa trẻ về quê cho bà ngoại chăm sóc, cô đặt tên nó là Trà Long. Hà Lan vẫn biết Ngạn thầm thương mình bấy lâu, nhưng cô không chấp nhận vì cô biết, cô và Ngạn không cùng một lối sống. Thế nhưng tấm lòng của anh trai làng vẫn không hề thay đổi, anh dành hết tình thương cho con cô. Cô bé Trà Long ấy ngày mộ
+t lớn và trở thành cô giáo, và tất nhiên, cô rất quý mến Ngạn.
+Liệu, Trà Long có phải là những gì mà Ngạn tìm kiếm ở Hà Lan,người có bù đắp lại những thứ mà Ngạn đã bỏ dở trong cuộc đời anh ấy?...</value>
+  </data>
 </root>

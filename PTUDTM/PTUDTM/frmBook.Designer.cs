@@ -99,7 +99,8 @@
             this.bookList2.Category = "Thể loại:";
             this.bookList2.CategoryName = "Truyện chữ";
             this.bookList2.DatePost = "Ngày đăng:";
-            this.bookList2.Location = new System.Drawing.Point(3, 3);
+            this.bookList2.Location = new System.Drawing.Point(3, 2);
+            this.bookList2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookList2.Name = "bookList2";
             this.bookList2.Poster = ((System.Drawing.Image)(resources.GetObject("bookList2.Poster")));
             this.bookList2.Size = new System.Drawing.Size(1419, 417);
@@ -117,7 +118,8 @@
             this.bookList1.Category = "Thể loại:";
             this.bookList1.CategoryName = "Truyện chữ";
             this.bookList1.DatePost = "Ngày đăng:";
-            this.bookList1.Location = new System.Drawing.Point(3, 426);
+            this.bookList1.Location = new System.Drawing.Point(3, 423);
+            this.bookList1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bookList1.Name = "bookList1";
             this.bookList1.Poster = ((System.Drawing.Image)(resources.GetObject("bookList1.Poster")));
             this.bookList1.Size = new System.Drawing.Size(1419, 417);
@@ -136,6 +138,7 @@
             this.Controls.Add(this.pnlButton);
             this.Name = "frmBook";
             this.Text = "frmBook";
+            this.Shown += new System.EventHandler(this.frmBook_Shown);
             this.pnlButton.ResumeLayout(false);
             this.flowPnlBooklist.ResumeLayout(false);
             this.ResumeLayout(false);

@@ -110,5 +110,10 @@ namespace PTUDTM.form
             Program.LoadDialog(new CreateBook(), "Thêm Sách - Book Community");
 
         }
+
+        private void bookDetail_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -57,6 +57,7 @@ namespace PTUDTM
             dialog.Controls.Clear();
             c.Parent = dialog;
             c.Dock = DockStyle.Fill;
+            c.Visible = true;
             dialog.Controls.Add(c);
             dialog.ShowDialog();
         }

@@ -66,7 +66,7 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.80868F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.19132F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 629F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 630F));
             this.tableLayoutPanel1.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtAuthorName, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboCate, 1, 2);
@@ -140,6 +140,7 @@ namespace PTUDTM.form
             this.cboCate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cboCate.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cboCate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCate.Enabled = false;
             this.cboCate.FocusedColor = System.Drawing.Color.Empty;
             this.cboCate.FocusedState.Parent = this.cboCate;
             this.cboCate.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -288,7 +289,7 @@ namespace PTUDTM.form
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
             this.btnCancel.Size = new System.Drawing.Size(131, 78);
             this.btnCancel.TabIndex = 15;
-            this.btnCancel.Text = "Hủy";
+            this.btnCancel.Text = "Đóng";
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // guna2Button2
@@ -300,13 +301,14 @@ namespace PTUDTM.form
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(936, 814);
+            this.guna2Button2.Location = new System.Drawing.Point(935, 814);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(51, 10, 20, 20);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(129, 78);
             this.guna2Button2.TabIndex = 16;
-            this.guna2Button2.Text = "Đăng";
+            this.guna2Button2.Text = "Sửa";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // EditBook
             // 

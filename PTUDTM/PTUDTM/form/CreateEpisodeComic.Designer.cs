@@ -32,6 +32,7 @@ namespace PTUDTM.form
             this.lblChapterTitle = new System.Windows.Forms.Label();
             this.txtChapterTitle = new Guna.UI2.WinForms.Guna2TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
@@ -41,7 +42,6 @@ namespace PTUDTM.form
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.lblIntro = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.URL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -88,6 +88,7 @@ namespace PTUDTM.form
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -100,6 +101,13 @@ namespace PTUDTM.form
             this.dataGridView1.RowTemplate.Height = 33;
             this.dataGridView1.Size = new System.Drawing.Size(1177, 420);
             this.dataGridView1.TabIndex = 19;
+            // 
+            // URL
+            // 
+            this.URL.DataPropertyName = "URL";
+            this.URL.HeaderText = "URL";
+            this.URL.MinimumWidth = 10;
+            this.URL.Name = "URL";
             // 
             // btnCancel
             // 
@@ -252,13 +260,6 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1483, 748);
             this.tableLayoutPanel1.TabIndex = 2;
-            // 
-            // URL
-            // 
-            this.URL.DataPropertyName = "URL";
-            this.URL.HeaderText = "URL";
-            this.URL.MinimumWidth = 10;
-            this.URL.Name = "URL";
             // 
             // CreateEpisodeComic
             // 

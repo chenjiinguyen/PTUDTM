@@ -15,7 +15,7 @@ namespace PTUDTM.form
 {
     public partial class CreateEpisodeAudio : UserControl
     {
-        public long idbook;
+        long idbook;
         public CreateEpisodeAudio()
         {
             InitializeComponent();

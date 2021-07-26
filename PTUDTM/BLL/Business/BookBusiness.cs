@@ -91,7 +91,15 @@ namespace BLL.Business
            
         }
 
+        public bool Update(long idbook, book input)
+        {
+            return Services.book.Update(idbook, input);
+        }
 
+        public bool Delete(long idbook)
+        {
+            return Services.book.Delete(idbook);
+        }
     }
 
   

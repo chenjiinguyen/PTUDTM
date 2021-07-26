@@ -14,7 +14,7 @@ namespace PTUDTM.form
 {
     public partial class CreateEpisodeText : UserControl
     {
-        public long idbook;
+        long idbook;
         public CreateEpisodeText()
         {
             InitializeComponent();

@@ -17,11 +17,10 @@ namespace PTUDTM.form
     public partial class CreateEpisodeComic : UserControl
     {
         DataTable links = new DataTable();
-        public long idbook;
+        long idbook;
         public CreateEpisodeComic()
         {
             InitializeComponent();
-
             LoadData();
         }
 
