@@ -53,7 +53,7 @@ namespace PTUDTM.form
             this.lblAuthorName.Location = new System.Drawing.Point(20, 81);
             this.lblAuthorName.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblAuthorName.Name = "lblAuthorName";
-            this.lblAuthorName.Size = new System.Drawing.Size(223, 81);
+            this.lblAuthorName.Size = new System.Drawing.Size(222, 81);
             this.lblAuthorName.TabIndex = 3;
             this.lblAuthorName.Text = "Tên tác giả:";
             this.lblAuthorName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -66,7 +66,7 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 27.80868F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 72.19132F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 630F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 633F));
             this.tableLayoutPanel1.Controls.Add(this.lblTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtAuthorName, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.cboCate, 1, 2);
@@ -101,7 +101,7 @@ namespace PTUDTM.form
             this.lblTitle.Location = new System.Drawing.Point(20, 0);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(223, 81);
+            this.lblTitle.Size = new System.Drawing.Size(222, 81);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Tiêu đề:";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -122,14 +122,14 @@ namespace PTUDTM.form
             this.txtAuthorName.FocusedState.Parent = this.txtAuthorName;
             this.txtAuthorName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAuthorName.HoverState.Parent = this.txtAuthorName;
-            this.txtAuthorName.Location = new System.Drawing.Point(251, 87);
+            this.txtAuthorName.Location = new System.Drawing.Point(250, 87);
             this.txtAuthorName.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtAuthorName.Name = "txtAuthorName";
             this.txtAuthorName.PasswordChar = '\0';
             this.txtAuthorName.PlaceholderText = "";
             this.txtAuthorName.SelectedText = "";
             this.txtAuthorName.ShadowDecoration.Parent = this.txtAuthorName;
-            this.txtAuthorName.Size = new System.Drawing.Size(1259, 69);
+            this.txtAuthorName.Size = new System.Drawing.Size(1260, 69);
             this.txtAuthorName.TabIndex = 4;
             // 
             // cboCate
@@ -149,11 +149,11 @@ namespace PTUDTM.form
             this.cboCate.HoverState.Parent = this.cboCate;
             this.cboCate.ItemHeight = 30;
             this.cboCate.ItemsAppearance.Parent = this.cboCate;
-            this.cboCate.Location = new System.Drawing.Point(249, 164);
+            this.cboCate.Location = new System.Drawing.Point(248, 164);
             this.cboCate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cboCate.Name = "cboCate";
             this.cboCate.ShadowDecoration.Parent = this.cboCate;
-            this.cboCate.Size = new System.Drawing.Size(1263, 36);
+            this.cboCate.Size = new System.Drawing.Size(1264, 36);
             this.cboCate.TabIndex = 9;
             // 
             // txtPicCover
@@ -172,14 +172,14 @@ namespace PTUDTM.form
             this.txtPicCover.FocusedState.Parent = this.txtPicCover;
             this.txtPicCover.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPicCover.HoverState.Parent = this.txtPicCover;
-            this.txtPicCover.Location = new System.Drawing.Point(251, 249);
+            this.txtPicCover.Location = new System.Drawing.Point(250, 249);
             this.txtPicCover.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtPicCover.Name = "txtPicCover";
             this.txtPicCover.PasswordChar = '\0';
             this.txtPicCover.PlaceholderText = "";
             this.txtPicCover.SelectedText = "";
             this.txtPicCover.ShadowDecoration.Parent = this.txtPicCover;
-            this.txtPicCover.Size = new System.Drawing.Size(1259, 69);
+            this.txtPicCover.Size = new System.Drawing.Size(1260, 69);
             this.txtPicCover.TabIndex = 6;
             // 
             // lblIntro
@@ -202,7 +202,7 @@ namespace PTUDTM.form
             this.lblCategory.Location = new System.Drawing.Point(20, 162);
             this.lblCategory.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblCategory.Name = "lblCategory";
-            this.lblCategory.Size = new System.Drawing.Size(223, 81);
+            this.lblCategory.Size = new System.Drawing.Size(222, 81);
             this.lblCategory.TabIndex = 5;
             this.lblCategory.Text = "Thể loại:";
             this.lblCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -223,14 +223,14 @@ namespace PTUDTM.form
             this.txtTitle.FocusedState.Parent = this.txtTitle;
             this.txtTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTitle.HoverState.Parent = this.txtTitle;
-            this.txtTitle.Location = new System.Drawing.Point(251, 6);
+            this.txtTitle.Location = new System.Drawing.Point(250, 6);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PasswordChar = '\0';
             this.txtTitle.PlaceholderText = "";
             this.txtTitle.SelectedText = "";
             this.txtTitle.ShadowDecoration.Parent = this.txtTitle;
-            this.txtTitle.Size = new System.Drawing.Size(1259, 69);
+            this.txtTitle.Size = new System.Drawing.Size(1260, 69);
             this.txtTitle.TabIndex = 2;
             // 
             // lblPicCover
@@ -241,7 +241,7 @@ namespace PTUDTM.form
             this.lblPicCover.Location = new System.Drawing.Point(20, 243);
             this.lblPicCover.Margin = new System.Windows.Forms.Padding(20, 0, 3, 0);
             this.lblPicCover.Name = "lblPicCover";
-            this.lblPicCover.Size = new System.Drawing.Size(223, 81);
+            this.lblPicCover.Size = new System.Drawing.Size(222, 81);
             this.lblPicCover.TabIndex = 10;
             this.lblPicCover.Text = "Ảnh bìa:";
             this.lblPicCover.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -263,7 +263,7 @@ namespace PTUDTM.form
             this.txtIntro.FocusedState.Parent = this.txtIntro;
             this.txtIntro.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIntro.HoverState.Parent = this.txtIntro;
-            this.txtIntro.Location = new System.Drawing.Point(251, 330);
+            this.txtIntro.Location = new System.Drawing.Point(250, 330);
             this.txtIntro.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.txtIntro.Multiline = true;
             this.txtIntro.Name = "txtIntro";
@@ -271,7 +271,7 @@ namespace PTUDTM.form
             this.txtIntro.PlaceholderText = "";
             this.txtIntro.SelectedText = "";
             this.txtIntro.ShadowDecoration.Parent = this.txtIntro;
-            this.txtIntro.Size = new System.Drawing.Size(1259, 459);
+            this.txtIntro.Size = new System.Drawing.Size(1260, 459);
             this.txtIntro.TabIndex = 11;
             // 
             // btnCancel
@@ -283,7 +283,7 @@ namespace PTUDTM.form
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(646, 814);
+            this.btnCancel.Location = new System.Drawing.Point(645, 814);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(400, 10, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
@@ -301,7 +301,7 @@ namespace PTUDTM.form
             this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(935, 814);
+            this.guna2Button2.Location = new System.Drawing.Point(932, 814);
             this.guna2Button2.Margin = new System.Windows.Forms.Padding(51, 10, 20, 20);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;

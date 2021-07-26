@@ -30,5 +30,7 @@ namespace DLL
 
         public static EpisodeService episode = new EpisodeService(db);
 
+        public static UserGroupService usergroup = new UserGroupService(db);
+
     }
 }

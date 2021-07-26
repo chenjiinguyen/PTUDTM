@@ -39,13 +39,59 @@ namespace PTUDTM.form
             episode epi = Businesses.episode.GetByID(idepi);
             txtTitle.Text = epi.name;
             txtLink.Text = epi.content;
-            //((Form)this.TopLevelControl).FormClosing += FormDialog_FormClosing;
-            this.Visible = false;
+
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' style='width: 100%; height: 400px' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+            html = string.Format(html, txtLink.Text.Split('=')[1]);
+            webBrowser1.Navigate("about:blank");
+            webBrowser1.Document.OpenNew(false);
+            webBrowser1.Document.Write(html);
+            webBrowser1.Refresh();
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            char[] delimiters = new char[] { ' ', '\r', '\n' };
+            string title = txtTitle.Text;
+            string contentLink = txtLink.Text;
+            long countTitle = title.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).Length;
+            if ((countTitle > 0 && countTitle <= 100) && contentLink.Trim().Length > 0)
+            {
+                string regexLink = @"(?:https?:\/\/)?(?:www\.)?youtu\.?be(?:\.com)?\/?.*(?:watch|embed)?(?:.*v=|v\/|\/)([\w\-_]+)\&?";
+                bool match = Regex.IsMatch(contentLink, regexLink);
+                if (match)
+                {
+                    episode epi = new episode();
+                    epi.name = title;
+                    epi.content = contentLink;
+                    epi.updatedat = DateTime.Now;
 
+                    bool update = Businesses.episode.UpdateEpi(idepi, epi);
+                    if (!update)
+                    {
+                        MessageBox.Show("Thất bại", "Thông báo");
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Thành công", "Thông báo");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Link ảnh không hợp lệ", "Thông báo");
+                }
+            }
+            else if (countTitle == 0 || contentLink.Trim().Length == 0)
+            {
+                MessageBox.Show("Vui lòng không để trống!", "Thông báo");
+            }
+            else if (countTitle > 100)
+            {
+                MessageBox.Show("Tiêu đề không được quá 100 từ!", "Thông báo");
+            }
         }
 
         private void EditEpisodeAudio_VisibleChanged(object sender, EventArgs e)
@@ -54,6 +100,19 @@ namespace PTUDTM.form
             //{
             //    ((Form)this.TopLevelControl).FormClosing += FormDialog_FormClosing_ABC;
             //}
+        }
+
+        private void txtLink_KeyUp(object sender, KeyEventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' style='width: 100%; height: 400px' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+            html = string.Format(html, txtLink.Text.Split('=')[1]);
+            webBrowser1.Navigate("about:blank");
+            webBrowser1.Document.OpenNew(false);
+            webBrowser1.Document.Write(html);
+            webBrowser1.Refresh();
         }
 
         private void FormDialog_FormClosing_ABC(object sender, FormClosingEventArgs e)

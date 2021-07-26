@@ -79,5 +79,14 @@ namespace PTUDTM.form
                 MessageBox.Show("Tiêu đề không được quá 100 từ!", "Thông báo");
             }
         }
+
+        private void txtLink_KeyUp(object sender, KeyEventArgs e)
+        {
+            string html = "<html><head>";
+            html += "<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>";
+            html += "<iframe id='video' src= 'https://www.youtube.com/embed/{0}' style='width: 100%; height: 420px' frameborder='0' allowfullscreen></iframe>";
+            html += "</body></html>";
+            this.webBrowser1.DocumentText = string.Format(html, txtLink.Text.Split('=')[1]);
+        }
     }
 }

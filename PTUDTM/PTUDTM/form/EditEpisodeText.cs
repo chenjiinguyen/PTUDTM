@@ -84,7 +84,7 @@ namespace PTUDTM.form
             episode epi = Businesses.episode.GetByID(id);
             txtTitle.Text = epi.name;
             txtContent.Text = epi.content;
-            this.Visible = false;
+            //this.Visible = false;
         }
 
         private void EditEpisodeText_VisibleChanged(object sender, EventArgs e)

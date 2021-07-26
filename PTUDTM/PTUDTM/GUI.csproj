@@ -162,6 +162,12 @@
     <Compile Include="component\StoryList.Designer.cs">
       <DependentUpon>StoryList.cs</DependentUpon>
     </Compile>
+    <Compile Include="component\UserDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\UserDetail.Designer.cs">
+      <DependentUpon>UserDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="component\UserInfoDetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -246,6 +252,18 @@
     <Compile Include="form\EditEpisodeText.Designer.cs">
       <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\EditUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\UsersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\UsersList.Designer.cs">
+      <DependentUpon>UsersList.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBook.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,36 +306,6 @@
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDetail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDetail.Designer.cs">
-      <DependentUpon>frmDetail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditBook.Designer.cs">
-      <DependentUpon>frmEditBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditEpisodeAudio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditEpisodeAudio.Designer.cs">
-      <DependentUpon>frmEditEpisodeAudio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditEpisodeComic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditEpisodeComic.Designer.cs">
-      <DependentUpon>frmEditEpisodeComic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditEpisodeWord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditEpisodeWord.Designer.cs">
-      <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmEpisodeAudioCensor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -354,18 +342,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPublicBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPublicBook.Designer.cs">
-      <DependentUpon>frmPublicBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmUserList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUserList.Designer.cs">
-      <DependentUpon>frmUserList.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="component\BookList.resx">
@@ -385,6 +361,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="component\StoryList.resx">
       <DependentUpon>StoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\UserDetail.resx">
+      <DependentUpon>UserDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="component\UserInfoDetail.resx">
       <DependentUpon>UserInfoDetail.cs</DependentUpon>
@@ -428,6 +407,12 @@
     <EmbeddedResource Include="form\EditEpisodeText.resx">
       <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\UsersList.resx">
+      <DependentUpon>UsersList.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBook.resx">
       <DependentUpon>frmBook.cs</DependentUpon>
     </EmbeddedResource>
@@ -449,21 +434,6 @@
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDetail.resx">
-      <DependentUpon>frmDetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditBook.resx">
-      <DependentUpon>frmEditBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditEpisodeAudio.resx">
-      <DependentUpon>frmEditEpisodeAudio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditEpisodeComic.resx">
-      <DependentUpon>frmEditEpisodeComic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditEpisodeWord.resx">
-      <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmEpisodeAudioCensor.resx">
       <DependentUpon>frmEpisodeAudioCensor.cs</DependentUpon>
     </EmbeddedResource>
@@ -481,12 +451,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPublicBook.resx">
-      <DependentUpon>frmPublicBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUserList.resx">
-      <DependentUpon>frmUserList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -530,6 +494,7 @@
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <None Include="Resources\WfI44pj.png" />
+    <None Include="Resources\Screenshot 2021-07-22 145349.png" />
     <Content Include="resource\background\background_login.jpg" />
     <Content Include="resource\icon\button_add.png" />
     <Content Include="resource\icon\dashboard.png" />

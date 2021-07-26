@@ -143,6 +143,16 @@ namespace PTUDTM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2021_07_22_145349 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot 2021-07-22 145349", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap WfI44pj {
             get {
                 object obj = ResourceManager.GetObject("WfI44pj", resourceCulture);

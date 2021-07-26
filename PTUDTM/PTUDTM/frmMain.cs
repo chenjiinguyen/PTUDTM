@@ -58,6 +58,9 @@ namespace PTUDTM.form
                 case "B":
                     Program.LoadForm(new Books());
                     break;
+                case "U":
+                    Program.LoadForm(new UsersList());
+                    break;
                 default:
                     Program.LoadForm(new Dashboard());
                     break;

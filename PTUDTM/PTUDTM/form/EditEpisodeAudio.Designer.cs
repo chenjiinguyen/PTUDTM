@@ -94,6 +94,7 @@ namespace PTUDTM.form
             this.txtLink.ShadowDecoration.Parent = this.txtLink;
             this.txtLink.Size = new System.Drawing.Size(1162, 57);
             this.txtLink.TabIndex = 20;
+            this.txtLink.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtLink_KeyUp);
             // 
             // guna2Separator1
             // 
