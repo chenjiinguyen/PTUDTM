@@ -14,6 +14,7 @@ namespace PTUDTM
     {
         public static user me = null;
         public static Panel mainPanel;
+        public static Form dialog = null;
         public static frmMain frmMain;
         public static frmLogin frmLogin;
         /// <summary>
@@ -38,7 +39,13 @@ namespace PTUDTM
 
         public static void LoadDialog(UserControl c, string title)
         {
-            Form dialog = new Form()
+            if(dialog != null)
+            {
+                dialog.Close();
+                dialog.Hide();
+                dialog = null;
+            }
+            dialog = new Form()
             {
                 Text = title,
                 TopLevel = true,
@@ -50,6 +57,7 @@ namespace PTUDTM
             dialog.Controls.Clear();
             c.Parent = dialog;
             c.Dock = DockStyle.Fill;
+            c.Visible = true;
             dialog.Controls.Add(c);
             dialog.ShowDialog();
         }

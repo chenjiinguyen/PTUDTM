@@ -18,6 +18,10 @@ namespace BLL
 
         public static CategoryBusiness category = new CategoryBusiness();
 
+        public static EpisodeBusiness episode = new EpisodeBusiness();
+
         public static ModerationBookBusiness modbook = new ModerationBookBusiness();
+
+        public static ModerationEpisodeBusiness modepi = new ModerationEpisodeBusiness();
     }
 }

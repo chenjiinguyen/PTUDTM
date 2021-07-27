@@ -107,6 +107,7 @@
     </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -198,17 +199,89 @@
     <Compile Include="form\CensorBooks.Designer.cs">
       <DependentUpon>CensorBooks.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\CensorEpisodeAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CensorEpisodeAudio.Designer.cs">
+      <DependentUpon>CensorEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CensorEpisodeComic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CensorEpisodeComic.Designer.cs">
+      <DependentUpon>CensorEpisodeComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CensorEpisodes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CensorEpisodes.Designer.cs">
+      <DependentUpon>CensorEpisodes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CensorEpisodeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CensorEpisodeText.Designer.cs">
+      <DependentUpon>CensorEpisodeText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CreateBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateBook.Designer.cs">
+      <DependentUpon>CreateBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CreateEpisodeAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateEpisodeAudio.Designer.cs">
+      <DependentUpon>CreateEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CreateEpisodeComic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateEpisodeComic.Designer.cs">
+      <DependentUpon>CreateEpisodeComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\CreateEpisodeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\CreateEpisodeText.Designer.cs">
+      <DependentUpon>CreateEpisodeText.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="form\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="form\DetailBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\DetailBook.Designer.cs">
+      <DependentUpon>DetailBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="form\EditBook.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="form\EditBook.Designer.cs">
       <DependentUpon>EditBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\EditEpisodeAudio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditEpisodeAudio.Designer.cs">
+      <DependentUpon>EditEpisodeAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\EditEpisodeComic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditEpisodeComic.Designer.cs">
+      <DependentUpon>EditEpisodeComic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form\EditEpisodeText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="form\EditEpisodeText.Designer.cs">
+      <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </Compile>
     <Compile Include="frmBook.cs">
       <SubType>Form</SubType>
@@ -252,35 +325,17 @@
     <Compile Include="frmDashboard.Designer.cs">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDetail.cs">
+    <Compile Include="frmEpisodeAudioCensor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDetail.Designer.cs">
-      <DependentUpon>frmDetail.cs</DependentUpon>
+    <Compile Include="frmEpisodeAudioCensor.Designer.cs">
+      <DependentUpon>frmEpisodeAudioCensor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmEditBook.cs">
+    <Compile Include="frmEpisodeComicCensor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmEditBook.Designer.cs">
-      <DependentUpon>frmEditBook.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditEpisodeAudio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditEpisodeAudio.Designer.cs">
-      <DependentUpon>frmEditEpisodeAudio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditEpisodeComic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditEpisodeComic.Designer.cs">
-      <DependentUpon>frmEditEpisodeComic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEditEpisodeWord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEditEpisodeWord.Designer.cs">
-      <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
+    <Compile Include="frmEpisodeComicCensor.Designer.cs">
+      <DependentUpon>frmEpisodeComicCensor.cs</DependentUpon>
     </Compile>
     <Compile Include="frmEpisodeListUncensored.cs">
       <SubType>Form</SubType>
@@ -305,12 +360,6 @@
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmPublicBook.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmPublicBook.Designer.cs">
-      <DependentUpon>frmPublicBook.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUserList.cs">
       <SubType>Form</SubType>
@@ -353,14 +402,50 @@
     <EmbeddedResource Include="form\Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\CensorEpisodeAudio.resx">
+      <DependentUpon>CensorEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CensorEpisodeComic.resx">
+      <DependentUpon>CensorEpisodeComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CensorEpisodes.resx">
+      <DependentUpon>CensorEpisodes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CensorEpisodeText.resx">
+      <DependentUpon>CensorEpisodeText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateBook.resx">
+      <DependentUpon>CreateBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateEpisodeAudio.resx">
+      <DependentUpon>CreateEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateEpisodeComic.resx">
+      <DependentUpon>CreateEpisodeComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\CreateEpisodeText.resx">
+      <DependentUpon>CreateEpisodeText.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\CensorBooks.resx">
       <DependentUpon>CensorBooks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="form\DetailBook.resx">
+      <DependentUpon>DetailBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="form\EditBook.resx">
       <DependentUpon>EditBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\EditEpisodeAudio.resx">
+      <DependentUpon>EditEpisodeAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\EditEpisodeComic.resx">
+      <DependentUpon>EditEpisodeComic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form\EditEpisodeText.resx">
+      <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBook.resx">
       <DependentUpon>frmBook.cs</DependentUpon>
@@ -383,20 +468,8 @@
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDetail.resx">
-      <DependentUpon>frmDetail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditBook.resx">
-      <DependentUpon>frmEditBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditEpisodeAudio.resx">
-      <DependentUpon>frmEditEpisodeAudio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditEpisodeComic.resx">
-      <DependentUpon>frmEditEpisodeComic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEditEpisodeWord.resx">
-      <DependentUpon>frmEditEpisodeWord.cs</DependentUpon>
+    <EmbeddedResource Include="frmEpisodeComicCensor.resx">
+      <DependentUpon>frmEpisodeComicCensor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmEpisodeListUncensored.resx">
       <DependentUpon>frmEpisodeListUncensored.cs</DependentUpon>
@@ -409,9 +482,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPublicBook.resx">
-      <DependentUpon>frmPublicBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserList.resx">
       <DependentUpon>frmUserList.cs</DependentUpon>
@@ -449,15 +519,12 @@
       <Project>{96e9c729-00d4-489f-820a-da57d5380f5c}</Project>
       <Name>DLL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MODEL\MODEL.csproj">
-      <Project>{7ED02B64-ACAC-41EC-BB90-99B5A4BD944D}</Project>
-      <Name>MODEL</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="resource\poster_not_available.jpg" />
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
+    <None Include="Resources\WfI44pj.png" />
     <Content Include="resource\background\background_login.jpg" />
     <Content Include="resource\icon\button_add.png" />
     <Content Include="resource\icon\dashboard.png" />

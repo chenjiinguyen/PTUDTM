@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtLink = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.lblIntro = new System.Windows.Forms.Label();
             this.lblChapterTitle = new System.Windows.Forms.Label();
             this.txtTitle = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
             this.btnCreate = new Guna.UI2.WinForms.Guna2Button();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.txtLink = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.13457F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.86543F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 597F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 598F));
             this.tableLayoutPanel1.Controls.Add(this.txtLink, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2Separator1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.lblIntro, 0, 1);
@@ -54,7 +54,6 @@
             this.tableLayoutPanel1.Controls.Add(this.btnCancel, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnCreate, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.webBrowser1, 1, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
@@ -66,6 +65,43 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1474, 619);
             this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // txtLink
+            // 
+            this.txtLink.BorderRadius = 10;
+            this.tableLayoutPanel1.SetColumnSpan(this.txtLink, 2);
+            this.txtLink.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtLink.DefaultText = "";
+            this.txtLink.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtLink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtLink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLink.DisabledState.Parent = this.txtLink;
+            this.txtLink.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtLink.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLink.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLink.FocusedState.Parent = this.txtLink;
+            this.txtLink.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtLink.HoverState.Parent = this.txtLink;
+            this.txtLink.Location = new System.Drawing.Point(287, 364);
+            this.txtLink.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtLink.Name = "txtLink";
+            this.txtLink.PasswordChar = '\0';
+            this.txtLink.PlaceholderText = "Link video youtube";
+            this.txtLink.SelectedText = "";
+            this.txtLink.ShadowDecoration.Parent = this.txtLink;
+            this.txtLink.Size = new System.Drawing.Size(1181, 81);
+            this.txtLink.TabIndex = 20;
+            this.txtLink.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtLink_KeyUp);
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.guna2Separator1, 3);
+            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
+            this.guna2Separator1.Location = new System.Drawing.Point(3, 476);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(1468, 10);
+            this.guna2Separator1.TabIndex = 16;
             // 
             // lblIntro
             // 
@@ -118,16 +154,6 @@
             this.txtTitle.Size = new System.Drawing.Size(1181, 87);
             this.txtTitle.TabIndex = 13;
             // 
-            // guna2Separator1
-            // 
-            this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.SetColumnSpan(this.guna2Separator1, 3);
-            this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Separator1.Location = new System.Drawing.Point(3, 476);
-            this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1468, 10);
-            this.guna2Separator1.TabIndex = 16;
-            // 
             // btnCancel
             // 
             this.btnCancel.BorderRadius = 5;
@@ -155,7 +181,7 @@
             this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCreate.ForeColor = System.Drawing.Color.White;
             this.btnCreate.HoverState.Parent = this.btnCreate;
-            this.btnCreate.Location = new System.Drawing.Point(879, 515);
+            this.btnCreate.Location = new System.Drawing.Point(878, 515);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.ShadowDecoration.Parent = this.btnCreate;
             this.btnCreate.Size = new System.Drawing.Size(142, 84);
@@ -173,33 +199,6 @@
             this.webBrowser1.Size = new System.Drawing.Size(1187, 253);
             this.webBrowser1.TabIndex = 19;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
-            // 
-            // txtLink
-            // 
-            this.txtLink.BorderRadius = 10;
-            this.tableLayoutPanel1.SetColumnSpan(this.txtLink, 2);
-            this.txtLink.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLink.DefaultText = "";
-            this.txtLink.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtLink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtLink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLink.DisabledState.Parent = this.txtLink;
-            this.txtLink.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtLink.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtLink.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLink.FocusedState.Parent = this.txtLink;
-            this.txtLink.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLink.HoverState.Parent = this.txtLink;
-            this.txtLink.Location = new System.Drawing.Point(287, 364);
-            this.txtLink.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.txtLink.Name = "txtLink";
-            this.txtLink.PasswordChar = '\0';
-            this.txtLink.PlaceholderText = "Link video youtube";
-            this.txtLink.SelectedText = "";
-            this.txtLink.ShadowDecoration.Parent = this.txtLink;
-            this.txtLink.Size = new System.Drawing.Size(1181, 81);
-            this.txtLink.TabIndex = 20;
-            this.txtLink.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtLink_KeyUp);
             // 
             // frmCreateEpisodeAudio
             // 

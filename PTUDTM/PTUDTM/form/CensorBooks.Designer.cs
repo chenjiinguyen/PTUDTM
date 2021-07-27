@@ -29,22 +29,23 @@ namespace PTUDTM.form
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CensorBooks));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CensorBooks));
             this.pnlButton = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.cboCate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.bookDetail = new PTUDTM.component.BookListUncensored();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uploader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.view = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookDetail = new PTUDTM.component.BookListUncensored();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlButton.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -142,8 +143,8 @@ namespace PTUDTM.form
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.pnlButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2DataGridView1, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pnlButton, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.bookDetail, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(74, 49);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -153,6 +154,25 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1140, 891);
             this.tableLayoutPanel1.TabIndex = 5;
+            // 
+            // bookDetail
+            // 
+            this.bookDetail.Author = "Tác giả:";
+            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
+            this.bookDetail.Category = "Thể loại:";
+            this.bookDetail.CategoryName = "Truyện chữ";
+            this.bookDetail.DatePost = "Ngày đăng:";
+            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookDetail.Location = new System.Drawing.Point(2, 102);
+            this.bookDetail.Margin = new System.Windows.Forms.Padding(2);
+            this.bookDetail.Name = "bookDetail";
+            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
+            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
+            this.bookDetail.TabIndex = 4;
+            this.bookDetail.Time = "16/07/2021";
+            this.bookDetail.Title = "MẮT BIẾC\r\n";
+            this.bookDetail.View = "Lượt xem:";
+            this.bookDetail.ViewNumber = "100";
             // 
             // guna2DataGridView1
             // 
@@ -179,7 +199,8 @@ namespace PTUDTM.form
             this.title,
             this.author,
             this.uploader,
-            this.view});
+            this.category,
+            this.status});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(235)))), ((int)(((byte)(230)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -196,10 +217,11 @@ namespace PTUDTM.form
             this.guna2DataGridView1.ReadOnly = true;
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 62;
+            this.guna2DataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.guna2DataGridView1.RowTemplate.Height = 28;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.guna2DataGridView1.Size = new System.Drawing.Size(1134, 445);
-            this.guna2DataGridView1.TabIndex = 3;
+            this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.GreenSea;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(226)))), ((int)(((byte)(218)))));
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -222,7 +244,7 @@ namespace PTUDTM.form
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 28;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(191)))), ((int)(((byte)(173)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click);
             // 
             // id
@@ -257,32 +279,21 @@ namespace PTUDTM.form
             this.uploader.Name = "uploader";
             this.uploader.ReadOnly = true;
             // 
-            // view
+            // category
             // 
-            this.view.DataPropertyName = "view";
-            this.view.HeaderText = "Lượt Xem";
-            this.view.MinimumWidth = 8;
-            this.view.Name = "view";
-            this.view.ReadOnly = true;
+            this.category.DataPropertyName = "category";
+            this.category.HeaderText = "Thể Loại";
+            this.category.MinimumWidth = 8;
+            this.category.Name = "category";
+            this.category.ReadOnly = true;
             // 
-            // bookDetail
+            // status
             // 
-            this.bookDetail.Author = "Tác giả:";
-            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
-            this.bookDetail.Category = "Thể loại:";
-            this.bookDetail.CategoryName = "Truyện chữ";
-            this.bookDetail.DatePost = "Ngày đăng:";
-            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookDetail.Location = new System.Drawing.Point(2, 102);
-            this.bookDetail.Margin = new System.Windows.Forms.Padding(2);
-            this.bookDetail.Name = "bookDetail";
-            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
-            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
-            this.bookDetail.TabIndex = 4;
-            this.bookDetail.Time = "16/07/2021";
-            this.bookDetail.Title = "MẮT BIẾC\r\n";
-            this.bookDetail.View = "Lượt xem:";
-            this.bookDetail.ViewNumber = "100";
+            this.status.DataPropertyName = "status";
+            this.status.HeaderText = "Trạng Thái";
+            this.status.MinimumWidth = 8;
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
             // 
             // CensorBooks
             // 
@@ -306,12 +317,13 @@ namespace PTUDTM.form
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private component.BookListUncensored bookDetail;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn title;
         private System.Windows.Forms.DataGridViewTextBoxColumn author;
         private System.Windows.Forms.DataGridViewTextBoxColumn uploader;
-        private System.Windows.Forms.DataGridViewTextBoxColumn view;
-        private component.BookListUncensored bookDetail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
     }
 }

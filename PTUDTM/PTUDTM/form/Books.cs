@@ -112,5 +112,16 @@ namespace PTUDTM.form
                 bookDetail.ViewNumber = row.Field<long>("view").ToString();
             }
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Program.LoadDialog(new CreateBook(), "Thêm Sách - Book Community");
+
+        }
+
+        private void bookDetail_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

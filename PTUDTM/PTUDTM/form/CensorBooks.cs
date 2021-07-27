@@ -109,6 +109,7 @@ namespace PTUDTM.form
                 bookDetail.CategoryName = Businesses.category.GetNameByID(row.Field<String>("category"));
                 bookDetail.Time = (row.Field<DateTime>("createdat")).ToString();
                 bookDetail.ViewNumber = row.Field<long>("view").ToString();
+                bookDetail.LoadData();
             }
         }
     }

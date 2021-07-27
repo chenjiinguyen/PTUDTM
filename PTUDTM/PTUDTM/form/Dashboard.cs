@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace PTUDTM.form
 {
@@ -38,9 +39,36 @@ namespace PTUDTM.form
             wnMembers.Number = userCount;
             wnCensorBook.Number = censorCount;
 
-          
+            List<string> category_name = Businesses.category.GetAll().Select(a => a.name).ToList();
+            List<int> category_default = category_name.Select(x => 0).ToList();
+            //Get the Total of Orders for each City.
+            List<int> category_total = books.Aggregate(category_default, (acc, a) => {
+                int index = category_name.IndexOf(a.category1.name);
+                acc[index]++;
+                return acc;
+            });
 
-            
+            chartBook.Series[0].ChartType = SeriesChartType.Pie;
+            chartBook.Series[0].Points.DataBindXY(category_name, category_total);
+            chartBook.Legends[0].Enabled = true;
+
+
+            List<string> seven_day = new List<string>();
+            for(int i = 7; i > -1; i--)
+            {
+                seven_day.Add(String.Format("{0:dd/MM}", DateTime.Today.AddDays(-i)));
+            }
+            List<int> book_create_in_seven_day_default = seven_day.Select(x => 0).ToList();
+           List<int> book_create_in_seven_day = books.Where(x=> x.createdat >= DateTime.Today.AddDays(-7).Date && x.status == 3).Aggregate(book_create_in_seven_day_default, (acc, a) => {
+                int index = seven_day.IndexOf(String.Format("{0:dd/MM}", a.updatedat));
+                if(index != -1) acc[index]++;
+                return acc;
+            });
+
+            charUser.Series[0].LegendText = "Sách";
+            charUser.Series[0].ChartType = SeriesChartType.Column;
+            charUser.Series[0].Points.DataBindXY(seven_day, book_create_in_seven_day);
+            charUser.Legends[0].Enabled = true;
 
             thread.Join();
 

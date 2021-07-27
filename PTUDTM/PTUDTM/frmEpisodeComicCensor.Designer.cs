@@ -221,7 +221,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::PTUDTM.Properties.Resources.WfI44pj;
+            this.guna2PictureBox1.Image = global::PTUDTM.Properties.Resources.poster_not_available;
             this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
@@ -232,7 +232,7 @@
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Image = global::PTUDTM.Properties.Resources.WfI44pj;
+            this.guna2PictureBox2.Image = global::PTUDTM.Properties.Resources.poster_not_available;
             this.guna2PictureBox2.Location = new System.Drawing.Point(3, 395);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;

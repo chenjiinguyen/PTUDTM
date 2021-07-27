@@ -16,5 +16,10 @@ namespace PTUDTM
         {
             InitializeComponent();
         }
+
+        private void frmBook_Shown(object sender, EventArgs e)
+        {
+
+        }
     }
 }

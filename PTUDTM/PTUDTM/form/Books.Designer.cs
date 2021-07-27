@@ -41,12 +41,13 @@ namespace PTUDTM.form
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.bookDetail = new PTUDTM.component.BookList();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uploader = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.view = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bookDetail = new PTUDTM.component.BookList();
+            this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlButton.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -61,7 +62,7 @@ namespace PTUDTM.form
             this.pnlButton.Controls.Add(this.btnAdd);
             this.pnlButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlButton.Location = new System.Drawing.Point(2, 2);
-            this.pnlButton.Margin = new System.Windows.Forms.Padding(2);
+            this.pnlButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pnlButton.Name = "pnlButton";
             this.pnlButton.ShadowDecoration.Parent = this.pnlButton;
             this.pnlButton.Size = new System.Drawing.Size(1136, 96);
@@ -89,8 +90,8 @@ namespace PTUDTM.form
             "Truyện Tranh",
             "Truyện Audio"});
             this.cboCate.ItemsAppearance.Parent = this.cboCate;
-            this.cboCate.Location = new System.Drawing.Point(797, 17);
-            this.cboCate.Margin = new System.Windows.Forms.Padding(2);
+            this.cboCate.Location = new System.Drawing.Point(796, 17);
+            this.cboCate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cboCate.Name = "cboCate";
             this.cboCate.ShadowDecoration.Parent = this.cboCate;
             this.cboCate.Size = new System.Drawing.Size(185, 36);
@@ -105,8 +106,8 @@ namespace PTUDTM.form
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.HoverState.Parent = this.btnSearch;
-            this.btnSearch.Location = new System.Drawing.Point(1006, 17);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSearch.Location = new System.Drawing.Point(1005, 17);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
             this.btnSearch.Size = new System.Drawing.Size(109, 58);
@@ -129,7 +130,7 @@ namespace PTUDTM.form
             this.txtSearch.FocusedState.Parent = this.txtSearch;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSearch.HoverState.Parent = this.txtSearch;
-            this.txtSearch.Location = new System.Drawing.Point(412, 17);
+            this.txtSearch.Location = new System.Drawing.Point(411, 17);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
@@ -150,7 +151,7 @@ namespace PTUDTM.form
             this.btnStatistic.ForeColor = System.Drawing.Color.White;
             this.btnStatistic.HoverState.Parent = this.btnStatistic;
             this.btnStatistic.Location = new System.Drawing.Point(171, 22);
-            this.btnStatistic.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStatistic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnStatistic.Name = "btnStatistic";
             this.btnStatistic.ShadowDecoration.Parent = this.btnStatistic;
             this.btnStatistic.Size = new System.Drawing.Size(103, 53);
@@ -168,12 +169,13 @@ namespace PTUDTM.form
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.HoverState.Parent = this.btnAdd;
             this.btnAdd.Location = new System.Drawing.Point(41, 22);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
             this.btnAdd.Size = new System.Drawing.Size(103, 53);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -219,7 +221,8 @@ namespace PTUDTM.form
             this.title,
             this.author,
             this.uploader,
-            this.view});
+            this.category,
+            this.status});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(235)))), ((int)(((byte)(230)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -266,6 +269,27 @@ namespace PTUDTM.form
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click);
             // 
+            // bookDetail
+            // 
+            this.bookDetail.Author = "Tác giả:";
+            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
+            this.bookDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bookDetail.Category = "Thể loại:";
+            this.bookDetail.CategoryName = "Truyện chữ";
+            this.bookDetail.DatePost = "Ngày đăng:";
+            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookDetail.Location = new System.Drawing.Point(2, 102);
+            this.bookDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookDetail.Name = "bookDetail";
+            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
+            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
+            this.bookDetail.TabIndex = 4;
+            this.bookDetail.Time = "16/07/2021";
+            this.bookDetail.Title = "MẮT BIẾC\r\n";
+            this.bookDetail.View = "Lượt xem:";
+            this.bookDetail.ViewNumber = "100";
+            this.bookDetail.Load += new System.EventHandler(this.bookDetail_Load);
+            // 
             // id
             // 
             this.id.DataPropertyName = "idbook";
@@ -298,33 +322,21 @@ namespace PTUDTM.form
             this.uploader.Name = "uploader";
             this.uploader.ReadOnly = true;
             // 
-            // view
+            // category
             // 
-            this.view.DataPropertyName = "view";
-            this.view.HeaderText = "Lượt Xem";
-            this.view.MinimumWidth = 8;
-            this.view.Name = "view";
-            this.view.ReadOnly = true;
+            this.category.DataPropertyName = "category";
+            this.category.HeaderText = "Thể Loại";
+            this.category.MinimumWidth = 8;
+            this.category.Name = "category";
+            this.category.ReadOnly = true;
             // 
-            // bookDetail
+            // status
             // 
-            this.bookDetail.Author = "Tác giả:";
-            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
-            this.bookDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bookDetail.Category = "Thể loại:";
-            this.bookDetail.CategoryName = "Truyện chữ";
-            this.bookDetail.DatePost = "Ngày đăng:";
-            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookDetail.Location = new System.Drawing.Point(2, 102);
-            this.bookDetail.Margin = new System.Windows.Forms.Padding(2);
-            this.bookDetail.Name = "bookDetail";
-            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
-            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
-            this.bookDetail.TabIndex = 4;
-            this.bookDetail.Time = "16/07/2021";
-            this.bookDetail.Title = "MẮT BIẾC\r\n";
-            this.bookDetail.View = "Lượt xem:";
-            this.bookDetail.ViewNumber = "100";
+            this.status.DataPropertyName = "status";
+            this.status.HeaderText = "Trạng Thái";
+            this.status.MinimumWidth = 8;
+            this.status.Name = "status";
+            this.status.ReadOnly = true;
             // 
             // Books
             // 
@@ -351,11 +363,12 @@ namespace PTUDTM.form
         private Guna.UI2.WinForms.Guna2Button btnSearch;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private component.BookList bookDetail;
         private System.Windows.Forms.DataGridViewTextBoxColumn id;
         private System.Windows.Forms.DataGridViewTextBoxColumn title;
         private System.Windows.Forms.DataGridViewTextBoxColumn author;
         private System.Windows.Forms.DataGridViewTextBoxColumn uploader;
-        private System.Windows.Forms.DataGridViewTextBoxColumn view;
-        private component.BookList bookDetail;
+        private System.Windows.Forms.DataGridViewTextBoxColumn category;
+        private System.Windows.Forms.DataGridViewTextBoxColumn status;
     }
 }

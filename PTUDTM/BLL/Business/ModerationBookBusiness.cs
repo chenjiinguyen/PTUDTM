@@ -17,5 +17,10 @@ namespace BLL.Business
         {
             return Services.modbook.Update(idbook, input);
         }
+
+        public bool CheckCensor(long idbook)
+        {
+            return Services.modbook.CheckCensor(idbook);
+        }
     }
 }

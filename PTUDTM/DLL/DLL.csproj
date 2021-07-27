@@ -59,9 +59,11 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -120,6 +122,8 @@
     <Compile Include="Service\BookService.cs" />
     <Compile Include="Service\CategoryService.cs" />
     <Compile Include="Service\ModerationBookService.cs" />
+    <Compile Include="Service\EpisodeService.cs" />
+    <Compile Include="Service\ModerationEpisodeService.cs" />
     <Compile Include="Service\UserService.cs" />
     <Compile Include="user.cs">
       <DependentUpon>BookCommunity.tt</DependentUpon>
@@ -138,12 +142,6 @@
       <DependentUpon>BookCommunity.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MODEL\MODEL.csproj">
-      <Project>{7ed02b64-acac-41ec-bb90-99b5a4bd944d}</Project>
-      <Name>MODEL</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="BookCommunity.Context.tt">
