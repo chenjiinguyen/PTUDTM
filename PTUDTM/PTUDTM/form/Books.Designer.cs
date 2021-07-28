@@ -37,17 +37,16 @@ namespace PTUDTM.form
             this.cboCate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnStatistic = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.bookDetail = new PTUDTM.component.BookList();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.author = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.uploader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookDetail = new PTUDTM.component.BookList();
             this.pnlButton.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -58,11 +57,10 @@ namespace PTUDTM.form
             this.pnlButton.Controls.Add(this.cboCate);
             this.pnlButton.Controls.Add(this.btnSearch);
             this.pnlButton.Controls.Add(this.txtSearch);
-            this.pnlButton.Controls.Add(this.btnStatistic);
             this.pnlButton.Controls.Add(this.btnAdd);
             this.pnlButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlButton.Location = new System.Drawing.Point(2, 2);
-            this.pnlButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnlButton.Margin = new System.Windows.Forms.Padding(2);
             this.pnlButton.Name = "pnlButton";
             this.pnlButton.ShadowDecoration.Parent = this.pnlButton;
             this.pnlButton.Size = new System.Drawing.Size(1136, 96);
@@ -91,7 +89,7 @@ namespace PTUDTM.form
             "Truyện Audio"});
             this.cboCate.ItemsAppearance.Parent = this.cboCate;
             this.cboCate.Location = new System.Drawing.Point(796, 17);
-            this.cboCate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboCate.Margin = new System.Windows.Forms.Padding(2);
             this.cboCate.Name = "cboCate";
             this.cboCate.ShadowDecoration.Parent = this.cboCate;
             this.cboCate.Size = new System.Drawing.Size(185, 36);
@@ -107,7 +105,7 @@ namespace PTUDTM.form
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.HoverState.Parent = this.btnSearch;
             this.btnSearch.Location = new System.Drawing.Point(1005, 17);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.ShadowDecoration.Parent = this.btnSearch;
             this.btnSearch.Size = new System.Drawing.Size(109, 58);
@@ -140,24 +138,6 @@ namespace PTUDTM.form
             this.txtSearch.Size = new System.Drawing.Size(358, 58);
             this.txtSearch.TabIndex = 3;
             // 
-            // btnStatistic
-            // 
-            this.btnStatistic.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnStatistic.BorderRadius = 5;
-            this.btnStatistic.CheckedState.Parent = this.btnStatistic;
-            this.btnStatistic.CustomImages.Parent = this.btnStatistic;
-            this.btnStatistic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnStatistic.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStatistic.ForeColor = System.Drawing.Color.White;
-            this.btnStatistic.HoverState.Parent = this.btnStatistic;
-            this.btnStatistic.Location = new System.Drawing.Point(171, 22);
-            this.btnStatistic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnStatistic.Name = "btnStatistic";
-            this.btnStatistic.ShadowDecoration.Parent = this.btnStatistic;
-            this.btnStatistic.Size = new System.Drawing.Size(103, 53);
-            this.btnStatistic.TabIndex = 1;
-            this.btnStatistic.Text = "Thống kê";
-            // 
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -169,7 +149,7 @@ namespace PTUDTM.form
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.HoverState.Parent = this.btnAdd;
             this.btnAdd.Location = new System.Drawing.Point(41, 22);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
             this.btnAdd.Size = new System.Drawing.Size(103, 53);
@@ -269,27 +249,6 @@ namespace PTUDTM.form
             this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click);
             // 
-            // bookDetail
-            // 
-            this.bookDetail.Author = "Tác giả:";
-            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
-            this.bookDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bookDetail.Category = "Thể loại:";
-            this.bookDetail.CategoryName = "Truyện chữ";
-            this.bookDetail.DatePost = "Ngày đăng:";
-            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookDetail.Location = new System.Drawing.Point(2, 102);
-            this.bookDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.bookDetail.Name = "bookDetail";
-            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
-            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
-            this.bookDetail.TabIndex = 4;
-            this.bookDetail.Time = "16/07/2021";
-            this.bookDetail.Title = "MẮT BIẾC\r\n";
-            this.bookDetail.View = "Lượt xem:";
-            this.bookDetail.ViewNumber = "100";
-            this.bookDetail.Load += new System.EventHandler(this.bookDetail_Load);
-            // 
             // id
             // 
             this.id.DataPropertyName = "idbook";
@@ -338,6 +297,27 @@ namespace PTUDTM.form
             this.status.Name = "status";
             this.status.ReadOnly = true;
             // 
+            // bookDetail
+            // 
+            this.bookDetail.Author = "Tác giả:";
+            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
+            this.bookDetail.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bookDetail.Category = "Thể loại:";
+            this.bookDetail.CategoryName = "Truyện chữ";
+            this.bookDetail.DatePost = "Ngày đăng:";
+            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookDetail.Location = new System.Drawing.Point(2, 102);
+            this.bookDetail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bookDetail.Name = "bookDetail";
+            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
+            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
+            this.bookDetail.TabIndex = 4;
+            this.bookDetail.Time = "16/07/2021";
+            this.bookDetail.Title = "MẮT BIẾC\r\n";
+            this.bookDetail.View = "Lượt xem:";
+            this.bookDetail.ViewNumber = "100";
+            this.bookDetail.Load += new System.EventHandler(this.bookDetail_Load);
+            // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -356,7 +336,6 @@ namespace PTUDTM.form
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel pnlButton;
-        private Guna.UI2.WinForms.Guna2Button btnStatistic;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI2.WinForms.Guna2ComboBox cboCate;

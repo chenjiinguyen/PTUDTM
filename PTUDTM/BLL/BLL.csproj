@@ -51,7 +51,10 @@
     <Compile Include="Business\EpisodeBusiness.cs" />
     <Compile Include="Business\ModerationBookBusiness.cs" />
     <Compile Include="Business\ModerationEpisodeBusiness.cs" />
+    <Compile Include="Business\RoleBusiness.cs" />
+    <Compile Include="Business\StatisticalBusiness.cs" />
     <Compile Include="Business\UserBusiness.cs" />
+    <Compile Include="Business\UserGroupBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Businesses.cs" />
   </ItemGroup>

@@ -58,8 +58,8 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.Controls.Add(this.btnCancel, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.btnEdit, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.webBrowser1, 1, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(194, 212);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(192, 57);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
@@ -67,7 +67,7 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 55F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 74F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1106, 495);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1106, 812);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // txtLink
@@ -86,7 +86,7 @@ namespace PTUDTM.form
             this.txtLink.FocusedState.Parent = this.txtLink;
             this.txtLink.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLink.HoverState.Parent = this.txtLink;
-            this.txtLink.Location = new System.Drawing.Point(229, 339);
+            this.txtLink.Location = new System.Drawing.Point(229, 656);
             this.txtLink.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtLink.Name = "txtLink";
             this.txtLink.PasswordChar = '\0';
@@ -102,8 +102,8 @@ namespace PTUDTM.form
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2Separator1, 3);
             this.guna2Separator1.FillColor = System.Drawing.Color.Gray;
-            this.guna2Separator1.Location = new System.Drawing.Point(2, 401);
-            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Separator1.Location = new System.Drawing.Point(2, 718);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(1102, 8);
             this.guna2Separator1.TabIndex = 16;
@@ -168,7 +168,7 @@ namespace PTUDTM.form
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(525, 423);
+            this.btnCancel.Location = new System.Drawing.Point(525, 740);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(300, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;
@@ -186,8 +186,8 @@ namespace PTUDTM.form
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.Parent = this.btnEdit;
-            this.btnEdit.Location = new System.Drawing.Point(667, 423);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEdit.Location = new System.Drawing.Point(667, 740);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
             this.btnEdit.Size = new System.Drawing.Size(106, 67);
@@ -199,11 +199,11 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.SetColumnSpan(this.webBrowser1, 2);
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.webBrowser1.Location = new System.Drawing.Point(227, 57);
-            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.webBrowser1.Margin = new System.Windows.Forms.Padding(2);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(15, 16);
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(877, 275);
+            this.webBrowser1.Size = new System.Drawing.Size(877, 592);
             this.webBrowser1.TabIndex = 19;
             this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
             // 
@@ -212,7 +212,7 @@ namespace PTUDTM.form
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "EditEpisodeAudio";
             this.Size = new System.Drawing.Size(1493, 918);
             this.Load += new System.EventHandler(this.EditEpisodeAudio_Load);

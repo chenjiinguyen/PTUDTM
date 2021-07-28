@@ -32,7 +32,7 @@ namespace PTUDTM.form
 
 
             List<string> data_title = new List<string>() { "Dashboard", "Books", "Users", "Censorship" };
-            List<Image> data_icon= new List<Image>() { Properties.Resources.icon_dashboard , Properties.Resources.icon_books, Properties.Resources.icon_users, Properties.Resources.icon_users };
+            List<Image> data_icon= new List<Image>() { Properties.Resources.icon_dashboard , Properties.Resources.icon_books, Properties.Resources.icon_users, Properties.Resources.icon_censor };
             List<string> data_tag = new List<string>() { "DB", "B", "U" , "CS" };
             for (int i = 0; i < data_title.Count;i++)
             {
@@ -57,6 +57,9 @@ namespace PTUDTM.form
                     break;
                 case "B":
                     Program.LoadForm(new Books());
+                    break;
+                case "U":
+                    Program.LoadForm(new UsersList());
                     break;
                 case "CS":
                     Program.LoadForm(new CensorBooks());

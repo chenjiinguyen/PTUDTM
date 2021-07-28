@@ -29,16 +29,15 @@ namespace PTUDTM.form
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CensorBooks));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CensorBooks));
             this.pnlButton = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.cboCate = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.bookDetail = new PTUDTM.component.BookListUncensored();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.title = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,6 +45,7 @@ namespace PTUDTM.form
             this.uploader = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.category = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bookDetail = new PTUDTM.component.BookListUncensored();
             this.pnlButton.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
@@ -154,25 +154,6 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1140, 891);
             this.tableLayoutPanel1.TabIndex = 5;
-            // 
-            // bookDetail
-            // 
-            this.bookDetail.Author = "Tác giả:";
-            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
-            this.bookDetail.Category = "Thể loại:";
-            this.bookDetail.CategoryName = "Truyện chữ";
-            this.bookDetail.DatePost = "Ngày đăng:";
-            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bookDetail.Location = new System.Drawing.Point(2, 102);
-            this.bookDetail.Margin = new System.Windows.Forms.Padding(2);
-            this.bookDetail.Name = "bookDetail";
-            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
-            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
-            this.bookDetail.TabIndex = 4;
-            this.bookDetail.Time = "16/07/2021";
-            this.bookDetail.Title = "MẮT BIẾC\r\n";
-            this.bookDetail.View = "Lượt xem:";
-            this.bookDetail.ViewNumber = "100";
             // 
             // guna2DataGridView1
             // 
@@ -294,6 +275,25 @@ namespace PTUDTM.form
             this.status.MinimumWidth = 8;
             this.status.Name = "status";
             this.status.ReadOnly = true;
+            // 
+            // bookDetail
+            // 
+            this.bookDetail.Author = "Tác giả:";
+            this.bookDetail.AuthorName = "Nguyễn Nhật Ánh";
+            this.bookDetail.Category = "Thể loại:";
+            this.bookDetail.CategoryName = "Truyện chữ";
+            this.bookDetail.DatePost = "Ngày đăng:";
+            this.bookDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bookDetail.Location = new System.Drawing.Point(2, 102);
+            this.bookDetail.Margin = new System.Windows.Forms.Padding(2);
+            this.bookDetail.Name = "bookDetail";
+            this.bookDetail.Poster = ((System.Drawing.Image)(resources.GetObject("bookDetail.Poster")));
+            this.bookDetail.Size = new System.Drawing.Size(1136, 336);
+            this.bookDetail.TabIndex = 4;
+            this.bookDetail.Time = "16/07/2021";
+            this.bookDetail.Title = "MẮT BIẾC\r\n";
+            this.bookDetail.View = "Lượt xem:";
+            this.bookDetail.ViewNumber = "100";
             // 
             // CensorBooks
             // 

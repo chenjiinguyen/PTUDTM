@@ -23,5 +23,11 @@ namespace BLL
         public static ModerationBookBusiness modbook = new ModerationBookBusiness();
 
         public static ModerationEpisodeBusiness modepi = new ModerationEpisodeBusiness();
+
+        public static UserGroupBusiness usergroup = new UserGroupBusiness();
+
+        public static StatisticalBusiness statistical = new StatisticalBusiness();
+
+        public static RoleBusiness role = new RoleBusiness();
     }
 }

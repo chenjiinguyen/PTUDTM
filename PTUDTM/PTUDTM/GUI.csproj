@@ -45,6 +45,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus, Version=5.7.2.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.7.2\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
     <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -60,6 +63,9 @@
     </Reference>
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -78,11 +84,15 @@
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
@@ -106,6 +116,7 @@
       <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
     <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
@@ -162,6 +173,12 @@
     </Compile>
     <Compile Include="component\StoryList.Designer.cs">
       <DependentUpon>StoryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="component\UserDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="component\UserDetail.Designer.cs">
+      <DependentUpon>UserDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="component\UserInfoDetail.cs">
       <SubType>UserControl</SubType>
@@ -283,71 +300,23 @@
     <Compile Include="form\EditEpisodeText.Designer.cs">
       <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBook.cs">
-      <SubType>Form</SubType>
+    <Compile Include="form\EditUser.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmBook.Designer.cs">
-      <DependentUpon>frmBook.cs</DependentUpon>
+    <Compile Include="form\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBookCensorship.cs">
-      <SubType>Form</SubType>
+    <Compile Include="form\UsersList.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmBookCensorship.Designer.cs">
-      <DependentUpon>frmBookCensorship.cs</DependentUpon>
+    <Compile Include="form\UsersList.Designer.cs">
+      <DependentUpon>UsersList.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBookListUnCensored.cs">
-      <SubType>Form</SubType>
+    <Compile Include="form\UserStatistical.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="frmBookListUnCensored.Designer.cs">
-      <DependentUpon>frmBookListUnCensored.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateEpisodeAudio.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCreateEpisodeAudio.Designer.cs">
-      <DependentUpon>frmCreateEpisodeAudio.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateEpisodeComic.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCreateEpisodeComic.Designer.cs">
-      <DependentUpon>frmCreateEpisodeComic.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmCreateEpisodeWord.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmCreateEpisodeWord.Designer.cs">
-      <DependentUpon>frmCreateEpisodeWord.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmDashboard.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmDashboard.Designer.cs">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEpisodeAudioCensor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEpisodeAudioCensor.Designer.cs">
-      <DependentUpon>frmEpisodeAudioCensor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEpisodeComicCensor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEpisodeComicCensor.Designer.cs">
-      <DependentUpon>frmEpisodeComicCensor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEpisodeListUncensored.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEpisodeListUncensored.Designer.cs">
-      <DependentUpon>frmEpisodeListUncensored.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmEpisodeWordCensorship.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmEpisodeWordCensorship.Designer.cs">
-      <DependentUpon>frmEpisodeWordCensorship.cs</DependentUpon>
+    <Compile Include="form\UserStatistical.Designer.cs">
+      <DependentUpon>UserStatistical.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -361,12 +330,7 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUserList.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUserList.Designer.cs">
-      <DependentUpon>frmUserList.cs</DependentUpon>
-    </Compile>
+    <Compile Include="helper\ExcelTemplate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="component\BookList.resx">
@@ -386,6 +350,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="component\StoryList.resx">
       <DependentUpon>StoryList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="component\UserDetail.resx">
+      <DependentUpon>UserDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="component\UserInfoDetail.resx">
       <DependentUpon>UserInfoDetail.cs</DependentUpon>
@@ -447,44 +414,20 @@
     <EmbeddedResource Include="form\EditEpisodeText.resx">
       <DependentUpon>EditEpisodeText.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBook.resx">
-      <DependentUpon>frmBook.cs</DependentUpon>
+    <EmbeddedResource Include="form\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBookCensorship.resx">
-      <DependentUpon>frmBookCensorship.cs</DependentUpon>
+    <EmbeddedResource Include="form\UsersList.resx">
+      <DependentUpon>UsersList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBookListUnCensored.resx">
-      <DependentUpon>frmBookListUnCensored.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateEpisodeAudio.resx">
-      <DependentUpon>frmCreateEpisodeAudio.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateEpisodeComic.resx">
-      <DependentUpon>frmCreateEpisodeComic.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmCreateEpisodeWord.resx">
-      <DependentUpon>frmCreateEpisodeWord.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmDashboard.resx">
-      <DependentUpon>frmDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEpisodeComicCensor.resx">
-      <DependentUpon>frmEpisodeComicCensor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEpisodeListUncensored.resx">
-      <DependentUpon>frmEpisodeListUncensored.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmEpisodeWordCensorship.resx">
-      <DependentUpon>frmEpisodeWordCensorship.cs</DependentUpon>
+    <EmbeddedResource Include="form\UserStatistical.resx">
+      <DependentUpon>UserStatistical.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUserList.resx">
-      <DependentUpon>frmUserList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -521,13 +464,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="resource\icon\icon-censor.png" />
     <Content Include="resource\poster_not_available.jpg" />
     <None Include="Resources\51376355_554018558417057_2054804331131043840_n.jpg" />
     <None Include="Resources\mat_biec_bia_cung_2019.jpg" />
     <None Include="Resources\WfI44pj.png" />
     <Content Include="resource\background\background_login.jpg" />
     <Content Include="resource\icon\button_add.png" />
-    <Content Include="resource\icon\dashboard.png" />
     <None Include="resource\icon\icon-dashboard.png" />
     <None Include="resource\icon\icon-books.png" />
     <Content Include="resource\icon\icon-password-login.png" />

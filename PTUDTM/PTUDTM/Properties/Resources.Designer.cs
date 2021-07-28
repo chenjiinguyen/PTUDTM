@@ -93,6 +93,16 @@ namespace PTUDTM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icon_censor {
+            get {
+                object obj = ResourceManager.GetObject("icon_censor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_dashboard {
             get {
                 object obj = ResourceManager.GetObject("icon_dashboard", resourceCulture);
@@ -133,6 +143,16 @@ namespace PTUDTM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap mat_biec_bia_cung_2019 {
             get {
                 object obj = ResourceManager.GetObject("mat_biec_bia_cung_2019", resourceCulture);
@@ -146,6 +166,16 @@ namespace PTUDTM.Properties {
         internal static System.Drawing.Bitmap poster_not_available {
             get {
                 object obj = ResourceManager.GetObject("poster_not_available", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WfI44pj {
+            get {
+                object obj = ResourceManager.GetObject("WfI44pj", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -48,11 +48,19 @@ namespace PTUDTM
 
             if (me != null)
             {
-                //MessageBox.Show("đăng nhập thành công !!!", "thông báo");
-                Program.me = me;
-                Program.frmMain = new frmMain();
-                this.Hide();
-                Program.frmMain.Show();
+                bool check_role = Businesses.role.Check(me.usergroup, "QUANTRI");
+                if (check_role)
+                {
+                    Program.me = me;
+                    Program.frmMain = new frmMain();
+                    this.Hide();
+                    Program.frmMain.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Bạn không có quyền truy cập vào", "thông báo");
+                }
+
             }
             else
             {
@@ -68,8 +76,7 @@ namespace PTUDTM
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            txtUsername.Text = "admin";
-            txtPassword.Text = "admin";
+  
         }
     }
 }

@@ -134,5 +134,51 @@ namespace PTUDTM.form
         
 
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            Program.LoadDialog(new EditBook(id), "Chỉnh sửa thông tin sách - Book Community");
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Bạn có chắc muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (dialogResult == DialogResult.Yes)
+            {
+                bool delete = Businesses.book.Delete(id);
+                if (!delete)
+                {
+                    MessageBox.Show("Thất bại", "Thông báo");
+                }
+                else
+                {
+                    MessageBox.Show("Thành công", "Thông báo");
+                    Program.LoadForm(new Books());
+
+                }
+            }
+            else if (dialogResult == DialogResult.No)
+            {
+
+
+            }
+        }
+
+        private void btnAddEpisode_Click(object sender, EventArgs e)
+        {
+            if (book.category == "TEXT")
+            {
+                Program.LoadDialog(new CreateEpisodeText(id), "Đăng chương - Book Community");
+            }
+            else if(book.category == "IMAGE")
+            {
+                Program.LoadDialog(new CreateEpisodeComic(id), "Đăng chương - Book Community");
+            }
+            else if (book.category == "AUDIO")
+            {
+                Program.LoadDialog(new CreateEpisodeAudio(id), "Đăng chương - Book Community");
+            }
+        }
     }
 }

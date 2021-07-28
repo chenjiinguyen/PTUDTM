@@ -35,20 +35,20 @@ namespace PTUDTM.form
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CensorEpisodes));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.txtDetail = new System.Windows.Forms.TextBox();
-            this.btnStatus = new Guna.UI2.WinForms.Guna2Button();
-            this.lblAuthorName = new System.Windows.Forms.Label();
-            this.lblCateName = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.sharp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnStatus = new Guna.UI2.WinForms.Guna2Button();
+            this.txtDetail = new System.Windows.Forms.TextBox();
+            this.lblAuthorName = new System.Windows.Forms.Label();
+            this.lblCateName = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
-            this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -62,12 +62,12 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.Controls.Add(this.guna2DataGridView1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.guna2PictureBox1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(193, 101);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(106, 90);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 300F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(912, 731);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1106, 812);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // guna2DataGridView1
@@ -113,7 +113,7 @@ namespace PTUDTM.form
             this.guna2DataGridView1.RowHeadersWidth = 62;
             this.guna2DataGridView1.RowTemplate.Height = 28;
             this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(906, 425);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(1100, 506);
             this.guna2DataGridView1.TabIndex = 14;
             this.guna2DataGridView1.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.SunFlower;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
@@ -138,112 +138,6 @@ namespace PTUDTM.form
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(215)))), ((int)(((byte)(95)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.guna2DataGridView1.Click += new System.EventHandler(this.guna2DataGridView1_Click);
-            // 
-            // tableLayoutPanel2
-            // 
-            this.tableLayoutPanel2.ColumnCount = 3;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 288F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.lblTitle, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.btnStatus, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.txtDetail, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.lblAuthorName, 1, 2);
-            this.tableLayoutPanel2.Controls.Add(this.lblCateName, 0, 2);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(203, 3);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 3;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(706, 294);
-            this.tableLayoutPanel2.TabIndex = 15;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTitle.AutoSize = true;
-            this.tableLayoutPanel2.SetColumnSpan(this.lblTitle, 2);
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(2, 48);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(460, 29);
-            this.lblTitle.TabIndex = 12;
-            this.lblTitle.Text = "MẮT BIẾC";
-            // 
-            // txtDetail
-            // 
-            this.txtDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel2.SetColumnSpan(this.txtDetail, 3);
-            this.txtDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDetail.Location = new System.Drawing.Point(2, 127);
-            this.txtDetail.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDetail.Multiline = true;
-            this.txtDetail.Name = "txtDetail";
-            this.txtDetail.ReadOnly = true;
-            this.txtDetail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDetail.Size = new System.Drawing.Size(702, 121);
-            this.txtDetail.TabIndex = 11;
-            this.txtDetail.Text = resources.GetString("txtDetail.Text");
-            // 
-            // btnStatus
-            // 
-            this.btnStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnStatus.BorderRadius = 5;
-            this.btnStatus.CheckedState.Parent = this.btnStatus;
-            this.btnStatus.CustomImages.Parent = this.btnStatus;
-            this.btnStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnStatus.ForeColor = System.Drawing.Color.White;
-            this.btnStatus.HoverState.Parent = this.btnStatus;
-            this.btnStatus.Location = new System.Drawing.Point(569, 2);
-            this.btnStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.btnStatus.Name = "btnStatus";
-            this.btnStatus.ShadowDecoration.Parent = this.btnStatus;
-            this.btnStatus.Size = new System.Drawing.Size(135, 55);
-            this.btnStatus.TabIndex = 13;
-            this.btnStatus.Text = "Chào anh";
-            // 
-            // lblAuthorName
-            // 
-            this.lblAuthorName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAuthorName.AutoSize = true;
-            this.lblAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAuthorName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lblAuthorName.Location = new System.Drawing.Point(178, 261);
-            this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblAuthorName.Name = "lblAuthorName";
-            this.lblAuthorName.Size = new System.Drawing.Size(284, 22);
-            this.lblAuthorName.TabIndex = 15;
-            this.lblAuthorName.Text = "Nguyễn Nhật Ánh";
-            // 
-            // lblCateName
-            // 
-            this.lblCateName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCateName.AutoSize = true;
-            this.lblCateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCateName.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lblCateName.Location = new System.Drawing.Point(2, 261);
-            this.lblCateName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblCateName.Name = "lblCateName";
-            this.lblCateName.Size = new System.Drawing.Size(172, 22);
-            this.lblCateName.TabIndex = 14;
-            this.lblCateName.Text = "Truyện chữ";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BorderRadius = 14;
-            this.guna2PictureBox1.Image = global::PTUDTM.Properties.Resources.mat_biec_bia_cung_2019;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 2);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(196, 290);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 10;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // sharp
             // 
@@ -273,6 +167,112 @@ namespace PTUDTM.form
             this.button.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.button.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 14;
+            this.guna2PictureBox1.Image = global::PTUDTM.Properties.Resources.mat_biec_bia_cung_2019;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(196, 290);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 10;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 3;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 288F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.lblTitle, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.btnStatus, 2, 0);
+            this.tableLayoutPanel2.Controls.Add(this.txtDetail, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblAuthorName, 1, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblCateName, 0, 2);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(203, 3);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 3;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(900, 294);
+            this.tableLayoutPanel2.TabIndex = 15;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitle.AutoSize = true;
+            this.tableLayoutPanel2.SetColumnSpan(this.lblTitle, 2);
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(2, 48);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(460, 29);
+            this.lblTitle.TabIndex = 12;
+            this.lblTitle.Text = "MẮT BIẾC";
+            // 
+            // btnStatus
+            // 
+            this.btnStatus.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnStatus.BorderRadius = 5;
+            this.btnStatus.CheckedState.Parent = this.btnStatus;
+            this.btnStatus.CustomImages.Parent = this.btnStatus;
+            this.btnStatus.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnStatus.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnStatus.ForeColor = System.Drawing.Color.White;
+            this.btnStatus.HoverState.Parent = this.btnStatus;
+            this.btnStatus.Location = new System.Drawing.Point(763, 2);
+            this.btnStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.btnStatus.Name = "btnStatus";
+            this.btnStatus.ShadowDecoration.Parent = this.btnStatus;
+            this.btnStatus.Size = new System.Drawing.Size(135, 55);
+            this.btnStatus.TabIndex = 13;
+            this.btnStatus.Text = "Trạng Thái";
+            // 
+            // txtDetail
+            // 
+            this.txtDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel2.SetColumnSpan(this.txtDetail, 3);
+            this.txtDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDetail.Location = new System.Drawing.Point(2, 127);
+            this.txtDetail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDetail.Multiline = true;
+            this.txtDetail.Name = "txtDetail";
+            this.txtDetail.ReadOnly = true;
+            this.txtDetail.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtDetail.Size = new System.Drawing.Size(896, 121);
+            this.txtDetail.TabIndex = 11;
+            this.txtDetail.Text = resources.GetString("txtDetail.Text");
+            // 
+            // lblAuthorName
+            // 
+            this.lblAuthorName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAuthorName.AutoSize = true;
+            this.lblAuthorName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAuthorName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.lblAuthorName.Location = new System.Drawing.Point(178, 261);
+            this.lblAuthorName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblAuthorName.Name = "lblAuthorName";
+            this.lblAuthorName.Size = new System.Drawing.Size(284, 22);
+            this.lblAuthorName.TabIndex = 15;
+            this.lblAuthorName.Text = "Nguyễn Nhật Ánh";
+            // 
+            // lblCateName
+            // 
+            this.lblCateName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCateName.AutoSize = true;
+            this.lblCateName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCateName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.lblCateName.Location = new System.Drawing.Point(2, 261);
+            this.lblCateName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCateName.Name = "lblCateName";
+            this.lblCateName.Size = new System.Drawing.Size(172, 22);
+            this.lblCateName.TabIndex = 14;
+            this.lblCateName.Text = "Truyện chữ";
+            // 
             // CensorEpisodes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -283,9 +283,9 @@ namespace PTUDTM.form
             this.Load += new System.EventHandler(this.CensorEpisodes_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
