@@ -51,25 +51,28 @@ namespace PTUDTM.form
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.6074F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.3926F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 452F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 57.04194F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 42.95806F));
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtContentCensor, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.lblIntro, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblChapterTitle, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTitle, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblContentCensor, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2Separator1, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel1, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblIntro, 0, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(107, 83);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 364F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 210F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 69F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1106, 812);
@@ -84,12 +87,12 @@ namespace PTUDTM.form
             this.URL});
             this.tableLayoutPanel1.SetColumnSpan(this.dataGridView1, 2);
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(221, 135);
+            this.dataGridView1.Location = new System.Drawing.Point(252, 71);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(883, 360);
+            this.dataGridView1.Size = new System.Drawing.Size(852, 315);
             this.dataGridView1.TabIndex = 20;
             // 
             // URL
@@ -116,7 +119,7 @@ namespace PTUDTM.form
             this.txtContentCensor.FocusedState.Parent = this.txtContentCensor;
             this.txtContentCensor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContentCensor.HoverState.Parent = this.txtContentCensor;
-            this.txtContentCensor.Location = new System.Drawing.Point(223, 502);
+            this.txtContentCensor.Location = new System.Drawing.Point(254, 393);
             this.txtContentCensor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtContentCensor.Multiline = true;
             this.txtContentCensor.Name = "txtContentCensor";
@@ -124,14 +127,14 @@ namespace PTUDTM.form
             this.txtContentCensor.PlaceholderText = "";
             this.txtContentCensor.SelectedText = "";
             this.txtContentCensor.ShadowDecoration.Parent = this.txtContentCensor;
-            this.txtContentCensor.Size = new System.Drawing.Size(879, 200);
+            this.txtContentCensor.Size = new System.Drawing.Size(848, 309);
             this.txtContentCensor.TabIndex = 18;
             // 
             // lblIntro
             // 
             this.lblIntro.AutoSize = true;
             this.lblIntro.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIntro.Location = new System.Drawing.Point(15, 149);
+            this.lblIntro.Location = new System.Drawing.Point(15, 85);
             this.lblIntro.Margin = new System.Windows.Forms.Padding(15, 16, 2, 0);
             this.lblIntro.Name = "lblIntro";
             this.lblIntro.Size = new System.Drawing.Size(114, 26);
@@ -147,7 +150,7 @@ namespace PTUDTM.form
             this.lblChapterTitle.Location = new System.Drawing.Point(15, 0);
             this.lblChapterTitle.Margin = new System.Windows.Forms.Padding(15, 0, 2, 0);
             this.lblChapterTitle.Name = "lblChapterTitle";
-            this.lblChapterTitle.Size = new System.Drawing.Size(202, 133);
+            this.lblChapterTitle.Size = new System.Drawing.Size(233, 69);
             this.lblChapterTitle.TabIndex = 14;
             this.lblChapterTitle.Text = "Chapter tiêu đề:";
             this.lblChapterTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -168,14 +171,14 @@ namespace PTUDTM.form
             this.txtTitle.FocusedState.Parent = this.txtTitle;
             this.txtTitle.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTitle.HoverState.Parent = this.txtTitle;
-            this.txtTitle.Location = new System.Drawing.Point(223, 5);
+            this.txtTitle.Location = new System.Drawing.Point(254, 5);
             this.txtTitle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.PasswordChar = '\0';
             this.txtTitle.PlaceholderText = "";
             this.txtTitle.SelectedText = "";
             this.txtTitle.ShadowDecoration.Parent = this.txtTitle;
-            this.txtTitle.Size = new System.Drawing.Size(879, 123);
+            this.txtTitle.Size = new System.Drawing.Size(848, 59);
             this.txtTitle.TabIndex = 13;
             // 
             // lblContentCensor
@@ -183,7 +186,7 @@ namespace PTUDTM.form
             this.lblContentCensor.BackColor = System.Drawing.Color.Transparent;
             this.lblContentCensor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblContentCensor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContentCensor.Location = new System.Drawing.Point(2, 499);
+            this.lblContentCensor.Location = new System.Drawing.Point(2, 390);
             this.lblContentCensor.Margin = new System.Windows.Forms.Padding(2);
             this.lblContentCensor.Name = "lblContentCensor";
             this.lblContentCensor.Size = new System.Drawing.Size(228, 28);
@@ -208,9 +211,9 @@ namespace PTUDTM.form
             this.panel1.Controls.Add(this.btnAllow);
             this.panel1.Controls.Add(this.btnRefuse);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(222, 746);
+            this.panel1.Location = new System.Drawing.Point(253, 746);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(881, 63);
+            this.panel1.Size = new System.Drawing.Size(850, 63);
             this.panel1.TabIndex = 21;
             // 
             // btnCancel
@@ -223,7 +226,7 @@ namespace PTUDTM.form
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.HoverState.Parent = this.btnCancel;
-            this.btnCancel.Location = new System.Drawing.Point(182, -3);
+            this.btnCancel.Location = new System.Drawing.Point(167, -3);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(300, 2, 2, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.ShadowDecoration.Parent = this.btnCancel;

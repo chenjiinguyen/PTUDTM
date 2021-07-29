@@ -54,6 +54,7 @@ namespace PTUDTM.form
             this.txtContentCensor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtContentCensor.DisabledState.Parent = this.txtContentCensor;
             this.txtContentCensor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtContentCensor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtContentCensor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtContentCensor.FocusedState.Parent = this.txtContentCensor;
             this.txtContentCensor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -66,7 +67,7 @@ namespace PTUDTM.form
             this.txtContentCensor.PlaceholderText = "";
             this.txtContentCensor.SelectedText = "";
             this.txtContentCensor.ShadowDecoration.Parent = this.txtContentCensor;
-            this.txtContentCensor.Size = new System.Drawing.Size(883, 250);
+            this.txtContentCensor.Size = new System.Drawing.Size(884, 309);
             this.txtContentCensor.TabIndex = 18;
             // 
             // btnRefuse
@@ -78,7 +79,7 @@ namespace PTUDTM.form
             this.btnRefuse.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnRefuse.ForeColor = System.Drawing.Color.White;
             this.btnRefuse.HoverState.Parent = this.btnRefuse;
-            this.btnRefuse.Location = new System.Drawing.Point(640, 745);
+            this.btnRefuse.Location = new System.Drawing.Point(639, 745);
             this.btnRefuse.Margin = new System.Windows.Forms.Padding(2);
             this.btnRefuse.Name = "btnRefuse";
             this.btnRefuse.ShadowDecoration.Parent = this.btnRefuse;
@@ -204,7 +205,7 @@ namespace PTUDTM.form
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.6074F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.3926F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 467F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 468F));
             this.tableLayoutPanel1.Controls.Add(this.txtContentCensor, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.btnRefuse, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.lblIntro, 0, 1);

@@ -72,7 +72,7 @@ namespace PTUDTM.form
             
             thread = new Thread(() =>
             {
-                episodes = Businesses.episode.GetUncensorDataTableByIdBook(id);
+                episodes = Businesses.episode.GetAllDataTableByIdBook(id);
                 book = Businesses.book.GetByID(id);
 
                 Action action = new Action(LoadData);
